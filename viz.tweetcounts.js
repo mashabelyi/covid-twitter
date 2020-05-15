@@ -103,10 +103,11 @@ function drawTweetsByDay(pop_data, tweet_data, state_converter, us) {
   const outerBars = d3.select("#TweetsByDay-bars");
   barsW = outerBars.node().getBoundingClientRect().width;
   console.log(barsW)
-  barsH = 200
+  barsH = 150
   margin = ({top: 30, right: 30, bottom: 30, left: 40})
+  chartAreaW = barsW - margin.right - margin.left;
   const bars = outerBars.append("svg")
-                .attr("width",barsW + margin.left+margin.right).attr("height", barsH+ margin.top+margin.bottom)
+                .attr("width",barsW).attr("height", barsH+ margin.top+margin.bottom)
                 .style('font', '0.8em sans-serif')
                 .style('text-anchor', 'middle')
                 .style('fill', '#426080')
@@ -114,7 +115,7 @@ function drawTweetsByDay(pop_data, tweet_data, state_converter, us) {
 
   x = d3.scaleBand()
     .domain(d3.range(tweet_data.length))
-    .range([margin.left, margin.left+barsW])
+    .range([margin.left, margin.left+chartAreaW])
     .padding(0.1)
 
   y = d3.scaleLinear()
