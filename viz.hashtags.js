@@ -13,7 +13,7 @@ function drawHirearchical(data) {
     const font_size = 18
     const font_size_mouseover = 19
 
-    const outerDiv = d3.select("#HashtagsPlot");
+    const outerDiv = d3.select("#HashtagsGraph");
     // width = outerDiv.node().getBoundingClientRect().width
     // height = nTopics*(20+5)
 

@@ -69,7 +69,9 @@
 	
 	<!-- HASHTAGS PLOT -->
 	<div id="HashtagsContainer">
-		<div id="HashtagsPlot"></div>
+		<div class='content'>
+			<b>What did people talk about?</b> Some accounts tweet the same hashtags over and over. These hastags are politically charged. See bar plots below.
+		</div>
 		<div id="HashtagsBars"></div>
 		<div style="clear:both;"></div>
 	</div>
@@ -79,7 +81,9 @@
 	<!-- TIMELINE PLOT -->
 	<div id='topics-context' class='context-container'>
 		<div class='content'>
-			This is the Context container for the topics timline viz. Say something ineresting here, give directions, draw a picture!
+			Who are these people who are tweeting the same hashtags over ad over again? Could they be bots? 
+			To investigate deeper, we filtered out the top 50 topics (by volume) and ranked them based on the number of tweets mentioning the hashtags in each cluster per day.
+			Check it out.
 		</div>
 	</div>
 
@@ -88,6 +92,13 @@
 		UC Berkeley School of Information.<br/>
 		INFO 247 Final Rpoejct, 2020<br/>
 		1. The <a href='https://github.com/echen102/COVID-19-TweetIDs'>COVID-19-TweetIDs</a> dataset was collected ias the Twitter API over the course of the pandemic. The dataset comprises 1% of the total Twitter converstaion, randomly selected by the Twitter API. <br/>
+	</div>
+
+	<div id="TopicsGraph">
+		<div class='content'>
+			See how the topics are related to each other:
+		</div>
+		<div id="HashtagsGraph"></div>
 	</div>
 </body>
 
