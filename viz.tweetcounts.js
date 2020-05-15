@@ -1,45 +1,18 @@
 function drawTweetsByDay(pop_data, tweet_data, state_converter, us) {
 
+  highlight_color = '#6eabcc';
+
   const outerDiv = d3.select("#TweetsByDay");
   width = outerDiv.node().getBoundingClientRect().width
-  height = width*0.77;
-
-  margin = ({top: 30, right: 0, bottom: 30, left: 40})
-
-  x = d3.scaleBand()
-    .domain(d3.range(tweet_data.length))
-    .range([margin.left, width - margin.right])
-    .padding(0.1)
-
-  y = d3.scaleLinear()
-    .domain([0, 100000])
-    .range([height - margin.bottom + 40, margin.top + 640])
-
-
-  xAxis = g => g
-    .attr('transform', `translate(0,${height - margin.bottom + 40})`)
-    .call(d3.axisBottom(x).tickFormat(i => tweet_data[i].date).tickSizeOuter(0))
-
-  yAxis = g => g
-    .attr('transform', `translate(${margin.left},0)`)
-    .call(d3.axisLeft(y).ticks(null, tweet_data.format))
-    .call(g => g.select('.domain').remove())
-    .call(g => g.selectAll('text')
-        .attr('x', -margin.left + 15)
-        .attr('y', 0)
-        .style('font', '0.8em sans-serif')
-        .style('text-anchor', 'middle')
-        .style('fill', '#426080'))
-
-
-
+  height = width*0.5;
 
   const path = d3.geoPath()
 
-  // const svg = d3.select(DOM.svg(975, 1000))
-  width = 975
-  height = 1000
-  const svg = outerDiv.append("svg")
+  
+  const outerMap = d3.select("#TweetsByDay-map");
+  // width = 975
+  // height = 1000
+  const svg = outerMap.append("svg").attr('class','usa-map')
                 .attr("width",width).attr("height", height)
                 .style('font', '0.8em sans-serif')
                 .style('text-anchor', 'middle')
@@ -83,11 +56,8 @@ function drawTweetsByDay(pop_data, tweet_data, state_converter, us) {
               .style('font-size', '12px')
               .text('Date in March')
 
-  // svg.on('click', d => {
-  //   console.log('clicked svg')
-  // });
-
-  scale = 0.75
+  
+  scale = 0.5
   // Adds the map
   svg.append('g')
     .selectAll('path')
@@ -98,12 +68,12 @@ function drawTweetsByDay(pop_data, tweet_data, state_converter, us) {
       .attr("transform", "scale("+scale+")")
       .attr('d', path)
       .style('cursor', 'pointer')
-      .attr('fill', d => {return (d.id == "06") ? '#CC442F' : '#6eabcc'})
+      .attr('fill', d => {return (d.id == "06") ? '#CC442F' : highlight_color})
       .attr('opacity', d => {return (d.id == "06") ? 1 : .7})
-      .on('click', d => {
+      .on('click mouseenter', d => {
         console.log("clicked")
         d3.selectAll('.stateShape')
-          .attr('fill', '#6eabcc')
+          .attr('fill', highlight_color)
           .attr('opacity', .7);
         const id = d.id; // d.id is the number code for the state
         outline.attr('d', path(d));
@@ -126,10 +96,59 @@ function drawTweetsByDay(pop_data, tweet_data, state_converter, us) {
       .attr('stroke-linejoin', 'round')
       .attr("transform", "scale("+scale+")");
   
+  // -------------------------------------------------------
+  // DRAW BAR CHART
+  // -------------------------------------------------------
+
+  const outerBars = d3.select("#TweetsByDay-bars");
+  barsW = outerBars.node().getBoundingClientRect().width;
+  console.log(barsW)
+  barsH = 200
+  margin = ({top: 30, right: 30, bottom: 30, left: 40})
+  const bars = outerBars.append("svg")
+                .attr("width",barsW + margin.left+margin.right).attr("height", barsH+ margin.top+margin.bottom)
+                .style('font', '0.8em sans-serif')
+                .style('text-anchor', 'middle')
+                .style('fill', '#426080')
+
+
+  x = d3.scaleBand()
+    .domain(d3.range(tweet_data.length))
+    .range([margin.left, margin.left+barsW])
+    .padding(0.1)
+
+  y = d3.scaleLinear()
+    .domain([0, 100000])
+    .range([barsH+margin.bottom,margin.bottom]) // reverse the direction. smart!
+
+
+  xAxis = g => g
+    .attr('transform', `translate(0,${barsH + margin.bottom})`)
+    .call(d3.axisBottom(x).tickFormat(i => tweet_data[i].date).tickSizeOuter(0))
+    .call(g => g.selectAll('text')
+        .style('font', '0.8em sans-serif')
+        .style('text-anchor', 'middle')
+        .style('fill', '#426080'))
+  bars.append('g')
+      .call(xAxis);
+
+  yAxis = g => g
+    .attr('transform', `translate(${margin.left},0)`)
+    .call(d3.axisLeft(y).ticks(null, tweet_data.format))
+    .call(g => g.select('.domain').remove())
+    .call(g => g.selectAll('text')
+        .attr('x', -margin.left + 15)
+        .attr('y', 0)
+        .style('font', '0.8em sans-serif')
+        .style('text-anchor', 'middle')
+        .style('fill', '#426080'))
+  bars.append('g')
+    .call(yAxis);
+
   // Bar chart
-  svg.append('g')
+  bars.append('g')
       .attr('class', 'bars')
-      .attr('fill', '#6eabcc')
+      .attr('fill', highlight_color)
       .selectAll('rect')
       .data(tweet_data)
       .join('rect')
@@ -139,11 +158,9 @@ function drawTweetsByDay(pop_data, tweet_data, state_converter, us) {
       .attr('width', x.bandwidth())
       .style('opacity', 0.7);
 
-  svg.append('g')
-      .call(xAxis);
+  
 
-  svg.append('g')
-      .call(yAxis);
+  
   
   // Updates the bar graph for the clicked state
   function update(key) {
@@ -154,14 +171,14 @@ function drawTweetsByDay(pop_data, tweet_data, state_converter, us) {
         .duration(800)
         .attr('y', (d) => {return y(d[key])})
         .attr('height', (d) => {return y(0) - y(d[key])})
-        .delay((d,i) => {console.log(i) ; return(i*20)});
+        .delay((d,i) => {return(i*20)});
     
     d3.selectAll('.bartextState').remove()
     d3.selectAll('.bartextPop').remove()
     
     let stateName = state_converter.find((d) => {return d.stateAbr == key}).stateName
     
-    svg
+    bars
       .append('text') // adds new bar graph title
       .attr('class', 'bartextState')
       .attr('x', (width / 2)) 
@@ -171,7 +188,7 @@ function drawTweetsByDay(pop_data, tweet_data, state_converter, us) {
       .style('fill', '#CC442F')
       .text(stateName)
     
-    svg // adds population
+    bars // adds population
       .append('text')
       .attr('class', 'bartextPop')
       .attr('x', (width / 2))             

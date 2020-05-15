@@ -3,6 +3,7 @@
 	<script src="https://d3js.org/d3.v5.min.js"></script>
 	<script src="https://d3js.org/topojson.v1.min.js"></script>
 
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/timeline.css">
 </head>
@@ -10,9 +11,19 @@
 	<div id='top-header'>
 		<div class='content'>
 			#COVID Twitter Dashboard
+			<p id='intro'>
+				The <a href='https://www.who.int/emergencies/diseases/novel-coronavirus-2019'>Coronavirus pandmemic</a> hit the United States in early spring, 2020. As common in times of crisis, millions of Americans took to Twitter to share and discuss information about Covid19.<br/><br/> 
+				
+				We analyzed tweets originating in the United States<sup>1</sup> between March 1 and March 30 to track how the conversation evolved over time. Scroll down to explore. (ADD MORE HERE) 
+			</p>
 		</div>
 	</div>
-	<div id="TweetsByDay"></div>
+	<div id="TweetsByDay">
+		<p><b>How much did different states tweet about COVID-19 in March?</b> Click on a state to see how many tweets mentioned COVID-19 for each date in the month of March.</p>
+		<div id="TweetsByDay-map"></div>
+		<div id="TweetsByDay-bars"></div>
+
+	</div>
 
 
 	<div id='sentiment-context' class='context-container'>
@@ -29,6 +40,11 @@
 	</div>
 
 	<div id="CovidTopicsTimeline"></div>
+	<div id='footer'>
+		UC Berkeley School of Information.<br/>
+		INFO 247 Final Rpoejct, 2020<br/>
+		1. The <a href='https://github.com/echen102/COVID-19-TweetIDs'>COVID-19-TweetIDs</a> dataset was collected ias the Twitter API over the course of the pandemic. The dataset comprises 1% of the total Twitter converstaion, randomly selected by the Twitter API. <br/>
+	</div>
 </body>
 
 <script src="viz.sentiment.js"></script>
