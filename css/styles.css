@@ -42,10 +42,10 @@ body {
 }
 .context-container{
   width:100%;
-  background-color:gray;
+  background-color:#f9f9f9;
   min-height:20%;
   color:white;
-  font-size:2em;
+  /*font-size:2em;*/
 }
 
 /*
@@ -99,7 +99,17 @@ body {
   SENTIMENT styles
 
 */
+#sentiment-context{
+  width:100%;
+  background-color:#f7f7f7;
+  min-height:20%;
+  color:black;
+  font-weight:300;
+  /*font-size:2em;*/
+}
+#sentiment-context .content{
 
+}
 #SentimentGrid{
   position:relative;
   margin:auto;
@@ -130,6 +140,9 @@ body {
 }
 #SentimentGrid .sentiment-detail{
 	overflow:visible;
+  display: block;
+  position: absolute;
+
 }
 #SentimentGrid .sentiment-detail text{
   font-size:16px;
@@ -137,6 +150,12 @@ body {
 #SentimentGrid  .controls{
   width:400px;
   margin:auto;
+  position:absolute;
+  top:30px;
+  width:100%;
+  cursor:pointer;
+  z-index:100;
+
 }
 #SentimentGrid  .controls .checkbox-container {
   display:inline;

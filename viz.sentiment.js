@@ -31,12 +31,6 @@ function drawSentiment(tw, re, states){
   const posfill = "#f2bc27" // "#45804e"
   const negfill = "#6eabcc" // "#ae74b0"
   
-  // const outerDiv = d3.create("div")
-  //                    .attr("id", "SentimentGrid")
-  //                    .style("width",width + margin.left + margin.right+"px")
-  //                    .style("height",height + margin.top + margin.bottom+50+"px");
-
-  
   
   // Controls
   const controls = outerDiv.append("div").attr("class","controls")

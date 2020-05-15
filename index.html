@@ -14,12 +14,12 @@
 			<p id='intro'>
 				The <a href='https://www.who.int/emergencies/diseases/novel-coronavirus-2019'>Coronavirus pandmemic</a> hit the United States in early spring, 2020. As common in times of crisis, millions of Americans took to Twitter to share and discuss information about Covid19.<br/><br/> 
 				
-				We analyzed tweets originating in the United States<sup>1</sup> between March 1 and March 30 to track how the conversation evolved over time. Scroll down to explore. (ADD MORE HERE) 
+				We analyzed tweets originating in the United States<sup>1</sup> between March 1 and March 30 to track how the conversation evolved over time. Scroll down to explore how the conversation evolved over time. 
 			</p>
 		</div>
 	</div>
 	<div id="TweetsByDay">
-		<p><b>How much did different states tweet about COVID-19 in March?</b> Click on a state to see how many tweets mentioned COVID-19 for each date in the month of March.</p>
+		<p><b>How much did different states tweet about COVID-19 in March?</b> Hover over a state to see how many tweets mentioned COVID-19 for each date in the month of March.</p>
 		<div id="TweetsByDay-map"></div>
 		<div id="TweetsByDay-bars">
 			
@@ -36,10 +36,29 @@
 
 	<div id='sentiment-context' class='context-container'>
 		<div class='content'>
-			This is the Context container for sentiment
-		</div>
+			<div style="float:left;width:50%">
+				<b>How do we feel about Coronavirus?</b>
+				Twitter users expressed a wide range of emotions about Covid19 in March.
+				<br/><br/>
+				The interactive map below reflects daily average sentiment scores in USA for every day in March. Evidently, the <b>shelter in place</b> orders that came into effect in the middle of the month correlated with a systematic shift in sentiment across the country. 
+
+				<br/><br/>
+
+				To see what kind of content users tend to retweet more, use the radio controls (rephrase).
+			</div>
+			<div style="float:right;width:50%">
+				[There will be a plot of most positive and negative words here.]
+			</div>
+			<div style="clear:both"></div>
+			
+		</div>	
 	</div>
 	<div id="SentimentGrid"></div>
+
+	<div class='footnotes' style='font-size:12px;margin:20px 0px;width:100%; text-align:center;'>
+		<a href='https://github.com/cjhutto/vaderSentiment'>Vader</a> sentiment analysis tool was used to score each tweet on a sentiment scale from -1 to 1. 
+	</div>
+	
 
 	<div id='topics-context' class='context-container'>
 		<div class='content'>
