@@ -19,13 +19,15 @@ function drawTweetsByDay(pop_data, tweet_data, state_converter, us) {
                 .style('fill', '#426080')
   
   // Initializing graph text
-  svg.append('text')
-              .attr('class', 'bartext')
-              .attr('x', (width / 2))             
-              .attr('y', 680)
-              .style('font-size', '16px')
-              .text('Number of tweets mentioning COVID-19 by date:');
+  // svg.append('text')
+  //             .attr('class', 'bartext')
+  //             .attr('x', (width / 2))             
+  //             .attr('y', 680)
+  //             .style('font-size', '16px')
+  //             .text('Number of tweets mentioning COVID-19 by date:');
   
+  
+
   svg.append('text')
               .attr('class', 'bartextState')
               .attr('x', (width / 2))             
@@ -50,11 +52,6 @@ function drawTweetsByDay(pop_data, tweet_data, state_converter, us) {
               .style('fill', '#CC442F')
               .text("39512223");
   
-  svg.append('text')
-              .attr('x', (width / 2))
-              .attr('y', 950)
-              .style('font-size', '12px')
-              .text('Date in March')
 
   
   scale = 0.5
@@ -160,9 +157,18 @@ function drawTweetsByDay(pop_data, tweet_data, state_converter, us) {
       .style('opacity', 0.7);
 
   
+  bars.append('text')
+          .attr('x', (barsW / 2))
+          .attr('y', barsH + margin.bottom +margin.top)
+          .style('font-size', '12px')
+          .text('Date in March')
+          .atr('fill', '#426080')
+  
+  
+  function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
 
-  
-  
   // Updates the bar graph for the clicked state
   function update(key) {
     d3.select('.bars').selectAll('rect')
@@ -179,10 +185,13 @@ function drawTweetsByDay(pop_data, tweet_data, state_converter, us) {
     
     let stateName = state_converter.find((d) => {return d.stateAbr == key}).stateName
     
+    d3.select("#viz1-statename").html(stateName)
+    d3.select("#viz1-population").html(numberWithCommas(pop_data.find((d) => {return d.NAME == stateName}).POPESTIMATE2019))
+
     bars
       .append('text') // adds new bar graph title
       .attr('class', 'bartextState')
-      .attr('x', (width / 2)) 
+      .attr('x', (barsW / 2)) 
       .attr('y', 705)
       .style('font-size', '16px')
       .style('font-weight', 'bold')

@@ -60,6 +60,7 @@ body {
   width:100%;
   max-width:700px;
   min-width:500px;
+  margin-bottom:30px;
 }
 #TweetsByDay-map {
   position:relative;
@@ -79,6 +80,19 @@ body {
   position:relative;
   width:500px;
   margin:20px auto;
+}
+#TweetsByDay-info {
+  position:absolute;
+  width:250px;
+  /*height:80px;*/
+  border:2px solid #a7a5a5;
+  right:0px;
+  top:0px;
+  text-align:center;
+  padding:10px;
+}
+#viz1-statename{
+  font-weight:bold;
 }
 /*
 
