@@ -1,0 +1,76 @@
+body {
+  /*max-width: 900px;*/
+  font-family: sans-serif;
+}
+
+#top-header{
+	width:100%;
+	background-color:#0099ff;
+	height:30%;
+	color:white;
+	font-size:2em;
+
+}
+#topics-context {
+	width:100%;
+	background-color:#cc0066;
+	min-height:20%;
+	color:white;
+	font-size:2em;
+}
+.content{
+	width:100%;
+	max-width:900px;
+	position:relative;
+	margin:auto;
+	padding:50px 0px;
+}
+
+
+#SentimentGrid{
+  position:relative;
+  margin:auto;
+  font-family: sans-serif;
+  width:100%;
+  max-width:700px;
+}
+#SentimentGrid .states-grid{
+  /*position:absolute;*/
+}
+#SentimentGrid .state text{
+	fill:#6b6a69;
+	font-family: sans-serif;
+	text-anchor:middle;
+	font-size:12px;
+}
+ #SentimentGrid p {
+  width:100%;
+  max-width: none;
+  margin:auto;
+  padding-bottom:10px;
+  margin: 20px 0px;
+}
+.pos { color:#f2bc27; font-weight:bold;}
+.neg { color:#6eabcc; font-weight:bold;}
+#SentimentGrid .annotation{
+  position:absolute;
+  text-anchor:middle;
+  font: 1em sans-serif;
+}
+#SentimentGrid .sentiment-detail{
+	overflow:visible;
+}
+#SentimentGrid .sentiment-detail text{
+  font-size:16px;
+}
+#SentimentGrid  .controls{
+  width:400px;
+  margin:auto;
+}
+#SentimentGrid  .controls .checkbox-container {
+  display:inline;
+  margin:auto 10px;
+}
+#SentimentGrid  .controls .checkbox-container input{
+  margin:0px 10px
+}

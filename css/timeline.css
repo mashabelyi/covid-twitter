@@ -1,0 +1,69 @@
+#CovidTopicsTimeline {
+  width:100%;
+  margin:auto;
+  max-width:700px;
+  min-width:300px;
+}
+#CovidTopicsTimeline .controls {
+  width:100%;
+  margin:auto;
+  padding: 10px;
+  clear:both;
+  background-color: #d8d5d5;
+  height:50px;
+}
+#CovidTopicsTimeline .controls button{
+  float:right;
+  clear:both;
+  margin: 5px;
+  width:80px;
+}
+line.grid{
+  opacity:0.5
+}
+.labelContainer {
+width:150px;
+height:20px;
+cursor:pointer;
+}
+.labelText {
+fill:white;
+font: 11px sans-serif;
+font-weight:bold;
+text-anchor: left;
+cursor:pointer;
+pointer-events:none;
+}
+path.line.background{
+stroke: #bfbeba !important;
+opacity:0.3;
+}
+.labelContainer.background {
+opacity:0.3;
+}
+path{
+   pointer-events:none; 
+}
+text.dateText{
+  fill:white;
+  font: 0.8em sans-serif;
+  text-anchor:middle;
+  pointer-events:none;
+  font-weight:bold;
+}
+
+#CovidTopicsTimeline p {
+  width:100%;
+  padding:1%;
+  max-height:70px;
+  min-height:70px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+p .label {
+  background-color:black;
+  color:white;
+  padding: 3px 5px;
+  font-weight: bold;
+  font-size: 0.9em;
+}
