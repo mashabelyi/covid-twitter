@@ -1,5 +1,4 @@
 body {
-  /*max-width: 900px;*/
   font-family: sans-serif;
 }
 
@@ -25,7 +24,20 @@ body {
 	margin:auto;
 	padding:50px 0px;
 }
-
+.context-container{
+  width:100%;
+  background-color:gray;
+  min-height:20%;
+  color:white;
+  font-size:2em;
+}
+#TweetsByDay{
+  position:relative;
+  margin:auto;
+  font-family: sans-serif;
+  width:100%;
+  /*max-width:700px;*/
+}
 
 #SentimentGrid{
   position:relative;

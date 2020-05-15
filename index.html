@@ -1,6 +1,7 @@
 <html>
 <head>
 	<script src="https://d3js.org/d3.v5.min.js"></script>
+	<script src="http://d3js.org/topojson.v1.min.js"></script>
 
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/timeline.css">
@@ -11,10 +12,17 @@
 			#COVID Twitter Dashboard
 		</div>
 	</div>
+	<div id="TweetsByDay"></div>
 
+
+	<div id='sentiment-context' class='context-container'>
+		<div class='content'>
+			This is the Context container for sentiment
+		</div>
+	</div>
 	<div id="SentimentGrid"></div>
 
-	<div id='topics-context'>
+	<div id='topics-context' class='context-container'>
 		<div class='content'>
 			This is the Context container for the topics timline viz. Say something ineresting here, give directions, draw a picture!
 		</div>
@@ -25,4 +33,5 @@
 
 <script src="viz.sentiment.js"></script>
 <script src="viz.topictimeline.js"></script>
+<script src="viz.tweetcounts.js"></script>
 </html>

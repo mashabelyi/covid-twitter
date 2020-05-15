@@ -41,7 +41,7 @@ opacity:0.3;
 .labelContainer.background {
 opacity:0.3;
 }
-path{
+#CovidTopicsTimeline path{
    pointer-events:none; 
 }
 text.dateText{
