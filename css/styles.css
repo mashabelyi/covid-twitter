@@ -164,3 +164,32 @@ body {
 #SentimentGrid  .controls .checkbox-container input{
   margin:0px 10px
 }
+
+/*
+  HASHTAGS STYLES
+*/
+#HashtagsContainer{
+  width:100%;
+  padding:20px 0px;
+  background-color:#f7f7f7;
+}
+#HashtagsPlot{
+  position:relative;
+  margin:auto;
+  width:50%;
+  float:left;
+}
+.cluster-text text{
+  font-size:11px;
+  cursor:pointer;
+}
+#HashtagsBars{
+  position:relative;
+  margin:auto;
+  width:50%;
+  float:left;
+}
+#HashtagsBars text{
+  fill:white;
+  font-weight:bold;
+}

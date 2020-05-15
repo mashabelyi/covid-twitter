@@ -101,6 +101,7 @@ function drawTweetsByDay(pop_data, tweet_data, state_converter, us) {
   barsW = outerBars.node().getBoundingClientRect().width;
   console.log(barsW)
   barsH = 150
+
   margin = ({top: 30, right: 30, bottom: 30, left: 40})
   chartAreaW = barsW - margin.right - margin.left;
   const bars = outerBars.append("svg")
@@ -162,7 +163,13 @@ function drawTweetsByDay(pop_data, tweet_data, state_converter, us) {
           .attr('y', barsH + margin.bottom +margin.top)
           .style('font-size', '12px')
           .text('Date in March')
-          .atr('fill', '#426080')
+          .attr('fill', '#426080')
+
+  // bars.append('text')
+  //         .style('font-size', '12px')
+  //         .text('Tweet Volume')
+  //         .attr('fill', '#426080')
+  //         .attr('transform', 'translate(40,'+(barsH /2)+') rotate(270)');
   
   
   function numberWithCommas(x) {

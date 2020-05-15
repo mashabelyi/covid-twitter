@@ -30,10 +30,14 @@
 			</div>
 		</div>
 
+		<div class='footnotes' style='font-size:12px;margin:20px 0px;width:100%; text-align:center;'>
+			The number of reported number of tweets represents ~1% of total Twitter traffic in each state.
+		</div>
+
 
 	</div>
 
-
+	<!-- SENTIMENT PLOT -->
 	<div id='sentiment-context' class='context-container'>
 		<div class='content'>
 			<div style="float:left;width:50%">
@@ -53,6 +57,8 @@
 			
 		</div>	
 	</div>
+
+	
 	<div id="SentimentGrid"></div>
 
 	<div class='footnotes' style='font-size:12px;margin:20px 0px;width:100%; text-align:center;'>
@@ -60,6 +66,17 @@
 	</div>
 	
 
+	
+	<!-- HASHTAGS PLOT -->
+	<div id="HashtagsContainer">
+		<div id="HashtagsPlot"></div>
+		<div id="HashtagsBars"></div>
+		<div style="clear:both;"></div>
+	</div>
+
+	
+
+	<!-- TIMELINE PLOT -->
 	<div id='topics-context' class='context-container'>
 		<div class='content'>
 			This is the Context container for the topics timline viz. Say something ineresting here, give directions, draw a picture!
@@ -77,4 +94,5 @@
 <script src="viz.sentiment.js"></script>
 <script src="viz.topictimeline.js"></script>
 <script src="viz.tweetcounts.js"></script>
+<script src="viz.hashtags.js"></script>
 </html>
