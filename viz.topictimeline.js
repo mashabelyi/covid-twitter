@@ -31,7 +31,7 @@ function drawTimeline(topicHashtags, data){
   
   toggleBot.on('mouseenter', function(){
     if (this.getAttribute('value')=='human'){
-        hashtags.html("Click to see data from automated social media bots.")
+        hashtags.html("Some accounts on Twitter are automated. Click to see data from automated Twitter bots.")
     }else{
       hashtags.html("Click to return to normal view.")
     }
@@ -216,10 +216,13 @@ function drawTimeline(topicHashtags, data){
         .data([...Array(32).keys()])
         .join("line").attr("class", "grid")
           .attr("x1", function(d){
-            console.log(d, xScale(d), w)
-            return xScale(d)-(w/2)
+            if (d > 0){
+              return xScale(d)-(w/2)
+            }else{
+              return -10
+            }
           }) 
-          .attr("x2", d => xScale(d)-(w/2))
+          .attr("x2", d => d > 0 ? xScale(d)-(w/2) : -100)
           .attr("y1", -10).attr("y2", height+10)
           .attr("stroke", "#bfbeba").attr("stroke-width", 1)
     
@@ -282,7 +285,6 @@ function drawTimeline(topicHashtags, data){
       
       // print out hashtags for this topic
       var topic = this.getAttribute('name');
-      console.log(topic)
       var tags = topicHashtags.find(function(d) {return d.topicName == topic}).hashtags.split(' ').slice(0,50)
       // console.log()
       hashtags.html("Top hashtags in <b>"+topic+"</b> cluster:<br/>#" + tags.join(" #"))
@@ -312,7 +314,7 @@ function drawTimeline(topicHashtags, data){
     }
 
     nTopics += 5
-    console.log("show more: " + nTopics)
+    // console.log("show more: " + nTopics)
     drawChart(nTopics)
   });
   showLess.on("click", function(d) {
@@ -321,7 +323,7 @@ function drawTimeline(topicHashtags, data){
     }
 
     nTopics -= 5
-    console.log("show more: " + nTopics)
+    // console.log("show more: " + nTopics)
     drawChart(nTopics)
   });
     
@@ -338,15 +340,15 @@ function drawTimeline(topicHashtags, data){
 
     if (this.getAttribute('value')=='human'){
       this.setAttribute('value', 'bot')
-      d3.select(this).text('GO BACK')
+      d3.select(this).text('GO BACK').style("background-color","#2ef0cc")
     }else{
       this.setAttribute('value', 'human')
-      d3.select(this).text('SEE BOTS')
+      d3.select(this).text('SEE BOTS').style("background-color","black")
     }
 
     d3.csv(url).then(function(loaded) {
       chartData = loaded
-      console.log(chartData)
+      // console.log(chartData)
       drawChart(nTopics)
     });
     
@@ -376,7 +378,7 @@ function drawTimeline(topicHashtags, data){
     paths
    // hide the arcs
     .attr("stroke-dasharray", function () {
-      console.log(this.getTotalLength())
+      // console.log(this.getTotalLength())
       return this.getTotalLength()
     })
     .attr("stroke-dashoffset",  function () {
