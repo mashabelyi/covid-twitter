@@ -181,6 +181,7 @@ body {
   margin:auto;
   width:50%;
   float:left;
+  transform:translate(30px,0px)
 }
 .hbars text{
   font-weight:bold;

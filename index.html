@@ -44,14 +44,14 @@
 				<b>How do we feel about Coronavirus?</b>
 				Twitter users expressed a wide range of emotions about Covid19 in March.
 				<br/><br/>
-				The interactive map below reflects daily average sentiment scores in USA for every day in March. Evidently, the <b>shelter in place</b> orders that came into effect in the middle of the month correlated with a systematic shift in sentiment across the country. 
+				The interactive map below reflects daily average sentiment scores in USA for every day in March. Evidently, the <span style='background-color:#000000; font-weight:bold; color:white;padding:0px 3px;'>shelter in place</span> orders that came into effect in the middle of the month correlated with a systematic shift in sentiment across the country. 
 
 				<br/><br/>
 
-				To see what kind of content users tend to retweet more, use the radio controls (rephrase).
+				Select <b>retweets</b> to find out what kind of content users tend to retweet more.
 			</div>
-			<div style="float:right;width:50%">
-				[There will be a plot of most positive and negative words here.]
+			<div style="float:right;width:50%" id="SentimentTerms">
+				
 			</div>
 			<div style="clear:both"></div>
 			
@@ -70,11 +70,26 @@
 	<!-- HASHTAGS PLOT -->
 	<div id="HashtagsContainer">
 		<div class='content'>
-			<b>What did people talk about?</b> Some accounts tweet the same hashtags over and over. These hastags are politically charged. See bar plots below.
+			<b>What did people talk about?</b> 
+			Conversations on Twitter are often <span style="background-color:#8050bf;color:white;font-weight:bold;padding:0px 3px;">politically charged</span>. Political discourse on social media is often polarized and prone to misinformation, which may have harmful effects in the public sphere<sup>2</sup>. <b>Who plays a role in facilitating these conversations?</b>
+			<br/><br/>
+			Looking at frequently occuring sequences of hashtags used when discussing COVID-19, we discovered that select accounts tend to re-use polarized hashtags multiple times over a short period of time.
+
 		</div>
 		<div id="HashtagsBarsLeft" class='hbars'></div>
 		<div id="HashtagsBarsRight" class='hbars'></div>
 		<div style="clear:both;"></div>
+
+	<!-- 	<div>
+			At first glance, it seems that #cpac2020, #trumpvirus, #trumpvirus, #trumpviruscoverup were the most popular hashtags in Twitter in March.
+		</div>
+ -->
+		<div class='footnotes' style='font-size:12px;margin:20px 0px;width:100%; text-align:center;'>
+			2. Matt Kapko, <a href="https://www.cio.com/article/3137513/twitters-impact-on-2016-presidential-election-is-unmistakable.html">Twitter's impact on 2016 presidential election is unmistakable</a>,<br/>
+			Grinberg et al, 2019. <a href="https://science.sciencemag.org/content/363/6425/374">Fake news on Twitter during the 2016 U.S. presidential election</a>
+		</div>
+
+		
 	</div>
 
 	
@@ -89,11 +104,7 @@
 	</div>
 
 	<div id="CovidTopicsTimeline"></div>
-	<div id='footer'>
-		UC Berkeley School of Information.<br/>
-		INFO 247 Final Rpoejct, 2020<br/>
-		1. The <a href='https://github.com/echen102/COVID-19-TweetIDs'>COVID-19-TweetIDs</a> dataset was collected ias the Twitter API over the course of the pandemic. The dataset comprises 1% of the total Twitter converstaion, randomly selected by the Twitter API. <br/>
-	</div>
+
 
 	<div id="TopicsGraph">
 		<div class='content'>
@@ -101,6 +112,13 @@
 		</div>
 		<div id="HashtagsGraph"></div>
 	</div>
+
+	<div id='footer'>
+		UC Berkeley School of Information.<br/>
+		INFO 247 Final Proejct, 2020<br/>
+		1. The <a href='https://github.com/echen102/COVID-19-TweetIDs'>COVID-19-TweetIDs</a> dataset was collected ias the Twitter API over the course of the pandemic. The dataset comprises 1% of the total Twitter converstaion, randomly selected by the Twitter API. <br/>
+	</div>
+
 </body>
 
 <script src="viz.sentiment.js"></script>

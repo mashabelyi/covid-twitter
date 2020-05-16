@@ -310,23 +310,100 @@ function drawSentiment(tw, re, states){
           });
   
   }
+}
+
+function drawTerms(mydata){
+  const outerDiv = d3.select("#SentimentTerms");
+  width = outerDiv.node().getBoundingClientRect().width
+
+  height = d3.select("#sentiment-context").node().getBoundingClientRect().height-100
+  console.log(height)
+  let margin = ({top: 10, bottom: 40, left: 10, right: 10});
+
+  const posfill = "#f2bc27" // "#45804e"
+  const negfill = "#6eabcc" // "#ae74b0"
+
+
+  const svg = outerDiv.append("svg").attr("width", width).attr('height', height);
+
+  plotW = width - margin.left - margin.right
+  plotH = height - margin.top - margin.bottom
+
+  const y = d3.scaleBand()
+        .domain(mydata.map(d => d.word))
+        .range([margin.top, height - margin.bottom])
+        .padding(0.1);
   
-  // return outerDiv.node()
+  var tickHeight = height/mydata.length;
   
+  const x = d3.scaleLinear()
+        .domain([-50, 50])
+        .range([width/2, width]);
+
+  const yAxis = g => g
+        .attr("transform", `translate(0,${height - margin.bottom})`)
+        .call(d3.axisBottom(x).tickSizeOuter(0));
+  
+  
+  var tickHeight = height/mydata.length;
+  
+  const bar = svg.append("g")
+                .selectAll("rect")
+                .data(mydata)
+                .join("rect")
+                  .attr("x", function(d){
+                        return x(Math.min(0, d.odds))
+                   })
+                  .attr("y", d => y(d.word))
+                  .attr("width", function(d){
+                        return Math.abs(x(d.odds) - x(0))
+                  })
+                  .attr("height", y.bandwidth())
+                  .attr("fill", d => (d.sentiment=='pos' ? posfill : negfill))
+  
+  svg.append("g")
+        .selectAll("text")
+        .data(mydata)
+        .join("text")
+            .attr("text-anchor", d => d.sentiment=="pos" ? 'start': 'end') 
+            .attr("x", function(d){
+              return d.sentiment=="pos" ? (x(d.odds) + 10) : (x(d.odds) - 10)
+             }) 
+            .attr("y", d => y(d.word) + tickHeight/2)
+            .text(d => d.word)
+            .attr("fill", d => d.sentiment=="pos" ? posfill: negfill)
+            .style('font-weight','bold').style('font-size','12px')
+
+  svg.append("g")
+     .call(yAxis);
+
+  // x axis
+  console.log(width)
+  svg.append('text')
+          .attr("text-anchor", "middle")
+          .attr('x',x(0))
+          .attr('y', plotH + margin.bottom +margin.top)
+          .style('font-size', '12px')
+          .text('Odds Ratio')
+
 }
 
 Promise.all([
     d3.csv("https://raw.githubusercontent.com/mashabelyi/Twitter-Covid-Response/master/data/tweets-smoothed.0301-0331.usa.sentiment.d3.csv"),
     d3.csv("https://raw.githubusercontent.com/mashabelyi/Twitter-Covid-Response/master/data/retweets-smoothed.0301-0331.usa.sentiment.d3.csv"),
-    d3.json("https://raw.githubusercontent.com/mashabelyi/Twitter-Covid-Response/master/scripts/us_states.json")
+    d3.json("https://raw.githubusercontent.com/mashabelyi/Twitter-Covid-Response/master/scripts/us_states.json"),
+    d3.csv("data/distinctive_sentiment_terms.csv")
 ]).then(function(files) {
     // files[0] will contain file1.csv
     // files[1] will contain file2.csv
     tw = files[0];
     re = files[1];
     states = files[2];
+    terms = files[3];
 
     drawSentiment(tw, re, states);
+    drawTerms(terms)
+
 }).catch(function(err) {
     // handle error here
     console.log(err)

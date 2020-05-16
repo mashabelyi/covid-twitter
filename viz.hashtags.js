@@ -163,13 +163,11 @@ function formatData(nodes,links){
 
 
 function drawBars(data, elId, dir, legend){
-    console.log(data);
+    // console.log(data);
     const outerDiv = d3.select(elId)
 
     var width = outerDiv.node().getBoundingClientRect().width
     var height = 500
-
-    console.log(data)
 
     // const height = 500;
     const margin = ({top: 20, right: 10, bottom: 30, left: 40});
@@ -196,7 +194,7 @@ function drawBars(data, elId, dir, legend){
     // const svg = d3.create("svg")
     //     .attr("viewBox", [0, 0, width, height]);
     
-    
+    accent_color = "#8050bf" //#4b78d1
 
     const svg = outerDiv.append("svg").attr("width", width).attr('height', height);
 
@@ -216,7 +214,7 @@ function drawBars(data, elId, dir, legend){
                     .attr("y", d => y(d.HashtagPair))
                     .attr("width", d => x(+d.Count) - x(0))
                     .attr("height", y.bandwidth())
-                    .attr("fill", d => (d.Type=="political" ? "#4b78d1": "#c2c4c3"));
+                    .attr("fill", d => (d.Type=="political" ? accent_color: "#c2c4c3"));
     
     // text
     var tickHeight = height/data.length;
@@ -265,7 +263,7 @@ function drawBars(data, elId, dir, legend){
                         
 
         legend.append("rect")
-                .attr("fill", "#4b78d1")
+                .attr("fill", accent_color)
                 .attr("width", legendW).attr("height", tickHeight)
 
         legend.append("rect")
@@ -275,16 +273,23 @@ function drawBars(data, elId, dir, legend){
 
         legend.append("text")
                 .attr("text-anchor", "middle")
-                .attr("x", legendW/2).attr("y", tickHeight/2)
+                .attr("x", legendW/2).attr("y", 3+tickHeight/2)
                 .attr("fill", "white")
                 .text("political")
 
         legend.append("text")
                 .attr("text-anchor", "middle")
-                .attr("x", legendW/2).attr("y", tickHeight/2)
+                .attr("x", legendW/2).attr("y", 3+tickHeight/2)
                 .attr("fill", "white")
                 .text("other")
-                .attr("transform","translate(0,"+(tickHeight+10)+")")   
+                .attr("transform","translate(0,"+(tickHeight+10)+")")
+
+        legend.append("text")
+                .attr("text-anchor", "middle")
+                .attr("x", legendW/2).attr("y", 3+tickHeight/2)
+                .attr("fill", "black")
+                .text("number of tweets")
+                .attr("transform","translate(0,"+(2*(tickHeight+10))+")")   
     }    
 
 
@@ -301,7 +306,6 @@ Promise.all([
     d3.csv("data/20_hashtag_pairs_formatted.csv"),
     d3.csv("data/20_hashtag_pairs_unique_formatted.csv"),
 ]).then(function(files) {
-    console.log(files)
     // var {nodes,links} = files[0];
 
     data31 = formatData(files[0].nodes,files[0].links);
