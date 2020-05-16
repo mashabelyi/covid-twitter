@@ -79,7 +79,7 @@
 			<b>What did people talk about?</b> 
 			Conversations on Twitter are often <span style="background-color:#8050bf;color:white;font-weight:bold;padding:0px 3px;">politically charged</span>. Political discourse on social media is often polarized and prone to misinformation, which may have harmful effects in the public sphere<sup>2</sup>. <b>Who plays a role in facilitating these conversations?</b>
 			<br/><br/>
-			Looking at frequently occuring sequences of hashtags used when discussing COVID-19, we find that select <span style='color:#30c74b;font-weight:bold;'>accounts</span> tend to re-use polarized hashtags multiple times over a short period of time.
+			Looking at frequently occuring sequences of hashtags used when discussing COVID-19, we find that select <span style='color:#30c74b;font-weight:bold;'>accounts</span> tend to re-use polarized hashtags multiple times over a short period of time and flood the platform.
 
 		</div>
 		<div id="HashtagsBarsLeft" class='hbars'></div>
@@ -87,7 +87,7 @@
 		<div style="clear:both;"></div>
 
 		<div style='position: absolute;bottom: 30%;left: 50px;width: 300px;'>
-			<span style='font-size:4em;font-weight:bold;color:#8050bf'>13</span> out of <span style='font-size:2em;'>20</span> most tweeted hashtag pairs are politically charged.
+			<span style='font-size:4em;font-weight:bold;color:#8050bf'>13</span> out of the top most tweeted hashtag pairs are politically charged.
 		</div>
 
 		<div style='position: absolute;bottom: 15%;right: 30px;width: 300px;'>
@@ -102,6 +102,20 @@
 		
 	</div>
 
+	<!-- HASHTAG GRAPH -->
+	<div id="TopicsGraph">
+		<div class='content' id='hashtags-context'>
+			<div style="float:right;width:48%;padding:0% 1%;">
+				Drawing connections between <span style='background-color:#000000; font-weight:bold; color:white;padding:0px 3px;'>#hashtags</span> that are often used in tweets together and making use of some <i>neat clustering alrothims</i>, we can form a build a network graph of the #COVID-19 convesation. Exploring how the hashtags are connected to each other exposes the diverse conversational <span style='background-color:#000000; font-weight:bold; color:white;padding:0px 3px;'>threads</span>.
+				<br/><br/>
+				<b>Hover over the words in the graph below to explore how the hashtags are connected to each other </b> 
+			</div>
+			<div id="HashtagsLegend" style="float:left;width:50%"></div>
+			<div style="clear:both"></div>
+		</div>
+		
+		<div id="HashtagsGraph"></div>
+	</div>
 	
 
 	<!-- TIMELINE PLOT -->
@@ -116,13 +130,7 @@
 	<div id="CovidTopicsTimeline"></div>
 
 
-	<div id="TopicsGraph">
-		<div class='content'>
-			See how the topics are related to each other:
-		</div>
-		<div id="HashtagsLegend"></div>
-		<div id="HashtagsGraph"></div>
-	</div>
+	
 
 	<div id='footer'>
 		UC Berkeley School of Information.<br/>

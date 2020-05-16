@@ -327,11 +327,11 @@ function drawLegend(elId){
 
     const outerDiv = d3.select(elId)
     var width = outerDiv.node().getBoundingClientRect().width
-    var height = 100
+    var height = d3.select("#hashtags-context").node().getBoundingClientRect().height
 
     // const height = 300;
     // const width = 500;
-    const margin = { top: 0, right: 0, bottom: 0, left:0 };
+    const margin = { top: 0, right: 20, bottom: 0, left:20 };
 
     const series = [
         { key: "StayHome" },
@@ -361,30 +361,57 @@ function drawLegend(elId){
 
     const svg = outerDiv
         .append("svg")
-        .attr("width", series.length * 60)
-        .attr("height", 70)
+        .attr("width", width)
+        .attr("height", height)
         .style("font", "10px sans-serif")
         .style("margin-left", `${margin.left}px`)
         .style("display", "block").style("margin","auto")
         .attr("text-anchor", "middle");
 
+
+    // AXES
+    var x = d3.scaleLinear()
+                  .domain([0,5])
+                  .range([0,width])
+
+    var y = d3.scaleLinear()
+                  .domain([0,4])
+                  .range([0,height])
+
+
+
+
     const g = svg
-        .append("g")
+        .append("g").attr("transform", "translate("+margin.left+","+margin.top+")")
         .selectAll("g")
         .data(series)
         .join("g")
-        .attr("transform", (d, i) => `translate(${i * 58},0)`);
+        .attr("transform", function(d, i){
+            var row = Math.floor(i/5);
+            var col = i%5;
+            console.log(row,col, x(row), y(col));
+            // console.log(row, xScale(row));
+            // console.log(col, yScale(col));
 
+
+            return "translate("+x(col)+","+y(row)+")"
+        }); //=> `translate(${i * 58},0)`);
+
+    // swatchW = Math.floor(width/5)- //(width/Math.floor(series.length)/5) - 30
+    // swatchW = Math.floor(series.length%5) - 30
+    swatchSize = 20
     g.append("rect")
-        .attr("width", 12)
-        .attr("height", 12)
-        .attr("fill", d => color(d.key));
+        .attr("width", swatchSize)
+        .attr("height", swatchSize)
+        .attr("fill", d => color(d.key))
+        .attr("x", x(0)/2 + swatchSize/2);
 
     g.append("text")
         .attr("x", 20)
         .attr("y", 25)
         .attr("text-anchor", "center")
         .attr("dy", "0.8em")
+        .style("font-size", "14px")
         .text(d => d.key);
 
 
