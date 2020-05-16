@@ -176,17 +176,17 @@ body {
   font-size:11px;
   cursor:pointer;
 }
-#HashtagsBars{
+.hbars{
   position:relative;
   margin:auto;
   width:50%;
   float:left;
 }
-#HashtagsBars text{
-  fill:white;
+.hbars text{
   font-weight:bold;
+  font-size:11px;
+  cursor:default;
 }
-
 #HashtagsGraph{
   position:relative;
   margin:auto;

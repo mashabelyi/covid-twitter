@@ -1,5 +1,5 @@
 // Following codes are adapted from https://observablehq.com/@mbostock/d3-hierarchical-edge-bundling-ii
-function drawHirearchical(data) {  
+function drawHirearchical(data, elId) {  
     const width = 600;
     const height = 600;
     const radius = width / 2;
@@ -13,7 +13,7 @@ function drawHirearchical(data) {
     const font_size = 18
     const font_size_mouseover = 19
 
-    const outerDiv = d3.select("#HashtagsGraph");
+    const outerDiv = d3.select(elId);
     // width = outerDiv.node().getBoundingClientRect().width
     // height = nTopics*(20+5)
 
@@ -162,12 +162,12 @@ function formatData(nodes,links){
 }
 
 
-function drawBars(data){
+function drawBars(data, elId, dir, legend){
     console.log(data);
-    const outerDiv = d3.select("#HashtagsBars")
+    const outerDiv = d3.select(elId)
 
     var width = outerDiv.node().getBoundingClientRect().width
-    var height = 600
+    var height = 500
 
     console.log(data)
 
@@ -180,7 +180,8 @@ function drawBars(data){
         .padding(0.1);
 
     const x = d3.scaleLinear()
-        .domain([0, d3.max(data, d => +d.Count)]).nice()
+        // .domain([0, d3.max(data, d => +d.Count)]).nice()
+        .domain([0, 522]).nice()
         .range([margin.left, width - margin.right]);
 
     const xAxis = g => g
@@ -201,35 +202,99 @@ function drawBars(data){
 
     //bars
     const bar = svg.append("g")
-                .attr("fill", "steelblue")
                 .selectAll("rect")
                 .data(data)
-                .join("rect")
-                .attr("x", d => x(Math.min(+d.Count, 0))) //Math.min?
-                .attr("y", d => y(d.HashtagPair))
-                .attr("width", d => x(+d.Count) - x(0))
-                .attr("height", y.bandwidth());
+                    .join("rect")
+                    // .attr("x", d => x(Math.min(+d.Count, 0))) 
+                    // .attr("x", d => +d.Count) 
+                    .attr("x", function(d){
+                        if (dir=="left"){
+                            return (width - (+d.Count));
+                        }
+                        else {return  x(0)}
+                    })
+                    .attr("y", d => y(d.HashtagPair))
+                    .attr("width", d => x(+d.Count) - x(0))
+                    .attr("height", y.bandwidth())
+                    .attr("fill", d => (d.Type=="political" ? "#4b78d1": "#c2c4c3"));
+    
     // text
+    var tickHeight = height/data.length;
     svg.append("g")
-        .selectAll(".mytext")
+        .selectAll("text")
         .data(data)
         .join("text")
-            .attr("text-anchor", 'end')
-            .attr("dx", -10)
-            .attr("x", d => x(Math.min(+d.Count, 0))) //Math.min?
-            .attr("y", d => y(d.HashtagPair))
+            .attr("text-anchor", dir=="left" ? 'start': 'end')
+            // .attr("x", d => x(+d.Count) - 10 )
+            .attr("x", function(d){
+                        if (dir=="left"){
+                            return (width - (+d.Count) + 10);
+                        }
+                        else {return  x(+d.Count) - 10;}
+                    })
+            .attr("y", d => y(d.HashtagPair) + tickHeight/2)
+            .text(d => d.HashtagPair)
+            .attr("fill", "white")
+
 
     svg.append("g")
-     .call(xAxis);
+        .selectAll("text")
+        .data(data)
+        .join("text")
+            .attr("text-anchor", dir=="left" ? 'end': 'start')
+            // .attr("x", d => x(+d.Count) + 10 ) // - x(0) ) //Math.min?
+            .attr("x", function(d){
+                        if (dir=="left"){
+                            return (width - (+d.Count) - 10);
+                        }
+                        else {return  x(+d.Count) + 10;}
+                    })
+            .attr("y", d => y(d.HashtagPair) + tickHeight/2)
+            .text(d => +d.Count)
+            .attr("fill", "black")
+
+
+    // LEGEND
+    // "#4b78d1" - political
+    // "#c2c4c, 3" - other
+    if (legend) {
+        legendW = 100
+
+        var legend = svg.append("g").attr("class", "legend")
+                        .attr("transform", "translate("+350+","+tickHeight+")")
+                        
+
+        legend.append("rect")
+                .attr("fill", "#4b78d1")
+                .attr("width", legendW).attr("height", tickHeight)
+
+        legend.append("rect")
+                .attr("fill", "#c2c4c3") 
+                .attr("width", legendW).attr("height", tickHeight)
+                .attr("transform","translate(0,"+(tickHeight+10)+")") 
+
+        legend.append("text")
+                .attr("text-anchor", "middle")
+                .attr("x", legendW/2).attr("y", tickHeight/2)
+                .attr("fill", "white")
+                .text("political")
+
+        legend.append("text")
+                .attr("text-anchor", "middle")
+                .attr("x", legendW/2).attr("y", tickHeight/2)
+                .attr("fill", "white")
+                .text("other")
+                .attr("transform","translate(0,"+(tickHeight+10)+")")   
+    }    
+
+
+    // svg.append("g")
+    //  .call(xAxis);
 
     // svg.append("g")
     //  .call(yAxis);
 }
 
-function formatBarData(data){
-    return 
-
-}
 Promise.all([
     d3.json("data/final_covid_hashtags_by_tweet-copy.json"),
     d3.json("data/final_covid_hashtags_by_users-copy1.json"),
@@ -244,10 +309,11 @@ Promise.all([
     // {n2,l2} = files[1];
     data32 = formatData(files[1].nodes,files[1].links);
 
-    drawHirearchical(data32);
+    drawHirearchical(data32, "#HashtagsGraph");
 
     // console.log(files[2])
-    drawBars(files[2])
+    drawBars(files[2], "#HashtagsBarsLeft", "left", false)
+    drawBars(files[3], "#HashtagsBarsRight", "right", true)
 
     // data = files[1];
 }).catch(function(err) {
