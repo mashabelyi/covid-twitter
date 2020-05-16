@@ -6,7 +6,7 @@ function drawTimeline(topicHashtags, data){
   width = outerDiv.node().getBoundingClientRect().width
   height = nTopics*(20+5)
   
-  let margin = ({top: 30, bottom: 50, left: 40, right: 100});
+  let margin = ({top: 30, bottom: 50, left: 0, right: 100});
   // const width = 750 //- margin.left - margin.right
   // let height = nTopics*(20+5) //- margin.top - margin.bottom
   
@@ -70,7 +70,7 @@ function drawTimeline(topicHashtags, data){
     .call(d3.axisBottom(xScale)
           .tickValues([1,10,20,31])
           .tickFormat(function (d) {
-            return "March " + d;
+            return d > 1 ? "March " + d : 1;
           })
           // .tickValues(xScale.domain().filter((d, i) => d % 5 === 0)));
           );
