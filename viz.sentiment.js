@@ -378,13 +378,18 @@ function drawTerms(mydata){
      .call(yAxis);
 
   // x axis
-  console.log(width)
-  svg.append('text')
-          .attr("text-anchor", "middle")
-          .attr('x',x(0))
-          .attr('y', plotH + margin.bottom +margin.top)
-          .style('font-size', '12px')
-          .text('Odds Ratio')
+  // console.log(width)
+  // svg.append('text')
+  //         .attr("text-anchor", "middle")
+  //         .attr('x',x(0))
+  //         .attr('y', plotH + margin.bottom +margin.top)
+  //         .style('font-size', '12px')
+  //         .text('Odds Ratio')
+
+  outerDiv.append('div')
+        .html("Word prevalence in <span style='color:#6eabcc;font-weight:bold;'>negative</span> and <span style='color:#f2bc27;font-weight:bold;'>positive</span> tweets<br/>(Calculated as odds ratio)")
+        // .html("Word prevalence in <span style='color:#f2bc27;'>positive</span>and negative tweets<br/>(Calculated as odds ratio)")
+        .attr("class","terms-caption")
 
 }
 

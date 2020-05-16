@@ -166,6 +166,12 @@ a {cursor:pointer;}
 #SentimentGrid  .controls .checkbox-container input{
   margin:0px 10px
 }
+.terms-caption{
+  position:relative;
+  font-size:12px;
+  text-align:right;
+  transform:translate(0px, -10px);
+}
 
 /*
   HASHTAGS STYLES
