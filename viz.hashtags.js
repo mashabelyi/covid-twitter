@@ -166,10 +166,10 @@ function drawBars(data, elId, dir, legend){
     // console.log(data);
     const outerDiv = d3.select(elId)
     var width = outerDiv.node().getBoundingClientRect().width
-    var height = 500
+    var height = dir=="left" ? 540 : 500
 
     // const height = 500;
-    const margin = ({top: 20, right: 10, bottom: 30, left: 40});
+    const margin = ({top: dir=="left" ? 0: 20, right: 10, bottom: 30, left: 40});
 
     const y = d3.scaleBand()
         .domain(data.map(d => d.HashtagPair))
@@ -389,11 +389,6 @@ function drawLegend(elId){
         .attr("transform", function(d, i){
             var row = Math.floor(i/5);
             var col = i%5;
-            console.log(row,col, x(row), y(col));
-            // console.log(row, xScale(row));
-            // console.log(col, yScale(col));
-
-
             return "translate("+x(col)+","+y(row)+")"
         }); //=> `translate(${i * 58},0)`);
 

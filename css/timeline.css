@@ -10,6 +10,7 @@
   margin:auto;
   max-width:700px;
   min-width:300px;
+  position:relative;
 }
 #CovidTopicsTimeline .controls {
   width:100%;
@@ -25,13 +26,22 @@
   margin: 5px;
   width:80px;
 }
+#CovidTopicsTimeline  button{
+  background-color:black;
+  color:white;
+  font-weight:bold;
+  cursor:pointer;
+}
+#CovidTopicsTimeline  button:hover{
+  background-color:#8a8a8a;
+}
 line.grid{
   opacity:0.5
 }
 .labelContainer {
-width:150px;
-height:20px;
-cursor:pointer;
+  width:100px;
+  height:20px;
+  cursor:pointer;
 }
 .labelText {
 fill:white;
@@ -62,10 +72,14 @@ text.dateText{
 #CovidTopicsTimeline p {
   width:100%;
   padding:1%;
-  max-height:70px;
-  min-height:70px;
-  overflow:hidden;
-  text-overflow:ellipsis;
+/*  max-height:70px;
+  min-height:70px;*/
+  /*overflow:hidden;*/
+  /*text-overflow:ellipsis;*/
+
+  line-height: 1.5em;
+  height: 4.4em;       /* height is 2x line-height, so two lines will display */
+  overflow: hidden;
 }
 p .label {
   background-color:black;

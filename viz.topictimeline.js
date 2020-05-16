@@ -7,46 +7,63 @@ function drawTimeline(topicHashtags, data){
   height = nTopics*(20+5)
   
   let margin = ({top: 30, bottom: 50, left: 0, right: 100});
-  // const width = 750 //- margin.left - margin.right
-  // let height = nTopics*(20+5) //- margin.top - margin.bottom
-  
-  // d3.create() creates an outer div to which we can append other things
-  // const outerDiv = d3.create("div").attr("id", "CovidTopicsTimeline").style("width",width + margin.left + margin.right+"px");
-  
-  // Some context, instructions
-  // outerDiv.append("p").attr("class", "top-context").html("In the month of March, Twitter users discussed major concerns on the platform. Below is an interactive visualization that lets you explore which topics received the most attention on Twitter every day in March. Hover over a <span class='label'>topic</span> to track its popularity over time.");
-  
-  
-  // buttons
-  const controls = outerDiv.append("div").attr("class","controls")
-  // show more/less
-  const showMore = controls.append("button").text("show more").attr("value", nTopics) 
-  const showLess = controls.append("button").text("show less").attr("value", nTopics) 
 
+  labelWidth = 100
+
+  // buttons
+  // const controls = outerDiv.append("div").attr("class","controls")
+  // show more/less
+  // const showMore = controls.append("button").text("show more").attr("value", nTopics) 
+  // const showLess = controls.append("button").text("show less").attr("value", nTopics) 
+
+  buttonH = 30
+  const showMore = outerDiv.append("button").text("SEE MORE").attr("value", nTopics) 
+                          .style("position","absolute").style("left",width-labelWidth+'px').style("top", '0px')
+                          .style("width", labelWidth+'px').style("height",buttonH+"px").style("cursor","pointer")
+  
+  const showLess = outerDiv.append("button").text("SEE LESS").attr("value", nTopics) 
+                          .style("position","absolute").style("left",width-labelWidth+'px').style("top", buttonH+10+'px')
+                          .style("width", labelWidth+'px').style("height",buttonH+"px").style("cursor","pointer")
+
+  const toggleBot = outerDiv.append("button").text("SEE BOTS").attr("value", nTopics).attr("value","human")
+                          .style("position","absolute").style("left",width-labelWidth+'px').style("top", 2*(buttonH+10)+'px')
+                          .style("width", labelWidth+'px').style("height",buttonH+"px").style("cursor","pointer")
+  
+  toggleBot.on('mouseenter', function(){
+    if (this.getAttribute('value')=='human'){
+        hashtags.html("Click to see data from automated social media bots.")
+    }else{
+      hashtags.html("Click to return to normal view.")
+    }
+  }).on('mouseleave', function(){
+    hashtags.html("")
+  });
+
+  
   
   //
   // Data filter
   //
   // controls.append("span").html("Some accounts on Twitter are automated. Select \"Bots\" to explore automatically tweeted content:").style("padding","10px").style("font-size","14px")
   
-  let accountFilter = controls.append('select').attr("id", "filter-accounts");
-  const allMessages = [ {display: "All accounts", value: "all"},
-                        {display: "Humans", value: "human"},
-                        {display: "Bots", value: "bot"}]
-   const items = accountFilter 
-      .selectAll('options')
-      .data(allMessages)
-      .enter()
-      .append('option')
-      .text(function (d) { return d.display; }) 
-      .attr("value", function (d) { return d.value; })
+  // let accountFilter = controls.append('select').attr("id", "filter-accounts");
+  // const allMessages = [ {display: "All accounts", value: "all"},
+  //                       {display: "Humans", value: "human"},
+  //                       {display: "Bots", value: "bot"}]
+  //  const items = accountFilter 
+  //     .selectAll('options')
+  //     .data(allMessages)
+  //     .enter()
+  //     .append('option')
+  //     .text(function (d) { return d.display; }) 
+  //     .attr("value", function (d) { return d.value; })
   
-   // set the default value by settings "selected", true for the item that matches the filter
-   items.filter(function(d) {return d.value === "All accounts"}).attr("selected",true);
+  //  // set the default value by settings "selected", true for the item that matches the filter
+  //  items.filter(function(d) {return d.value === "All accounts"}).attr("selected",true);
   
-  controls.append("span").html("*Some accounts on Twitter are automated. Select \"Bots\" to explore automatically tweeted content.").style("padding","10px").style("font-size","14px")
+  // controls.append("span").html("*Some accounts on Twitter are automated. Select \"Bots\" to explore automatically tweeted content.").style("padding","10px").style("font-size","14px")
   
-   var hashtags = outerDiv.append("p").attr("classs", "top-context").html("")
+  var hashtags = outerDiv.append("p").attr("classs", "top-context").html("").style("width", (width-labelWidth)+"px")
    
   // SVG Container for the plot
   const container = outerDiv.append("svg").attr("width",width + margin.left + margin.right)
@@ -56,9 +73,10 @@ function drawTimeline(topicHashtags, data){
   //
   // Define X and Y Scales
   //
+  
   let xScale = d3.scalePoint()
   .domain(d3.keys(data[0]).slice(0,31).map(x => +x))
-  .range([0,width])
+  .range([0,width-labelWidth])
 
   let yScale = d3.scalePoint()
   .domain([...Array(nTopics).keys()])
@@ -81,7 +99,7 @@ function drawTimeline(topicHashtags, data){
   //
   const gridLines = container.append("g").attr("class", "vertical-grid")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
-    .attr("width", width).attr("height", height)  
+    .attr("width", width-labelWidth).attr("height", height)  
   gridLines.append("line").attr("stroke", "#bfbeba").attr("stroke-width", 1).style("opacity",0)
 
   //
@@ -117,7 +135,7 @@ function drawTimeline(topicHashtags, data){
   // Mouseover the grid - will monitor mousemove events
   const mouse_catcher = container.append("g").attr("class", "mouse-catcher")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
-        .append("rect").attr("width", width).attr("height", height).attr("opacity", 0)
+        .append("rect").attr("width", width-labelWidth).attr("height", height).attr("opacity", 0)
   
   // Date highlighter
   var tickwidth = xScale(2) // width of one day
@@ -197,7 +215,11 @@ function drawTimeline(topicHashtags, data){
     gridLines.selectAll("line")
         .data([...Array(32).keys()])
         .join("line").attr("class", "grid")
-          .attr("x1", d => xScale(d)-(w/2)).attr("x2", d => xScale(d)-(w/2))
+          .attr("x1", function(d){
+            console.log(d, xScale(d), w)
+            return xScale(d)-(w/2)
+          }) 
+          .attr("x2", d => xScale(d)-(w/2))
           .attr("y1", -10).attr("y2", height+10)
           .attr("stroke", "#bfbeba").attr("stroke-width", 1)
     
@@ -207,7 +229,7 @@ function drawTimeline(topicHashtags, data){
               .join("rect").attr("class", "labelContainer")
                   .attr("topic", d => d.selector)
                   .attr("name", d => d.key)
-                  .attr("x", width)
+                  .attr("x", width-labelWidth)
                   .attr("rank", d => d)
                   .attr("fill", function(d){ return color(d.key) })
     
@@ -217,7 +239,7 @@ function drawTimeline(topicHashtags, data){
               .join("text").attr("class", "labelText").attr("dy", "15px").attr("dx", "5px")
                 .text(d => (d.values[30].rank + 1) +" " +d.key)
                 // .attr("y", d => yScale(d.values[30].rank)-10)
-                .attr("x", width)
+                .attr("x", width-labelWidth)
     
     labels.transition()
             .ease(d3.easeCubicInOut)
@@ -269,6 +291,7 @@ function drawTimeline(topicHashtags, data){
     }).on("mouseout", function(d){
       labelGroup.selectAll("rect").attr("class", "labelContainer")
       pathGroup.selectAll("path.line").attr("class", "line")
+      hashtags.html("").style("border-left", "0px solid " + color(d.key))
     });
     
     
@@ -305,11 +328,21 @@ function drawTimeline(topicHashtags, data){
   ///
   // change data source
   //
-  accountFilter.on('change', function() {
-    var selectedText = d3.select('#filter-accounts option:checked').text();
-    var selectedValue = d3.select("#filter-accounts").property("value") ;
+  toggleBot.on('click', function() {
+    // var selectedText = d3.select('#filter-accounts option:checked').text();
+    // var selectedValue = d3.select("#filter-accounts").property("value") ;
 
-    var url = "https://raw.githubusercontent.com/mashabelyi/Twitter-Covid-Response/master/data/topics_timeline_v2_"+selectedValue+".csv";
+    var selectedValue = this.getAttribute("value");
+    var query = selectedValue == "human" ? "bot" : "human";
+    var url = "https://raw.githubusercontent.com/mashabelyi/Twitter-Covid-Response/master/data/topics_timeline_v2_"+query+".csv";
+
+    if (this.getAttribute('value')=='human'){
+      this.setAttribute('value', 'bot')
+      d3.select(this).text('GO BACK')
+    }else{
+      this.setAttribute('value', 'human')
+      d3.select(this).text('SEE BOTS')
+    }
 
     d3.csv(url).then(function(loaded) {
       chartData = loaded
@@ -317,8 +350,12 @@ function drawTimeline(topicHashtags, data){
       drawChart(nTopics)
     });
     
-  })
+  });
     
+
+  //   .on('click', function(){
+    
+  // })
   
   // TRYING TO FIGURE OUT ANIMATION BELOW:
   //

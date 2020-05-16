@@ -15,7 +15,7 @@
 			<p id='intro'>
 				The <a href='https://www.who.int/emergencies/diseases/novel-coronavirus-2019' target="_blank">COVID-19 pandmemic</a> hit the United States in early spring, 2020. As common in times of crisis, millions of Americans took to Twitter to share and discuss information about COVID-19.<br/><br/> 
 				
-				We analyzed tweets originating in the United States<sup>1</sup> between March 1 and March 30 of 2020 to track how the conversation evolved over time. Scroll down to explore. 
+				We analyzed tweets originating in the United States<sup>1</sup> between March 1 and March 30 of 2020 to track how the conversation evolved over time. <span style='background-color:#ffffff; font-weight:bold; color:#50abf2;padding:0px 3px;'>Scroll down to explore</span> 
 			</p>
 
 			<div class='footnotes' style='font-size:12px;margin:auto;width:100%; text-align:left;max-width:700px'>
@@ -26,7 +26,7 @@
 
 
 	<div id="TweetsByDay">
-		<p><b>How much did different states tweet about COVID-19 in March?</b> Hover over a state to see how many tweets mentioned COVID-19 for each date in the month of March.</p>
+		<p><b>How much did different states tweet about COVID-19 in March?</b> Hover over a state to see how many tweets mentioned COVID-19 every day in March 2020.</p>
 		<div id="TweetsByDay-map"></div>
 		<div id="TweetsByDay-bars">
 			
@@ -49,13 +49,13 @@
 		<div class='content'>
 			<div style="float:left;width:60%">
 				<b>How does COVID-19 feel?</b>
-				Twitter users expressed a wide range of emotions about Covid19 in March.
+				Twitter users expressed a wide range of emotions about COVID-19.
 				<br/><br/>
 				The interactive map below reflects daily average sentiment scores in USA for every day of the month. Evidently, the <span style='background-color:#000000; font-weight:bold; color:white;padding:0px 3px;'>shelter in place</span> orders that came into effect in the middle of the month correlated with a systematic shift in sentiment across the country, with users tweeting more words like <span style='color:#f2bc27;font-weight:bold;'>grateful</span> and <span style='color:#f2bc27;font-weight:bold;'>beautiful</span> towards the end of the month.
 
 				<br/><br/>
 
-				Select <b>retweets</b> below to find out what kind of content users retweeted more.
+				Select <b>retweets</b> below to find out what kind of content users retweeted.
 			</div>
 			<div style="float:right;width:40%" id="SentimentTerms"></div>
 
@@ -68,7 +68,7 @@
 	<div id="SentimentGrid"></div>
 
 	<div class='footnotes' style='font-size:12px;margin:20px 0px;width:100%; text-align:center;'>
-		<a href='https://github.com/cjhutto/vaderSentiment' target="_blank">Vader</a> sentiment analysis tool was used to score each tweet on a sentiment scale from -1 to 1. 
+		<a href='https://github.com/cjhutto/vaderSentiment' target="_blank">Vader</a> sentiment analysis tool was used to score each tweet on a sentiment scale from -1 to 1. Averages were comupter over all tweets per state by day.
 	</div>
 	
 
@@ -77,7 +77,7 @@
 	<div id="HashtagsContainer">
 		<div class='content'>
 			<b>What did people talk about?</b> 
-			Conversations on Twitter are often <span style="background-color:#8050bf;color:white;font-weight:bold;padding:0px 3px;">politically charged</span>. Political discourse on social media is often polarized and prone to misinformation, which may have harmful effects in the public sphere<sup>2</sup>. <b>Who plays a role in facilitating these conversations?</b>
+			Conversations on Twitter are often <span style="background-color:#8050bf;color:white;font-weight:bold;padding:0px 3px;">politically charged</span>. Political discourse on social media can be polarized and prone to misinformation, which may have harmful effects in the public sphere<sup>2</sup>. <b>Who plays a role in facilitating these conversations?</b>
 			<br/><br/>
 			Ranking the top most frequently occuring sequences of <span style='background-color:#000000; font-weight:bold; color:white;padding:0px 3px;'>#hashtags</span> used when discussing COVID-19, we find that select <span style='color:#30c74b;font-weight:bold;'>accounts</span> tend to re-use polarized hashtags multiple times over a short period of time and flood the platform.
 
@@ -106,7 +106,7 @@
 	<div id="TopicsGraph">
 		<div class='content' id='hashtags-context'>
 			<div style="float:right;width:48%;padding:0% 1%;">
-				Drawing connections between <span style='background-color:#000000; font-weight:bold; color:white;padding:0px 3px;'>#hashtags</span> that are often used in tweets together and making use of some <i>neat clustering alrothims</i>, we can form a build a network graph of the #COVID-19 convesation. Exploring how the hashtags are connected to each other exposes the diverse conversational <span style='background-color:#000000; font-weight:bold; color:white;padding:0px 3px;'>threads</span> that make up the main #COVID-19 converstaion.
+				Connecting <span style='background-color:#000000; font-weight:bold; color:white;padding:0px 3px;'>#hashtags</span> that often appear in tweets together and making use of some <i><a href='https://arxiv.org/pdf/0709.2938.pdf' targe="blank">neat clustering alrothims</a></i>, we can build a network graph of the #COVID-19 Twitter discourse. Exploring how the hashtags are connected to each other exposes the diverse <span style='background-color:#000000; font-weight:bold; color:white;padding:0px 3px;'>threads</span> that make up the main #COVID-19 converstaion.
 				<br/><br/>
 				<b>Hover over words in the graph below to explore how the hashtags are connected to each other </b> 
 			</div>
@@ -133,11 +133,8 @@
 				<br/><br/>
 				Hover over the <span style='background-color:#000000; font-weight:bold; color:white;padding:0px 3px;'>thread labels</span> to explpore each one separately.
 			</div>
-			<div style="float:left;width:100%;text-align:center;margin:20px auto;">
-				
-			</div>
+			<div style="clear:both;"></div>
 
-			<!-- Importance here is defined by the amount of attention a topic recieves. -->
 		</div>
 	</div>
 
