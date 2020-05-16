@@ -165,7 +165,6 @@ function formatData(nodes,links){
 function drawBars(data, elId, dir, legend){
     // console.log(data);
     const outerDiv = d3.select(elId)
-
     var width = outerDiv.node().getBoundingClientRect().width
     var height = 500
 
@@ -248,8 +247,25 @@ function drawBars(data, elId, dir, legend){
                         else {return  x(+d.Count) + 10;}
                     })
             .attr("y", d => y(d.HashtagPair) + tickHeight/2)
-            .text(d => +d.Count)
+            // .text(d => +d.Count)
+            .text(d => dir=="left" ? ("| "+d.Count) : (d.Count +  " |" ))
             .attr("fill", "black")
+
+    svg.append("g")
+        .selectAll("text")
+        .data(data)
+        .join("text")
+            .attr("text-anchor", dir=="left" ? 'end': 'start')
+            // .attr("x", d => x(+d.Count) + 10 ) // - x(0) ) //Math.min?
+            .attr("x", function(d){
+                        if (dir=="left"){
+                            return (width - (+d.Count) - 40);
+                        }
+                        else {return  x(+d.Count) + 40;}
+                    })
+            .attr("y", d => y(d.HashtagPair) + tickHeight/2)
+            .text(d => d.UserCount)
+            .attr("fill", "#30c74b")
 
 
     // LEGEND
@@ -259,7 +275,7 @@ function drawBars(data, elId, dir, legend){
         legendW = 100
 
         var legend = svg.append("g").attr("class", "legend")
-                        .attr("transform", "translate("+350+","+tickHeight+")")
+                        .attr("transform", "translate("+(width*0.7)+","+tickHeight+")")
                         
 
         legend.append("rect")
@@ -290,6 +306,13 @@ function drawBars(data, elId, dir, legend){
                 .attr("fill", "black")
                 .text("number of tweets")
                 .attr("transform","translate(0,"+(2*(tickHeight+10))+")")   
+
+        legend.append("text")
+                .attr("text-anchor", "middle")
+                .attr("x", legendW/2).attr("y", 3+tickHeight/2)
+                .attr("fill", "#30c74b")
+                .text("number of accounts")
+                .attr("transform","translate(0,"+(3*(tickHeight+5))+")")   
     }    
 
 
@@ -298,6 +321,73 @@ function drawBars(data, elId, dir, legend){
 
     // svg.append("g")
     //  .call(yAxis);
+}
+
+function drawLegend(elId){
+
+    const outerDiv = d3.select(elId)
+    var width = outerDiv.node().getBoundingClientRect().width
+    var height = 100
+
+    // const height = 300;
+    // const width = 500;
+    const margin = { top: 0, right: 0, bottom: 0, left:0 };
+
+    const series = [
+        { key: "StayHome" },
+        { key: "Health" },
+        { key: "Economy" },
+        { key: "AntiTrump" },
+        { key: "ProTrump" },
+        { key: "International" },
+        { key: "China" },
+        { key: "Music" },
+        { key: "Election" },
+        { key: "New York" },
+        { key: "Toilet Paper" },
+        { key: "Vote Blue" },
+        { key: "Cybersecurity" },
+        { key: "Travel" },
+        { key: "Canada" },
+        { key: "SXSW" },
+        { key: "Seattle" }
+        ];
+
+    const color = d3
+        .scaleOrdinal()
+        .domain(series.map(d => d.key))  
+        .range( ['#35AAF2','#33CC89','#CC9829','#4777CC','#CC6352','#3DBBCC','#5652CC','#CC476A','#1171CC','#99957A','#CC7839','#173C80','#3DCCB3','#628000','#850F00','#CC831C','#7C8500']
+              );
+
+    const svg = outerDiv
+        .append("svg")
+        .attr("width", series.length * 60)
+        .attr("height", 70)
+        .style("font", "10px sans-serif")
+        .style("margin-left", `${margin.left}px`)
+        .style("display", "block").style("margin","auto")
+        .attr("text-anchor", "middle");
+
+    const g = svg
+        .append("g")
+        .selectAll("g")
+        .data(series)
+        .join("g")
+        .attr("transform", (d, i) => `translate(${i * 58},0)`);
+
+    g.append("rect")
+        .attr("width", 12)
+        .attr("height", 12)
+        .attr("fill", d => color(d.key));
+
+    g.append("text")
+        .attr("x", 20)
+        .attr("y", 25)
+        .attr("text-anchor", "center")
+        .attr("dy", "0.8em")
+        .text(d => d.key);
+
+
 }
 
 Promise.all([
@@ -318,6 +408,7 @@ Promise.all([
     // console.log(files[2])
     drawBars(files[2], "#HashtagsBarsLeft", "left", false)
     drawBars(files[3], "#HashtagsBarsRight", "right", true)
+    drawLegend("#HashtagsLegend")
 
     // data = files[1];
 }).catch(function(err) {
