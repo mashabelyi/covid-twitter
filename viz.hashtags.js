@@ -156,6 +156,17 @@ function drawBars(data, elId, dir, legend){
                     .attr("width", d => x(+d.Count) - x(0))
                     .attr("height", y.bandwidth())
                     .attr("fill", d => (d.Type=="political" ? accent_color: "#c2c4c3"));
+
+                    // .on('mouseenter', function(){
+                    //     // if (svg.attr("scaled") == 0) {
+                    //         svg.transition().duration(500)
+                    //             .attr("transform", "scale(1.1)")
+                    //             .attr("scaled", 1)
+                    //     // }
+                    // }).on('mouseout', function(){
+                    //      svg.transition().duration(500)
+                    //         .attr("transform", "scale(1)").attr("scaled", 0)
+                    // });
     
     // text
     var tickHeight = height/data.length;
