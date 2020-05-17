@@ -1,0 +1,5406 @@
+{
+    "nodes": [
+        {
+            "id": "lockdown",
+            "group": 1,
+            "color": "#984ea3",
+            "topic": "placeholder"
+        },
+        {
+            "id": "italy",
+            "group": 6,
+            "color": "#6b8e23",
+            "topic": "placeholder"
+        },
+        {
+            "id": "quarantinelife",
+            "group": 1,
+            "color": "#984ea3",
+            "topic": "placeholder"
+        },
+        {
+            "id": "chinesevirus",
+            "group": 7,
+            "color": "#ff7f00",
+            "topic": "placeholder"
+        },
+        {
+            "id": "stayhome",
+            "group": 1,
+            "color": "#984ea3",
+            "topic": "placeholder"
+        },
+        {
+            "id": "stayathome",
+            "group": 1,
+            "color": "#984ea3",
+            "topic": "placeholder"
+        },
+        {
+            "id": "quarantine",
+            "group": 1,
+            "color": "#984ea3",
+            "topic": "placeholder"
+        },
+        {
+            "id": "wuhan",
+            "group": 2,
+            "color": "#2cdec0",
+            "topic": "placeholder"
+        },
+        {
+            "id": "coronapocolypse",
+            "group": 1,
+            "color": "#984ea3",
+            "topic": "placeholder"
+        },
+        {
+            "id": "health",
+            "group": 2,
+            "color": "#2cdec0",
+            "topic": "placeholder"
+        },
+        {
+            "id": "uk",
+            "group": 6,
+            "color": "#6b8e23",
+            "topic": "placeholder"
+        },
+        {
+            "id": "epidemic",
+            "group": 2,
+            "color": "#2cdec0",
+            "topic": "placeholder"
+        },
+        {
+            "id": "who",
+            "group": 2,
+            "color": "#2cdec0",
+            "topic": "placeholder"
+        },
+        {
+            "id": "flu",
+            "group": 2,
+            "color": "#2cdec0",
+            "topic": "placeholder"
+        },
+        {
+            "id": "newyork",
+            "group": 9,
+            "color": "#15ed2e",
+            "topic": "placeholder"
+        },
+        {
+            "id": "india",
+            "group": 6,
+            "color": "#6b8e23",
+            "topic": "placeholder"
+        },
+        {
+            "id": "chinavirus",
+            "group": 7,
+            "color": "#ff7f00",
+            "topic": "placeholder"
+        },
+        {
+            "id": "washyourhands",
+            "group": 1,
+            "color": "#984ea3",
+            "topic": "placeholder"
+        },
+        {
+            "id": "covid19australia",
+            "group": 10,
+            "color": "#dbaf2a",
+            "topic": "placeholder"
+        },
+        {
+            "id": "youtube",
+            "group": 8,
+            "color": "#bd0f3a",
+            "topic": "placeholder"
+        },
+        {
+            "id": "australia",
+            "group": 6,
+            "color": "#6b8e23",
+            "topic": "placeholder"
+        },
+        {
+            "id": "toiletpaper",
+            "group": 10,
+            "color": "#dbaf2a",
+            "topic": "placeholder"
+        },
+        {
+            "id": "staysafe",
+            "group": 1,
+            "color": "#984ea3",
+            "topic": "placeholder"
+        },
+        {
+            "id": "coronapocalypse",
+            "group": 1,
+            "color": "#984ea3",
+            "topic": "placeholder"
+        },
+        {
+            "id": "flattenthecurve",
+            "group": 1,
+            "color": "#984ea3",
+            "topic": "placeholder"
+        },
+        {
+            "id": "music",
+            "group": 8,
+            "color": "#bd0f3a",
+            "topic": "placeholder"
+        },
+        {
+            "id": "nyc",
+            "group": 9,
+            "color": "#15ed2e",
+            "topic": "placeholder"
+        },
+        {
+            "id": "panicbuying",
+            "group": 10,
+            "color": "#dbaf2a",
+            "topic": "placeholder"
+        },
+        {
+            "id": "trending",
+            "group": 8,
+            "color": "#bd0f3a",
+            "topic": "placeholder"
+        },
+        {
+            "id": "love",
+            "group": 8,
+            "color": "#bd0f3a",
+            "topic": "placeholder"
+        },
+        {
+            "id": "trumpvirus",
+            "group": 3,
+            "color": "#377eb8",
+            "topic": "placeholder"
+        },
+        {
+            "id": "hope",
+            "group": 8,
+            "color": "#bd0f3a",
+            "topic": "placeholder"
+        },
+        {
+            "id": "qanon",
+            "group": 4,
+            "color": "#e41a1c",
+            "topic": "placeholder"
+        },
+        {
+            "id": "healthcare",
+            "group": 2,
+            "color": "#2cdec0",
+            "topic": "placeholder"
+        },
+        {
+            "id": "publichealth",
+            "group": 2,
+            "color": "#2cdec0",
+            "topic": "placeholder"
+        },
+        {
+            "id": "covid19usa",
+            "group": 3,
+            "color": "#377eb8",
+            "topic": "placeholder"
+        },
+        {
+            "id": "chinacoronavirus",
+            "group": 7,
+            "color": "#ff7f00",
+            "topic": "placeholder"
+        },
+        {
+            "id": "wuhancoronavirus",
+            "group": 7,
+            "color": "#ff7f00",
+            "topic": "placeholder"
+        },
+        {
+            "id": "covid19us",
+            "group": 3,
+            "color": "#377eb8",
+            "topic": "placeholder"
+        },
+        {
+            "id": "ncov2019",
+            "group": 7,
+            "color": "#ff7f00",
+            "topic": "placeholder"
+        },
+        {
+            "id": "vaccine",
+            "group": 2,
+            "color": "#2cdec0",
+            "topic": "placeholder"
+        },
+        {
+            "id": "wuhanvirus",
+            "group": 7,
+            "color": "#ff7f00",
+            "topic": "placeholder"
+        },
+        {
+            "id": "democrats",
+            "group": 4,
+            "color": "#e41a1c",
+            "topic": "placeholder"
+        },
+        {
+            "id": "business",
+            "group": 5,
+            "color": "#4daf4a",
+            "topic": "placeholder"
+        },
+        {
+            "id": "toiletpaperpanic",
+            "group": 10,
+            "color": "#dbaf2a",
+            "topic": "placeholder"
+        },
+        {
+            "id": "toiletpaperapocalypse",
+            "group": 10,
+            "color": "#dbaf2a",
+            "topic": "placeholder"
+        },
+        {
+            "id": "toiletpapergate",
+            "group": 10,
+            "color": "#dbaf2a",
+            "topic": "placeholder"
+        },
+        {
+            "id": "toiletpapercrisis",
+            "group": 10,
+            "color": "#dbaf2a",
+            "topic": "placeholder"
+        },
+        {
+            "id": "coronvirusuk",
+            "group": 10,
+            "color": "#dbaf2a",
+            "topic": "placeholder"
+        },
+        {
+            "id": "cornoravirus",
+            "group": 10,
+            "color": "#dbaf2a",
+            "topic": "placeholder"
+        },
+        {
+            "id": "trumppandemic",
+            "group": 3,
+            "color": "#377eb8",
+            "topic": "placeholder"
+        },
+        {
+            "id": "maga",
+            "group": 4,
+            "color": "#e41a1c",
+            "topic": "placeholder"
+        },
+        {
+            "id": "trump2020",
+            "group": 4,
+            "color": "#e41a1c",
+            "topic": "placeholder"
+        },
+        {
+            "id": "kag",
+            "group": 4,
+            "color": "#e41a1c",
+            "topic": "placeholder"
+        },
+        {
+            "id": "chinaliedpeopledied",
+            "group": 7,
+            "color": "#ff7f00",
+            "topic": "placeholder"
+        },
+        {
+            "id": "kungflu",
+            "group": 7,
+            "color": "#ff7f00",
+            "topic": "placeholder"
+        },
+        {
+            "id": "politics",
+            "group": 4,
+            "color": "#e41a1c",
+            "topic": "placeholder"
+        },
+        {
+            "id": "wuflu",
+            "group": 7,
+            "color": "#ff7f00",
+            "topic": "placeholder"
+        },
+        {
+            "id": "cnn",
+            "group": 4,
+            "color": "#e41a1c",
+            "topic": "placeholder"
+        },
+        {
+            "id": "votebluenomatterwho",
+            "group": 3,
+            "color": "#377eb8",
+            "topic": "placeholder"
+        },
+        {
+            "id": "trumpviruscoverup",
+            "group": 3,
+            "color": "#377eb8",
+            "topic": "placeholder"
+        },
+        {
+            "id": "gop",
+            "group": 4,
+            "color": "#e41a1c",
+            "topic": "placeholder"
+        },
+        {
+            "id": "science",
+            "group": 2,
+            "color": "#2cdec0",
+            "topic": "placeholder"
+        },
+        {
+            "id": "potus",
+            "group": 4,
+            "color": "#e41a1c",
+            "topic": "placeholder"
+        },
+        {
+            "id": "economy",
+            "group": 5,
+            "color": "#4daf4a",
+            "topic": "placeholder"
+        },
+        {
+            "id": "iran",
+            "group": 6,
+            "color": "#6b8e23",
+            "topic": "placeholder"
+        },
+        {
+            "id": "canada",
+            "group": 6,
+            "color": "#6b8e23",
+            "topic": "placeholder"
+        },
+        {
+            "id": "new",
+            "group": 8,
+            "color": "#bd0f3a",
+            "topic": "placeholder"
+        },
+        {
+            "id": "japan",
+            "group": 6,
+            "color": "#6b8e23",
+            "topic": "placeholder"
+        },
+        {
+            "id": "southkorea",
+            "group": 6,
+            "color": "#6b8e23",
+            "topic": "placeholder"
+        },
+        {
+            "id": "world",
+            "group": 6,
+            "color": "#6b8e23",
+            "topic": "placeholder"
+        },
+        {
+            "id": "us",
+            "group": 6,
+            "color": "#6b8e23",
+            "topic": "placeholder"
+        },
+        {
+            "id": "newyorkcity",
+            "group": 9,
+            "color": "#15ed2e",
+            "topic": "placeholder"
+        },
+        {
+            "id": "donaldtrump",
+            "group": 4,
+            "color": "#e41a1c",
+            "topic": "placeholder"
+        },
+        {
+            "id": "thebachelor",
+            "group": 8,
+            "color": "#bd0f3a",
+            "topic": "placeholder"
+        },
+        {
+            "id": "stocks",
+            "group": 5,
+            "color": "#4daf4a",
+            "topic": "placeholder"
+        },
+        {
+            "id": "stockmarket",
+            "group": 5,
+            "color": "#4daf4a",
+            "topic": "placeholder"
+        },
+        {
+            "id": "trading",
+            "group": 5,
+            "color": "#4daf4a",
+            "topic": "placeholder"
+        },
+        {
+            "id": "covid19uk",
+            "group": 5,
+            "color": "#4daf4a",
+            "topic": "placeholder"
+        },
+        {
+            "id": "investing",
+            "group": 5,
+            "color": "#4daf4a",
+            "topic": "placeholder"
+        },
+        {
+            "id": "bitcoin",
+            "group": 5,
+            "color": "#4daf4a",
+            "topic": "placeholder"
+        },
+        {
+            "id": "fed",
+            "group": 5,
+            "color": "#4daf4a",
+            "topic": "placeholder"
+        },
+        {
+            "id": "markets",
+            "group": 5,
+            "color": "#4daf4a",
+            "topic": "placeholder"
+        },
+        {
+            "id": "ccp",
+            "group": 7,
+            "color": "#ff7f00",
+            "topic": "placeholder"
+        },
+        {
+            "id": "westchester",
+            "group": 9,
+            "color": "#15ed2e",
+            "topic": "placeholder"
+        },
+        {
+            "id": "ny",
+            "group": 9,
+            "color": "#15ed2e",
+            "topic": "placeholder"
+        },
+        {
+            "id": "mta",
+            "group": 9,
+            "color": "#15ed2e",
+            "topic": "placeholder"
+        },
+        {
+            "id": "boston",
+            "group": 9,
+            "color": "#15ed2e",
+            "topic": "placeholder"
+        },
+        {
+            "id": "art",
+            "group": 8,
+            "color": "#bd0f3a",
+            "topic": "placeholder"
+        },
+        {
+            "id": "fashion",
+            "group": 8,
+            "color": "#bd0f3a",
+            "topic": "placeholder"
+        },
+        {
+            "id": "trumpslump",
+            "group": 3,
+            "color": "#377eb8",
+            "topic": "placeholder"
+        },
+        {
+            "id": "trumpliesaboutcoronavirus",
+            "group": 3,
+            "color": "#377eb8",
+            "topic": "placeholder"
+        },
+        {
+            "id": "nowplaying",
+            "group": 8,
+            "color": "#bd0f3a",
+            "topic": "placeholder"
+        },
+        {
+            "id": "costco",
+            "group": 10,
+            "color": "#dbaf2a",
+            "topic": "placeholder"
+        },
+        {
+            "id": "nj",
+            "group": 9,
+            "color": "#15ed2e",
+            "topic": "placeholder"
+        },
+        {
+            "id": "2019ncov",
+            "group": 2,
+            "color": "#2cdec0",
+            "topic": "placeholder"
+        },
+        {
+            "id": "pencedemic",
+            "group": 3,
+            "color": "#377eb8",
+            "topic": "placeholder"
+        },
+        {
+            "id": "newjersey",
+            "group": 9,
+            "color": "#15ed2e",
+            "topic": "placeholder"
+        },
+        {
+            "id": "cpac2020",
+            "group": 3,
+            "color": "#377eb8",
+            "topic": "placeholder"
+        },
+        {
+            "id": "dailyvoice",
+            "group": 9,
+            "color": "#15ed2e",
+            "topic": "placeholder"
+        }
+    ],
+    "links": [
+        {
+            "source": "lockdown",
+            "target": "italy",
+            "value": 16
+        },
+        {
+            "source": "lockdown",
+            "target": "quarantinelife",
+            "value": 36
+        },
+        {
+            "source": "lockdown",
+            "target": "chinesevirus",
+            "value": 4
+        },
+        {
+            "source": "lockdown",
+            "target": "stayhome",
+            "value": 66
+        },
+        {
+            "source": "lockdown",
+            "target": "stayathome",
+            "value": 49
+        },
+        {
+            "source": "lockdown",
+            "target": "quarantine",
+            "value": 73
+        },
+        {
+            "source": "lockdown",
+            "target": "wuhan",
+            "value": 12
+        },
+        {
+            "source": "lockdown",
+            "target": "coronapocolypse",
+            "value": 6
+        },
+        {
+            "source": "lockdown",
+            "target": "health",
+            "value": 5
+        },
+        {
+            "source": "lockdown",
+            "target": "uk",
+            "value": 9
+        },
+        {
+            "source": "lockdown",
+            "target": "epidemic",
+            "value": 6
+        },
+        {
+            "source": "lockdown",
+            "target": "who",
+            "value": 5
+        },
+        {
+            "source": "lockdown",
+            "target": "flu",
+            "value": 5
+        },
+        {
+            "source": "lockdown",
+            "target": "newyork",
+            "value": 3
+        },
+        {
+            "source": "lockdown",
+            "target": "india",
+            "value": 3
+        },
+        {
+            "source": "lockdown",
+            "target": "chinavirus",
+            "value": 4
+        },
+        {
+            "source": "lockdown",
+            "target": "washyourhands",
+            "value": 8
+        },
+        {
+            "source": "lockdown",
+            "target": "covid19australia",
+            "value": 4
+        },
+        {
+            "source": "lockdown",
+            "target": "youtube",
+            "value": 4
+        },
+        {
+            "source": "lockdown",
+            "target": "australia",
+            "value": 3
+        },
+        {
+            "source": "lockdown",
+            "target": "toiletpaper",
+            "value": 5
+        },
+        {
+            "source": "lockdown",
+            "target": "staysafe",
+            "value": 7
+        },
+        {
+            "source": "lockdown",
+            "target": "lockdown",
+            "value": 6
+        },
+        {
+            "source": "lockdown",
+            "target": "coronapocalypse",
+            "value": 5
+        },
+        {
+            "source": "lockdown",
+            "target": "flattenthecurve",
+            "value": 6
+        },
+        {
+            "source": "lockdown",
+            "target": "music",
+            "value": 6
+        },
+        {
+            "source": "lockdown",
+            "target": "nyc",
+            "value": 7
+        },
+        {
+            "source": "lockdown",
+            "target": "panicbuying",
+            "value": 5
+        },
+        {
+            "source": "lockdown",
+            "target": "trending",
+            "value": 3
+        },
+        {
+            "source": "lockdown",
+            "target": "love",
+            "value": 3
+        },
+        {
+            "source": "lockdown",
+            "target": "trumpvirus",
+            "value": 3
+        },
+        {
+            "source": "lockdown",
+            "target": "hope",
+            "value": 3
+        },
+        {
+            "source": "lockdown",
+            "target": "qanon",
+            "value": 3
+        },
+        {
+            "source": "flu",
+            "target": "who",
+            "value": 17
+        },
+        {
+            "source": "flu",
+            "target": "health",
+            "value": 46
+        },
+        {
+            "source": "flu",
+            "target": "flu",
+            "value": 9
+        },
+        {
+            "source": "flu",
+            "target": "healthcare",
+            "value": 5
+        },
+        {
+            "source": "flu",
+            "target": "publichealth",
+            "value": 9
+        },
+        {
+            "source": "flu",
+            "target": "covid19usa",
+            "value": 4
+        },
+        {
+            "source": "flu",
+            "target": "epidemic",
+            "value": 35
+        },
+        {
+            "source": "flu",
+            "target": "chinacoronavirus",
+            "value": 3
+        },
+        {
+            "source": "flu",
+            "target": "chinavirus",
+            "value": 4
+        },
+        {
+            "source": "flu",
+            "target": "washyourhands",
+            "value": 29
+        },
+        {
+            "source": "flu",
+            "target": "quarantine",
+            "value": 8
+        },
+        {
+            "source": "flu",
+            "target": "wuhancoronavirus",
+            "value": 4
+        },
+        {
+            "source": "flu",
+            "target": "covid19us",
+            "value": 6
+        },
+        {
+            "source": "flu",
+            "target": "ncov2019",
+            "value": 10
+        },
+        {
+            "source": "flu",
+            "target": "vaccine",
+            "value": 10
+        },
+        {
+            "source": "flu",
+            "target": "wuhanvirus",
+            "value": 3
+        },
+        {
+            "source": "flu",
+            "target": "wuhan",
+            "value": 7
+        },
+        {
+            "source": "flu",
+            "target": "democrats",
+            "value": 5
+        },
+        {
+            "source": "flu",
+            "target": "business",
+            "value": 3
+        },
+        {
+            "source": "flu",
+            "target": "toiletpaper",
+            "value": 4
+        },
+        {
+            "source": "flu",
+            "target": "stayhome",
+            "value": 3
+        },
+        {
+            "source": "flu",
+            "target": "italy",
+            "value": 4
+        },
+        {
+            "source": "toiletpaperpanic",
+            "target": "toiletpaper",
+            "value": 29
+        },
+        {
+            "source": "toiletpaperpanic",
+            "target": "toiletpaperapocalypse",
+            "value": 26
+        },
+        {
+            "source": "toiletpaperpanic",
+            "target": "toiletpapergate",
+            "value": 7
+        },
+        {
+            "source": "toiletpaperpanic",
+            "target": "toiletpapercrisis",
+            "value": 22
+        },
+        {
+            "source": "toiletpaperpanic",
+            "target": "coronvirusuk",
+            "value": 18
+        },
+        {
+            "source": "toiletpaperpanic",
+            "target": "covid19australia",
+            "value": 8
+        },
+        {
+            "source": "toiletpaperpanic",
+            "target": "coronapocalypse",
+            "value": 10
+        },
+        {
+            "source": "toiletpaperpanic",
+            "target": "panicbuying",
+            "value": 13
+        },
+        {
+            "source": "toiletpaperpanic",
+            "target": "coronapocolypse",
+            "value": 3
+        },
+        {
+            "source": "toiletpaperpanic",
+            "target": "cornoravirus",
+            "value": 3
+        },
+        {
+            "source": "toiletpaperpanic",
+            "target": "quarantinelife",
+            "value": 4
+        },
+        {
+            "source": "chinesevirus",
+            "target": "quarantinelife",
+            "value": 23
+        },
+        {
+            "source": "chinesevirus",
+            "target": "quarantine",
+            "value": 10
+        },
+        {
+            "source": "chinesevirus",
+            "target": "nyc",
+            "value": 3
+        },
+        {
+            "source": "chinesevirus",
+            "target": "newyork",
+            "value": 5
+        },
+        {
+            "source": "chinesevirus",
+            "target": "coronapocolypse",
+            "value": 10
+        },
+        {
+            "source": "chinesevirus",
+            "target": "trumppandemic",
+            "value": 7
+        },
+        {
+            "source": "chinesevirus",
+            "target": "trumpvirus",
+            "value": 11
+        },
+        {
+            "source": "chinesevirus",
+            "target": "wuhanvirus",
+            "value": 89
+        },
+        {
+            "source": "chinesevirus",
+            "target": "maga",
+            "value": 17
+        },
+        {
+            "source": "chinesevirus",
+            "target": "trump2020",
+            "value": 17
+        },
+        {
+            "source": "chinesevirus",
+            "target": "kag",
+            "value": 6
+        },
+        {
+            "source": "chinesevirus",
+            "target": "chinaliedpeopledied",
+            "value": 53
+        },
+        {
+            "source": "chinesevirus",
+            "target": "wuhan",
+            "value": 7
+        },
+        {
+            "source": "chinesevirus",
+            "target": "chinavirus",
+            "value": 47
+        },
+        {
+            "source": "chinesevirus",
+            "target": "democrats",
+            "value": 4
+        },
+        {
+            "source": "chinesevirus",
+            "target": "kungflu",
+            "value": 17
+        },
+        {
+            "source": "chinesevirus",
+            "target": "chinesevirus",
+            "value": 42
+        },
+        {
+            "source": "chinesevirus",
+            "target": "wuhancoronavirus",
+            "value": 33
+        },
+        {
+            "source": "chinesevirus",
+            "target": "politics",
+            "value": 3
+        },
+        {
+            "source": "chinesevirus",
+            "target": "chinacoronavirus",
+            "value": 11
+        },
+        {
+            "source": "chinesevirus",
+            "target": "wuflu",
+            "value": 7
+        },
+        {
+            "source": "chinesevirus",
+            "target": "qanon",
+            "value": 9
+        },
+        {
+            "source": "chinesevirus",
+            "target": "stayhome",
+            "value": 10
+        },
+        {
+            "source": "chinesevirus",
+            "target": "cnn",
+            "value": 3
+        },
+        {
+            "source": "coronapocolypse",
+            "target": "votebluenomatterwho",
+            "value": 3
+        },
+        {
+            "source": "coronapocolypse",
+            "target": "stayathome",
+            "value": 5
+        },
+        {
+            "source": "coronapocolypse",
+            "target": "trumpvirus",
+            "value": 19
+        },
+        {
+            "source": "coronapocolypse",
+            "target": "quarantinelife",
+            "value": 46
+        },
+        {
+            "source": "coronapocolypse",
+            "target": "trumpviruscoverup",
+            "value": 3
+        },
+        {
+            "source": "coronapocolypse",
+            "target": "trumppandemic",
+            "value": 16
+        },
+        {
+            "source": "coronapocolypse",
+            "target": "maga",
+            "value": 6
+        },
+        {
+            "source": "coronapocolypse",
+            "target": "kag",
+            "value": 3
+        },
+        {
+            "source": "coronapocolypse",
+            "target": "quarantine",
+            "value": 11
+        },
+        {
+            "source": "coronapocolypse",
+            "target": "gop",
+            "value": 3
+        },
+        {
+            "source": "coronapocolypse",
+            "target": "covid19us",
+            "value": 3
+        },
+        {
+            "source": "coronapocolypse",
+            "target": "panicbuying",
+            "value": 4
+        },
+        {
+            "source": "coronapocolypse",
+            "target": "stayhome",
+            "value": 9
+        },
+        {
+            "source": "coronapocolypse",
+            "target": "toiletpaper",
+            "value": 3
+        },
+        {
+            "source": "coronapocolypse",
+            "target": "coronapocalypse",
+            "value": 3
+        },
+        {
+            "source": "coronapocolypse",
+            "target": "washyourhands",
+            "value": 4
+        },
+        {
+            "source": "coronapocolypse",
+            "target": "flattenthecurve",
+            "value": 3
+        },
+        {
+            "source": "science",
+            "target": "health",
+            "value": 34
+        },
+        {
+            "source": "science",
+            "target": "healthcare",
+            "value": 7
+        },
+        {
+            "source": "science",
+            "target": "who",
+            "value": 3
+        },
+        {
+            "source": "science",
+            "target": "publichealth",
+            "value": 8
+        },
+        {
+            "source": "science",
+            "target": "epidemic",
+            "value": 6
+        },
+        {
+            "source": "science",
+            "target": "trumpvirus",
+            "value": 3
+        },
+        {
+            "source": "science",
+            "target": "vaccine",
+            "value": 5
+        },
+        {
+            "source": "science",
+            "target": "potus",
+            "value": 3
+        },
+        {
+            "source": "science",
+            "target": "economy",
+            "value": 5
+        },
+        {
+            "source": "science",
+            "target": "politics",
+            "value": 8
+        },
+        {
+            "source": "science",
+            "target": "gop",
+            "value": 7
+        },
+        {
+            "source": "science",
+            "target": "maga",
+            "value": 8
+        },
+        {
+            "source": "science",
+            "target": "washyourhands",
+            "value": 4
+        },
+        {
+            "source": "iran",
+            "target": "canada",
+            "value": 11
+        },
+        {
+            "source": "iran",
+            "target": "new",
+            "value": 4
+        },
+        {
+            "source": "iran",
+            "target": "india",
+            "value": 11
+        },
+        {
+            "source": "iran",
+            "target": "japan",
+            "value": 26
+        },
+        {
+            "source": "iran",
+            "target": "southkorea",
+            "value": 55
+        },
+        {
+            "source": "iran",
+            "target": "italy",
+            "value": 98
+        },
+        {
+            "source": "iran",
+            "target": "uk",
+            "value": 6
+        },
+        {
+            "source": "iran",
+            "target": "world",
+            "value": 6
+        },
+        {
+            "source": "iran",
+            "target": "chinavirus",
+            "value": 4
+        },
+        {
+            "source": "iran",
+            "target": "quarantine",
+            "value": 3
+        },
+        {
+            "source": "iran",
+            "target": "nyc",
+            "value": 3
+        },
+        {
+            "source": "iran",
+            "target": "healthcare",
+            "value": 3
+        },
+        {
+            "source": "iran",
+            "target": "us",
+            "value": 19
+        },
+        {
+            "source": "iran",
+            "target": "democrats",
+            "value": 4
+        },
+        {
+            "source": "iran",
+            "target": "australia",
+            "value": 4
+        },
+        {
+            "source": "iran",
+            "target": "who",
+            "value": 18
+        },
+        {
+            "source": "iran",
+            "target": "health",
+            "value": 7
+        },
+        {
+            "source": "iran",
+            "target": "newyork",
+            "value": 6
+        },
+        {
+            "source": "iran",
+            "target": "wuflu",
+            "value": 4
+        },
+        {
+            "source": "iran",
+            "target": "iran",
+            "value": 15
+        },
+        {
+            "source": "iran",
+            "target": "newyorkcity",
+            "value": 5
+        },
+        {
+            "source": "iran",
+            "target": "donaldtrump",
+            "value": 4
+        },
+        {
+            "source": "iran",
+            "target": "wuhanvirus",
+            "value": 3
+        },
+        {
+            "source": "iran",
+            "target": "wuhan",
+            "value": 15
+        },
+        {
+            "source": "iran",
+            "target": "covid19usa",
+            "value": 3
+        },
+        {
+            "source": "iran",
+            "target": "epidemic",
+            "value": 3
+        },
+        {
+            "source": "iran",
+            "target": "qanon",
+            "value": 3
+        },
+        {
+            "source": "iran",
+            "target": "maga",
+            "value": 4
+        },
+        {
+            "source": "iran",
+            "target": "kag",
+            "value": 3
+        },
+        {
+            "source": "thebachelor",
+            "target": "trending",
+            "value": 6
+        },
+        {
+            "source": "thebachelor",
+            "target": "love",
+            "value": 4
+        },
+        {
+            "source": "democrats",
+            "target": "potus",
+            "value": 4
+        },
+        {
+            "source": "democrats",
+            "target": "kag",
+            "value": 25
+        },
+        {
+            "source": "democrats",
+            "target": "trump2020",
+            "value": 21
+        },
+        {
+            "source": "democrats",
+            "target": "maga",
+            "value": 30
+        },
+        {
+            "source": "democrats",
+            "target": "chinavirus",
+            "value": 7
+        },
+        {
+            "source": "democrats",
+            "target": "economy",
+            "value": 5
+        },
+        {
+            "source": "democrats",
+            "target": "gop",
+            "value": 20
+        },
+        {
+            "source": "democrats",
+            "target": "democrats",
+            "value": 9
+        },
+        {
+            "source": "democrats",
+            "target": "cnn",
+            "value": 16
+        },
+        {
+            "source": "democrats",
+            "target": "politics",
+            "value": 3
+        },
+        {
+            "source": "democrats",
+            "target": "health",
+            "value": 5
+        },
+        {
+            "source": "democrats",
+            "target": "healthcare",
+            "value": 3
+        },
+        {
+            "source": "democrats",
+            "target": "donaldtrump",
+            "value": 3
+        },
+        {
+            "source": "democrats",
+            "target": "quarantine",
+            "value": 3
+        },
+        {
+            "source": "democrats",
+            "target": "votebluenomatterwho",
+            "value": 4
+        },
+        {
+            "source": "democrats",
+            "target": "stocks",
+            "value": 7
+        },
+        {
+            "source": "democrats",
+            "target": "trumpviruscoverup",
+            "value": 4
+        },
+        {
+            "source": "democrats",
+            "target": "stockmarket",
+            "value": 5
+        },
+        {
+            "source": "trading",
+            "target": "covid19uk",
+            "value": 6
+        },
+        {
+            "source": "trading",
+            "target": "investing",
+            "value": 132
+        },
+        {
+            "source": "trading",
+            "target": "stocks",
+            "value": 142
+        },
+        {
+            "source": "trading",
+            "target": "us",
+            "value": 5
+        },
+        {
+            "source": "trading",
+            "target": "australia",
+            "value": 5
+        },
+        {
+            "source": "trading",
+            "target": "italy",
+            "value": 6
+        },
+        {
+            "source": "trading",
+            "target": "stockmarket",
+            "value": 45
+        },
+        {
+            "source": "trading",
+            "target": "india",
+            "value": 7
+        },
+        {
+            "source": "trading",
+            "target": "uk",
+            "value": 7
+        },
+        {
+            "source": "trading",
+            "target": "economy",
+            "value": 7
+        },
+        {
+            "source": "trading",
+            "target": "bitcoin",
+            "value": 9
+        },
+        {
+            "source": "trading",
+            "target": "business",
+            "value": 5
+        },
+        {
+            "source": "trading",
+            "target": "fed",
+            "value": 5
+        },
+        {
+            "source": "trading",
+            "target": "markets",
+            "value": 20
+        },
+        {
+            "source": "vaccine",
+            "target": "trumpvirus",
+            "value": 4
+        },
+        {
+            "source": "vaccine",
+            "target": "health",
+            "value": 6
+        },
+        {
+            "source": "vaccine",
+            "target": "healthcare",
+            "value": 7
+        },
+        {
+            "source": "vaccine",
+            "target": "vaccine",
+            "value": 4
+        },
+        {
+            "source": "vaccine",
+            "target": "stocks",
+            "value": 3
+        },
+        {
+            "source": "vaccine",
+            "target": "publichealth",
+            "value": 3
+        },
+        {
+            "source": "vaccine",
+            "target": "wuhan",
+            "value": 5
+        },
+        {
+            "source": "vaccine",
+            "target": "potus",
+            "value": 4
+        },
+        {
+            "source": "vaccine",
+            "target": "wuflu",
+            "value": 3
+        },
+        {
+            "source": "vaccine",
+            "target": "ccp",
+            "value": 3
+        },
+        {
+            "source": "vaccine",
+            "target": "trump2020",
+            "value": 3
+        },
+        {
+            "source": "vaccine",
+            "target": "us",
+            "value": 4
+        },
+        {
+            "source": "newyorkcity",
+            "target": "newyork",
+            "value": 27
+        },
+        {
+            "source": "newyorkcity",
+            "target": "westchester",
+            "value": 7
+        },
+        {
+            "source": "newyorkcity",
+            "target": "health",
+            "value": 4
+        },
+        {
+            "source": "newyorkcity",
+            "target": "nyc",
+            "value": 28
+        },
+        {
+            "source": "newyorkcity",
+            "target": "ny",
+            "value": 4
+        },
+        {
+            "source": "newyorkcity",
+            "target": "mta",
+            "value": 4
+        },
+        {
+            "source": "newyorkcity",
+            "target": "wuhan",
+            "value": 5
+        },
+        {
+            "source": "newyorkcity",
+            "target": "boston",
+            "value": 5
+        },
+        {
+            "source": "newyorkcity",
+            "target": "stayhome",
+            "value": 3
+        },
+        {
+            "source": "love",
+            "target": "quarantine",
+            "value": 7
+        },
+        {
+            "source": "love",
+            "target": "hope",
+            "value": 14
+        },
+        {
+            "source": "love",
+            "target": "health",
+            "value": 10
+        },
+        {
+            "source": "love",
+            "target": "new",
+            "value": 19
+        },
+        {
+            "source": "love",
+            "target": "trending",
+            "value": 17
+        },
+        {
+            "source": "love",
+            "target": "music",
+            "value": 19
+        },
+        {
+            "source": "love",
+            "target": "youtube",
+            "value": 9
+        },
+        {
+            "source": "love",
+            "target": "art",
+            "value": 10
+        },
+        {
+            "source": "love",
+            "target": "stayhome",
+            "value": 18
+        },
+        {
+            "source": "love",
+            "target": "staysafe",
+            "value": 7
+        },
+        {
+            "source": "love",
+            "target": "japan",
+            "value": 3
+        },
+        {
+            "source": "love",
+            "target": "fashion",
+            "value": 11
+        },
+        {
+            "source": "love",
+            "target": "nyc",
+            "value": 3
+        },
+        {
+            "source": "love",
+            "target": "stayathome",
+            "value": 8
+        },
+        {
+            "source": "love",
+            "target": "world",
+            "value": 3
+        },
+        {
+            "source": "love",
+            "target": "bitcoin",
+            "value": 4
+        },
+        {
+            "source": "love",
+            "target": "quarantinelife",
+            "value": 8
+        },
+        {
+            "source": "love",
+            "target": "canada",
+            "value": 3
+        },
+        {
+            "source": "love",
+            "target": "italy",
+            "value": 3
+        },
+        {
+            "source": "love",
+            "target": "flattenthecurve",
+            "value": 6
+        },
+        {
+            "source": "trumppandemic",
+            "target": "gop",
+            "value": 5
+        },
+        {
+            "source": "trumppandemic",
+            "target": "trumpvirus",
+            "value": 91
+        },
+        {
+            "source": "trumppandemic",
+            "target": "quarantinelife",
+            "value": 9
+        },
+        {
+            "source": "trumppandemic",
+            "target": "trumpviruscoverup",
+            "value": 17
+        },
+        {
+            "source": "trumppandemic",
+            "target": "maga",
+            "value": 4
+        },
+        {
+            "source": "trumppandemic",
+            "target": "trumpslump",
+            "value": 7
+        },
+        {
+            "source": "trumppandemic",
+            "target": "trump2020",
+            "value": 4
+        },
+        {
+            "source": "trumppandemic",
+            "target": "trumpliesaboutcoronavirus",
+            "value": 20
+        },
+        {
+            "source": "trumppandemic",
+            "target": "covid19us",
+            "value": 6
+        },
+        {
+            "source": "trumppandemic",
+            "target": "quarantine",
+            "value": 4
+        },
+        {
+            "source": "trumppandemic",
+            "target": "votebluenomatterwho",
+            "value": 5
+        },
+        {
+            "source": "art",
+            "target": "music",
+            "value": 12
+        },
+        {
+            "source": "art",
+            "target": "fashion",
+            "value": 3
+        },
+        {
+            "source": "art",
+            "target": "world",
+            "value": 3
+        },
+        {
+            "source": "art",
+            "target": "washyourhands",
+            "value": 3
+        },
+        {
+            "source": "art",
+            "target": "quarantine",
+            "value": 6
+        },
+        {
+            "source": "art",
+            "target": "quarantinelife",
+            "value": 6
+        },
+        {
+            "source": "art",
+            "target": "stayhome",
+            "value": 13
+        },
+        {
+            "source": "stayhome",
+            "target": "boston",
+            "value": 4
+        },
+        {
+            "source": "stayhome",
+            "target": "nyc",
+            "value": 19
+        },
+        {
+            "source": "stayhome",
+            "target": "stayathome",
+            "value": 72
+        },
+        {
+            "source": "stayhome",
+            "target": "quarantine",
+            "value": 96
+        },
+        {
+            "source": "stayhome",
+            "target": "staysafe",
+            "value": 156
+        },
+        {
+            "source": "stayhome",
+            "target": "quarantinelife",
+            "value": 71
+        },
+        {
+            "source": "stayhome",
+            "target": "flattenthecurve",
+            "value": 103
+        },
+        {
+            "source": "stayhome",
+            "target": "canada",
+            "value": 4
+        },
+        {
+            "source": "stayhome",
+            "target": "who",
+            "value": 4
+        },
+        {
+            "source": "stayhome",
+            "target": "covid19usa",
+            "value": 3
+        },
+        {
+            "source": "stayhome",
+            "target": "covid19us",
+            "value": 8
+        },
+        {
+            "source": "stayhome",
+            "target": "newyork",
+            "value": 5
+        },
+        {
+            "source": "stayhome",
+            "target": "trumpvirus",
+            "value": 7
+        },
+        {
+            "source": "stayhome",
+            "target": "healthcare",
+            "value": 7
+        },
+        {
+            "source": "stayhome",
+            "target": "washyourhands",
+            "value": 58
+        },
+        {
+            "source": "stayhome",
+            "target": "music",
+            "value": 19
+        },
+        {
+            "source": "stayhome",
+            "target": "toiletpapercrisis",
+            "value": 3
+        },
+        {
+            "source": "stayhome",
+            "target": "trumpliesaboutcoronavirus",
+            "value": 4
+        },
+        {
+            "source": "stayhome",
+            "target": "coronapocalypse",
+            "value": 11
+        },
+        {
+            "source": "stayhome",
+            "target": "stayhome",
+            "value": 54
+        },
+        {
+            "source": "stayhome",
+            "target": "chinavirus",
+            "value": 3
+        },
+        {
+            "source": "stayhome",
+            "target": "hope",
+            "value": 8
+        },
+        {
+            "source": "stayhome",
+            "target": "health",
+            "value": 6
+        },
+        {
+            "source": "stayhome",
+            "target": "nowplaying",
+            "value": 13
+        },
+        {
+            "source": "stayhome",
+            "target": "italy",
+            "value": 8
+        },
+        {
+            "source": "stayhome",
+            "target": "toiletpaper",
+            "value": 5
+        },
+        {
+            "source": "stayhome",
+            "target": "bitcoin",
+            "value": 5
+        },
+        {
+            "source": "stayhome",
+            "target": "youtube",
+            "value": 8
+        },
+        {
+            "source": "stayhome",
+            "target": "fashion",
+            "value": 5
+        },
+        {
+            "source": "stayhome",
+            "target": "cnn",
+            "value": 4
+        },
+        {
+            "source": "markets",
+            "target": "stocks",
+            "value": 37
+        },
+        {
+            "source": "markets",
+            "target": "investing",
+            "value": 25
+        },
+        {
+            "source": "markets",
+            "target": "us",
+            "value": 4
+        },
+        {
+            "source": "markets",
+            "target": "economy",
+            "value": 38
+        },
+        {
+            "source": "markets",
+            "target": "fed",
+            "value": 28
+        },
+        {
+            "source": "markets",
+            "target": "business",
+            "value": 16
+        },
+        {
+            "source": "markets",
+            "target": "who",
+            "value": 7
+        },
+        {
+            "source": "markets",
+            "target": "bitcoin",
+            "value": 5
+        },
+        {
+            "source": "markets",
+            "target": "stockmarket",
+            "value": 8
+        },
+        {
+            "source": "markets",
+            "target": "markets",
+            "value": 3
+        },
+        {
+            "source": "health",
+            "target": "economy",
+            "value": 24
+        },
+        {
+            "source": "health",
+            "target": "publichealth",
+            "value": 76
+        },
+        {
+            "source": "health",
+            "target": "healthcare",
+            "value": 110
+        },
+        {
+            "source": "health",
+            "target": "uk",
+            "value": 10
+        },
+        {
+            "source": "health",
+            "target": "politics",
+            "value": 21
+        },
+        {
+            "source": "health",
+            "target": "costco",
+            "value": 4
+        },
+        {
+            "source": "health",
+            "target": "wuhan",
+            "value": 26
+        },
+        {
+            "source": "health",
+            "target": "who",
+            "value": 31
+        },
+        {
+            "source": "health",
+            "target": "canada",
+            "value": 8
+        },
+        {
+            "source": "health",
+            "target": "us",
+            "value": 15
+        },
+        {
+            "source": "health",
+            "target": "business",
+            "value": 32
+        },
+        {
+            "source": "health",
+            "target": "italy",
+            "value": 12
+        },
+        {
+            "source": "health",
+            "target": "stocks",
+            "value": 3
+        },
+        {
+            "source": "health",
+            "target": "world",
+            "value": 13
+        },
+        {
+            "source": "health",
+            "target": "india",
+            "value": 3
+        },
+        {
+            "source": "health",
+            "target": "quarantine",
+            "value": 23
+        },
+        {
+            "source": "health",
+            "target": "hope",
+            "value": 3
+        },
+        {
+            "source": "health",
+            "target": "health",
+            "value": 9
+        },
+        {
+            "source": "health",
+            "target": "coronapocalypse",
+            "value": 6
+        },
+        {
+            "source": "health",
+            "target": "epidemic",
+            "value": 41
+        },
+        {
+            "source": "health",
+            "target": "chinavirus",
+            "value": 6
+        },
+        {
+            "source": "health",
+            "target": "nyc",
+            "value": 8
+        },
+        {
+            "source": "health",
+            "target": "nj",
+            "value": 3
+        },
+        {
+            "source": "health",
+            "target": "wuhancoronavirus",
+            "value": 7
+        },
+        {
+            "source": "health",
+            "target": "music",
+            "value": 9
+        },
+        {
+            "source": "health",
+            "target": "potus",
+            "value": 5
+        },
+        {
+            "source": "health",
+            "target": "australia",
+            "value": 9
+        },
+        {
+            "source": "health",
+            "target": "donaldtrump",
+            "value": 7
+        },
+        {
+            "source": "health",
+            "target": "stockmarket",
+            "value": 4
+        },
+        {
+            "source": "health",
+            "target": "wuflu",
+            "value": 5
+        },
+        {
+            "source": "health",
+            "target": "ny",
+            "value": 3
+        },
+        {
+            "source": "health",
+            "target": "washyourhands",
+            "value": 26
+        },
+        {
+            "source": "health",
+            "target": "staysafe",
+            "value": 9
+        },
+        {
+            "source": "health",
+            "target": "maga",
+            "value": 5
+        },
+        {
+            "source": "health",
+            "target": "trending",
+            "value": 4
+        },
+        {
+            "source": "health",
+            "target": "newyork",
+            "value": 8
+        },
+        {
+            "source": "health",
+            "target": "2019ncov",
+            "value": 12
+        },
+        {
+            "source": "health",
+            "target": "covid19us",
+            "value": 3
+        },
+        {
+            "source": "health",
+            "target": "gop",
+            "value": 3
+        },
+        {
+            "source": "health",
+            "target": "flattenthecurve",
+            "value": 5
+        },
+        {
+            "source": "stayathome",
+            "target": "trumpvirus",
+            "value": 4
+        },
+        {
+            "source": "stayathome",
+            "target": "staysafe",
+            "value": 37
+        },
+        {
+            "source": "stayathome",
+            "target": "stayathome",
+            "value": 11
+        },
+        {
+            "source": "stayathome",
+            "target": "quarantine",
+            "value": 52
+        },
+        {
+            "source": "stayathome",
+            "target": "wuhan",
+            "value": 3
+        },
+        {
+            "source": "stayathome",
+            "target": "newyork",
+            "value": 4
+        },
+        {
+            "source": "stayathome",
+            "target": "nyc",
+            "value": 6
+        },
+        {
+            "source": "stayathome",
+            "target": "quarantinelife",
+            "value": 42
+        },
+        {
+            "source": "stayathome",
+            "target": "flattenthecurve",
+            "value": 49
+        },
+        {
+            "source": "stayathome",
+            "target": "toiletpaper",
+            "value": 3
+        },
+        {
+            "source": "stayathome",
+            "target": "washyourhands",
+            "value": 28
+        },
+        {
+            "source": "stayathome",
+            "target": "italy",
+            "value": 6
+        },
+        {
+            "source": "stayathome",
+            "target": "covid19us",
+            "value": 5
+        },
+        {
+            "source": "stayathome",
+            "target": "covid19australia",
+            "value": 3
+        },
+        {
+            "source": "stayathome",
+            "target": "music",
+            "value": 8
+        },
+        {
+            "source": "stayathome",
+            "target": "publichealth",
+            "value": 3
+        },
+        {
+            "source": "stayathome",
+            "target": "qanon",
+            "value": 3
+        },
+        {
+            "source": "stayathome",
+            "target": "youtube",
+            "value": 3
+        },
+        {
+            "source": "stayathome",
+            "target": "maga",
+            "value": 3
+        },
+        {
+            "source": "business",
+            "target": "newyork",
+            "value": 4
+        },
+        {
+            "source": "business",
+            "target": "publichealth",
+            "value": 6
+        },
+        {
+            "source": "business",
+            "target": "economy",
+            "value": 31
+        },
+        {
+            "source": "business",
+            "target": "us",
+            "value": 3
+        },
+        {
+            "source": "business",
+            "target": "bitcoin",
+            "value": 9
+        },
+        {
+            "source": "business",
+            "target": "investing",
+            "value": 13
+        },
+        {
+            "source": "business",
+            "target": "business",
+            "value": 4
+        },
+        {
+            "source": "business",
+            "target": "who",
+            "value": 10
+        },
+        {
+            "source": "business",
+            "target": "maga",
+            "value": 5
+        },
+        {
+            "source": "business",
+            "target": "healthcare",
+            "value": 5
+        },
+        {
+            "source": "business",
+            "target": "fashion",
+            "value": 4
+        },
+        {
+            "source": "business",
+            "target": "politics",
+            "value": 3
+        },
+        {
+            "source": "business",
+            "target": "gop",
+            "value": 4
+        },
+        {
+            "source": "business",
+            "target": "wuhancoronavirus",
+            "value": 4
+        },
+        {
+            "source": "business",
+            "target": "quarantinelife",
+            "value": 3
+        },
+        {
+            "source": "business",
+            "target": "quarantine",
+            "value": 5
+        },
+        {
+            "source": "business",
+            "target": "coronapocalypse",
+            "value": 4
+        },
+        {
+            "source": "business",
+            "target": "epidemic",
+            "value": 6
+        },
+        {
+            "source": "business",
+            "target": "stocks",
+            "value": 7
+        },
+        {
+            "source": "business",
+            "target": "panicbuying",
+            "value": 3
+        },
+        {
+            "source": "business",
+            "target": "chinacoronavirus",
+            "value": 4
+        },
+        {
+            "source": "investing",
+            "target": "stocks",
+            "value": 172
+        },
+        {
+            "source": "investing",
+            "target": "covid19uk",
+            "value": 6
+        },
+        {
+            "source": "investing",
+            "target": "us",
+            "value": 6
+        },
+        {
+            "source": "investing",
+            "target": "healthcare",
+            "value": 4
+        },
+        {
+            "source": "investing",
+            "target": "australia",
+            "value": 5
+        },
+        {
+            "source": "investing",
+            "target": "italy",
+            "value": 5
+        },
+        {
+            "source": "investing",
+            "target": "stockmarket",
+            "value": 75
+        },
+        {
+            "source": "investing",
+            "target": "uk",
+            "value": 5
+        },
+        {
+            "source": "investing",
+            "target": "bitcoin",
+            "value": 17
+        },
+        {
+            "source": "investing",
+            "target": "economy",
+            "value": 29
+        },
+        {
+            "source": "investing",
+            "target": "fed",
+            "value": 11
+        },
+        {
+            "source": "investing",
+            "target": "ny",
+            "value": 6
+        },
+        {
+            "source": "investing",
+            "target": "youtube",
+            "value": 5
+        },
+        {
+            "source": "investing",
+            "target": "world",
+            "value": 3
+        },
+        {
+            "source": "trumpliesaboutcoronavirus",
+            "target": "trumpviruscoverup",
+            "value": 70
+        },
+        {
+            "source": "trumpliesaboutcoronavirus",
+            "target": "nyc",
+            "value": 6
+        },
+        {
+            "source": "trumpliesaboutcoronavirus",
+            "target": "covid19usa",
+            "value": 5
+        },
+        {
+            "source": "trumpliesaboutcoronavirus",
+            "target": "maga",
+            "value": 34
+        },
+        {
+            "source": "trumpliesaboutcoronavirus",
+            "target": "kag",
+            "value": 9
+        },
+        {
+            "source": "trumpliesaboutcoronavirus",
+            "target": "stocks",
+            "value": 3
+        },
+        {
+            "source": "trumpliesaboutcoronavirus",
+            "target": "trumpvirus",
+            "value": 60
+        },
+        {
+            "source": "trumpliesaboutcoronavirus",
+            "target": "pencedemic",
+            "value": 26
+        },
+        {
+            "source": "trumpliesaboutcoronavirus",
+            "target": "trumpslump",
+            "value": 25
+        },
+        {
+            "source": "trumpliesaboutcoronavirus",
+            "target": "trump2020",
+            "value": 5
+        },
+        {
+            "source": "trumpliesaboutcoronavirus",
+            "target": "covid19us",
+            "value": 13
+        },
+        {
+            "source": "trumpliesaboutcoronavirus",
+            "target": "gop",
+            "value": 10
+        },
+        {
+            "source": "trumpliesaboutcoronavirus",
+            "target": "votebluenomatterwho",
+            "value": 3
+        },
+        {
+            "source": "trumpliesaboutcoronavirus",
+            "target": "qanon",
+            "value": 18
+        },
+        {
+            "source": "trumpliesaboutcoronavirus",
+            "target": "stockmarket",
+            "value": 4
+        },
+        {
+            "source": "trumpliesaboutcoronavirus",
+            "target": "donaldtrump",
+            "value": 8
+        },
+        {
+            "source": "trumpliesaboutcoronavirus",
+            "target": "washyourhands",
+            "value": 3
+        },
+        {
+            "source": "covid19australia",
+            "target": "toiletpaperapocalypse",
+            "value": 3
+        },
+        {
+            "source": "covid19australia",
+            "target": "australia",
+            "value": 4
+        },
+        {
+            "source": "covid19australia",
+            "target": "panicbuying",
+            "value": 6
+        },
+        {
+            "source": "covid19australia",
+            "target": "toiletpaper",
+            "value": 3
+        },
+        {
+            "source": "newyork",
+            "target": "southkorea",
+            "value": 4
+        },
+        {
+            "source": "newyork",
+            "target": "newjersey",
+            "value": 14
+        },
+        {
+            "source": "newyork",
+            "target": "westchester",
+            "value": 19
+        },
+        {
+            "source": "newyork",
+            "target": "nyc",
+            "value": 55
+        },
+        {
+            "source": "newyork",
+            "target": "newyork",
+            "value": 4
+        },
+        {
+            "source": "newyork",
+            "target": "us",
+            "value": 7
+        },
+        {
+            "source": "newyork",
+            "target": "italy",
+            "value": 11
+        },
+        {
+            "source": "newyork",
+            "target": "canada",
+            "value": 3
+        },
+        {
+            "source": "newyork",
+            "target": "boston",
+            "value": 6
+        },
+        {
+            "source": "newyork",
+            "target": "covid19us",
+            "value": 3
+        },
+        {
+            "source": "newyork",
+            "target": "covid19usa",
+            "value": 5
+        },
+        {
+            "source": "newyork",
+            "target": "japan",
+            "value": 5
+        },
+        {
+            "source": "newyork",
+            "target": "ny",
+            "value": 18
+        },
+        {
+            "source": "newyork",
+            "target": "quarantine",
+            "value": 8
+        },
+        {
+            "source": "newyork",
+            "target": "wuhanvirus",
+            "value": 4
+        },
+        {
+            "source": "newyork",
+            "target": "wuhan",
+            "value": 11
+        },
+        {
+            "source": "newyork",
+            "target": "trending",
+            "value": 3
+        },
+        {
+            "source": "newyork",
+            "target": "music",
+            "value": 4
+        },
+        {
+            "source": "newyork",
+            "target": "healthcare",
+            "value": 3
+        },
+        {
+            "source": "newyork",
+            "target": "coronapocalypse",
+            "value": 3
+        },
+        {
+            "source": "newyork",
+            "target": "cnn",
+            "value": 4
+        },
+        {
+            "source": "newyork",
+            "target": "who",
+            "value": 5
+        },
+        {
+            "source": "newyork",
+            "target": "quarantinelife",
+            "value": 3
+        },
+        {
+            "source": "wuhancoronavirus",
+            "target": "economy",
+            "value": 4
+        },
+        {
+            "source": "wuhancoronavirus",
+            "target": "chinavirus",
+            "value": 38
+        },
+        {
+            "source": "wuhancoronavirus",
+            "target": "wuhan",
+            "value": 24
+        },
+        {
+            "source": "wuhancoronavirus",
+            "target": "wuflu",
+            "value": 26
+        },
+        {
+            "source": "wuhancoronavirus",
+            "target": "trump2020",
+            "value": 4
+        },
+        {
+            "source": "wuhancoronavirus",
+            "target": "publichealth",
+            "value": 17
+        },
+        {
+            "source": "wuhancoronavirus",
+            "target": "who",
+            "value": 12
+        },
+        {
+            "source": "wuhancoronavirus",
+            "target": "healthcare",
+            "value": 10
+        },
+        {
+            "source": "wuhancoronavirus",
+            "target": "donaldtrump",
+            "value": 7
+        },
+        {
+            "source": "wuhancoronavirus",
+            "target": "wuhanvirus",
+            "value": 54
+        },
+        {
+            "source": "wuhancoronavirus",
+            "target": "ccp",
+            "value": 9
+        },
+        {
+            "source": "wuhancoronavirus",
+            "target": "chinacoronavirus",
+            "value": 18
+        },
+        {
+            "source": "wuhancoronavirus",
+            "target": "covid19usa",
+            "value": 4
+        },
+        {
+            "source": "wuhancoronavirus",
+            "target": "politics",
+            "value": 4
+        },
+        {
+            "source": "wuhancoronavirus",
+            "target": "gop",
+            "value": 5
+        },
+        {
+            "source": "wuhancoronavirus",
+            "target": "maga",
+            "value": 6
+        },
+        {
+            "source": "wuhancoronavirus",
+            "target": "epidemic",
+            "value": 4
+        },
+        {
+            "source": "wuhancoronavirus",
+            "target": "chinaliedpeopledied",
+            "value": 14
+        },
+        {
+            "source": "wuhancoronavirus",
+            "target": "ncov2019",
+            "value": 19
+        },
+        {
+            "source": "wuhancoronavirus",
+            "target": "us",
+            "value": 3
+        },
+        {
+            "source": "wuhancoronavirus",
+            "target": "kungflu",
+            "value": 6
+        },
+        {
+            "source": "wuhancoronavirus",
+            "target": "kag",
+            "value": 3
+        },
+        {
+            "source": "italy",
+            "target": "publichealth",
+            "value": 4
+        },
+        {
+            "source": "italy",
+            "target": "japan",
+            "value": 44
+        },
+        {
+            "source": "italy",
+            "target": "italy",
+            "value": 10
+        },
+        {
+            "source": "italy",
+            "target": "new",
+            "value": 5
+        },
+        {
+            "source": "italy",
+            "target": "india",
+            "value": 18
+        },
+        {
+            "source": "italy",
+            "target": "southkorea",
+            "value": 78
+        },
+        {
+            "source": "italy",
+            "target": "us",
+            "value": 25
+        },
+        {
+            "source": "italy",
+            "target": "canada",
+            "value": 14
+        },
+        {
+            "source": "italy",
+            "target": "chinavirus",
+            "value": 6
+        },
+        {
+            "source": "italy",
+            "target": "trumpvirus",
+            "value": 3
+        },
+        {
+            "source": "italy",
+            "target": "wuhanvirus",
+            "value": 4
+        },
+        {
+            "source": "italy",
+            "target": "quarantine",
+            "value": 21
+        },
+        {
+            "source": "italy",
+            "target": "nyc",
+            "value": 5
+        },
+        {
+            "source": "italy",
+            "target": "australia",
+            "value": 11
+        },
+        {
+            "source": "italy",
+            "target": "politics",
+            "value": 4
+        },
+        {
+            "source": "italy",
+            "target": "stocks",
+            "value": 5
+        },
+        {
+            "source": "italy",
+            "target": "stockmarket",
+            "value": 5
+        },
+        {
+            "source": "italy",
+            "target": "covid19us",
+            "value": 3
+        },
+        {
+            "source": "italy",
+            "target": "world",
+            "value": 7
+        },
+        {
+            "source": "italy",
+            "target": "economy",
+            "value": 5
+        },
+        {
+            "source": "italy",
+            "target": "uk",
+            "value": 15
+        },
+        {
+            "source": "italy",
+            "target": "cnn",
+            "value": 3
+        },
+        {
+            "source": "italy",
+            "target": "wuhan",
+            "value": 11
+        },
+        {
+            "source": "italy",
+            "target": "who",
+            "value": 13
+        },
+        {
+            "source": "italy",
+            "target": "wuflu",
+            "value": 3
+        },
+        {
+            "source": "italy",
+            "target": "toiletpaper",
+            "value": 3
+        },
+        {
+            "source": "italy",
+            "target": "epidemic",
+            "value": 3
+        },
+        {
+            "source": "italy",
+            "target": "flattenthecurve",
+            "value": 5
+        },
+        {
+            "source": "world",
+            "target": "politics",
+            "value": 13
+        },
+        {
+            "source": "world",
+            "target": "economy",
+            "value": 5
+        },
+        {
+            "source": "world",
+            "target": "uk",
+            "value": 13
+        },
+        {
+            "source": "world",
+            "target": "india",
+            "value": 5
+        },
+        {
+            "source": "world",
+            "target": "who",
+            "value": 13
+        },
+        {
+            "source": "world",
+            "target": "wuhan",
+            "value": 3
+        },
+        {
+            "source": "world",
+            "target": "us",
+            "value": 15
+        },
+        {
+            "source": "world",
+            "target": "hope",
+            "value": 3
+        },
+        {
+            "source": "world",
+            "target": "potus",
+            "value": 4
+        },
+        {
+            "source": "world",
+            "target": "canada",
+            "value": 4
+        },
+        {
+            "source": "qanon",
+            "target": "kag",
+            "value": 43
+        },
+        {
+            "source": "qanon",
+            "target": "maga",
+            "value": 120
+        },
+        {
+            "source": "qanon",
+            "target": "bitcoin",
+            "value": 10
+        },
+        {
+            "source": "qanon",
+            "target": "stockmarket",
+            "value": 5
+        },
+        {
+            "source": "qanon",
+            "target": "trump2020",
+            "value": 15
+        },
+        {
+            "source": "qanon",
+            "target": "gop",
+            "value": 6
+        },
+        {
+            "source": "qanon",
+            "target": "potus",
+            "value": 5
+        },
+        {
+            "source": "qanon",
+            "target": "trumpvirus",
+            "value": 3
+        },
+        {
+            "source": "qanon",
+            "target": "donaldtrump",
+            "value": 3
+        },
+        {
+            "source": "qanon",
+            "target": "cnn",
+            "value": 5
+        },
+        {
+            "source": "qanon",
+            "target": "quarantine",
+            "value": 5
+        },
+        {
+            "source": "qanon",
+            "target": "qanon",
+            "value": 6
+        },
+        {
+            "source": "maga",
+            "target": "trumpvirus",
+            "value": 16
+        },
+        {
+            "source": "maga",
+            "target": "nyc",
+            "value": 7
+        },
+        {
+            "source": "maga",
+            "target": "covid19usa",
+            "value": 9
+        },
+        {
+            "source": "maga",
+            "target": "trumpviruscoverup",
+            "value": 17
+        },
+        {
+            "source": "maga",
+            "target": "kag",
+            "value": 223
+        },
+        {
+            "source": "maga",
+            "target": "covid19us",
+            "value": 11
+        },
+        {
+            "source": "maga",
+            "target": "politics",
+            "value": 14
+        },
+        {
+            "source": "maga",
+            "target": "trump2020",
+            "value": 109
+        },
+        {
+            "source": "maga",
+            "target": "wuhanvirus",
+            "value": 8
+        },
+        {
+            "source": "maga",
+            "target": "coronapocalypse",
+            "value": 6
+        },
+        {
+            "source": "maga",
+            "target": "toiletpaper",
+            "value": 3
+        },
+        {
+            "source": "maga",
+            "target": "chinacoronavirus",
+            "value": 5
+        },
+        {
+            "source": "maga",
+            "target": "chinavirus",
+            "value": 10
+        },
+        {
+            "source": "maga",
+            "target": "gop",
+            "value": 69
+        },
+        {
+            "source": "maga",
+            "target": "potus",
+            "value": 24
+        },
+        {
+            "source": "maga",
+            "target": "pencedemic",
+            "value": 14
+        },
+        {
+            "source": "maga",
+            "target": "maga",
+            "value": 6
+        },
+        {
+            "source": "maga",
+            "target": "trumpslump",
+            "value": 12
+        },
+        {
+            "source": "maga",
+            "target": "donaldtrump",
+            "value": 12
+        },
+        {
+            "source": "maga",
+            "target": "stockmarket",
+            "value": 9
+        },
+        {
+            "source": "maga",
+            "target": "cnn",
+            "value": 29
+        },
+        {
+            "source": "maga",
+            "target": "washyourhands",
+            "value": 4
+        },
+        {
+            "source": "maga",
+            "target": "wuhan",
+            "value": 3
+        },
+        {
+            "source": "maga",
+            "target": "fed",
+            "value": 3
+        },
+        {
+            "source": "maga",
+            "target": "votebluenomatterwho",
+            "value": 11
+        },
+        {
+            "source": "maga",
+            "target": "quarantine",
+            "value": 5
+        },
+        {
+            "source": "maga",
+            "target": "kungflu",
+            "value": 3
+        },
+        {
+            "source": "maga",
+            "target": "flattenthecurve",
+            "value": 5
+        },
+        {
+            "source": "music",
+            "target": "music",
+            "value": 4
+        },
+        {
+            "source": "music",
+            "target": "canada",
+            "value": 3
+        },
+        {
+            "source": "music",
+            "target": "trumpvirus",
+            "value": 3
+        },
+        {
+            "source": "music",
+            "target": "stocks",
+            "value": 6
+        },
+        {
+            "source": "music",
+            "target": "staysafe",
+            "value": 3
+        },
+        {
+            "source": "music",
+            "target": "trending",
+            "value": 7
+        },
+        {
+            "source": "music",
+            "target": "youtube",
+            "value": 10
+        },
+        {
+            "source": "music",
+            "target": "new",
+            "value": 9
+        },
+        {
+            "source": "music",
+            "target": "nowplaying",
+            "value": 8
+        },
+        {
+            "source": "music",
+            "target": "uk",
+            "value": 4
+        },
+        {
+            "source": "music",
+            "target": "quarantinelife",
+            "value": 15
+        },
+        {
+            "source": "music",
+            "target": "japan",
+            "value": 9
+        },
+        {
+            "source": "music",
+            "target": "quarantine",
+            "value": 17
+        },
+        {
+            "source": "music",
+            "target": "nyc",
+            "value": 9
+        },
+        {
+            "source": "music",
+            "target": "bitcoin",
+            "value": 3
+        },
+        {
+            "source": "quarantinelife",
+            "target": "quarantine",
+            "value": 139
+        },
+        {
+            "source": "quarantinelife",
+            "target": "nyc",
+            "value": 10
+        },
+        {
+            "source": "quarantinelife",
+            "target": "trumpvirus",
+            "value": 16
+        },
+        {
+            "source": "quarantinelife",
+            "target": "fashion",
+            "value": 5
+        },
+        {
+            "source": "quarantinelife",
+            "target": "coronapocalypse",
+            "value": 6
+        },
+        {
+            "source": "quarantinelife",
+            "target": "wuhanvirus",
+            "value": 4
+        },
+        {
+            "source": "quarantinelife",
+            "target": "flattenthecurve",
+            "value": 9
+        },
+        {
+            "source": "quarantinelife",
+            "target": "washyourhands",
+            "value": 3
+        },
+        {
+            "source": "quarantinelife",
+            "target": "nowplaying",
+            "value": 7
+        },
+        {
+            "source": "quarantinelife",
+            "target": "healthcare",
+            "value": 3
+        },
+        {
+            "source": "quarantinelife",
+            "target": "staysafe",
+            "value": 6
+        },
+        {
+            "source": "quarantinelife",
+            "target": "panicbuying",
+            "value": 3
+        },
+        {
+            "source": "quarantinelife",
+            "target": "youtube",
+            "value": 7
+        },
+        {
+            "source": "epidemic",
+            "target": "publichealth",
+            "value": 23
+        },
+        {
+            "source": "epidemic",
+            "target": "economy",
+            "value": 4
+        },
+        {
+            "source": "epidemic",
+            "target": "who",
+            "value": 19
+        },
+        {
+            "source": "epidemic",
+            "target": "coronapocalypse",
+            "value": 5
+        },
+        {
+            "source": "epidemic",
+            "target": "quarantine",
+            "value": 12
+        },
+        {
+            "source": "epidemic",
+            "target": "chinavirus",
+            "value": 6
+        },
+        {
+            "source": "epidemic",
+            "target": "us",
+            "value": 5
+        },
+        {
+            "source": "epidemic",
+            "target": "washyourhands",
+            "value": 6
+        },
+        {
+            "source": "epidemic",
+            "target": "covid19us",
+            "value": 5
+        },
+        {
+            "source": "epidemic",
+            "target": "ncov2019",
+            "value": 13
+        },
+        {
+            "source": "epidemic",
+            "target": "healthcare",
+            "value": 15
+        },
+        {
+            "source": "epidemic",
+            "target": "wuhan",
+            "value": 8
+        },
+        {
+            "source": "epidemic",
+            "target": "wuhanvirus",
+            "value": 6
+        },
+        {
+            "source": "epidemic",
+            "target": "stockmarket",
+            "value": 3
+        },
+        {
+            "source": "southkorea",
+            "target": "new",
+            "value": 6
+        },
+        {
+            "source": "southkorea",
+            "target": "japan",
+            "value": 41
+        },
+        {
+            "source": "southkorea",
+            "target": "india",
+            "value": 10
+        },
+        {
+            "source": "southkorea",
+            "target": "wuhan",
+            "value": 7
+        },
+        {
+            "source": "southkorea",
+            "target": "us",
+            "value": 14
+        },
+        {
+            "source": "southkorea",
+            "target": "quarantine",
+            "value": 4
+        },
+        {
+            "source": "southkorea",
+            "target": "covid19us",
+            "value": 3
+        },
+        {
+            "source": "southkorea",
+            "target": "canada",
+            "value": 3
+        },
+        {
+            "source": "southkorea",
+            "target": "who",
+            "value": 6
+        },
+        {
+            "source": "southkorea",
+            "target": "wuflu",
+            "value": 4
+        },
+        {
+            "source": "costco",
+            "target": "toiletpaper",
+            "value": 11
+        },
+        {
+            "source": "costco",
+            "target": "panicbuying",
+            "value": 10
+        },
+        {
+            "source": "costco",
+            "target": "toiletpaperapocalypse",
+            "value": 4
+        },
+        {
+            "source": "costco",
+            "target": "covid19us",
+            "value": 3
+        },
+        {
+            "source": "costco",
+            "target": "coronapocalypse",
+            "value": 3
+        },
+        {
+            "source": "cpac2020",
+            "target": "trumpvirus",
+            "value": 29
+        },
+        {
+            "source": "cpac2020",
+            "target": "trumpviruscoverup",
+            "value": 16
+        },
+        {
+            "source": "cpac2020",
+            "target": "pencedemic",
+            "value": 17
+        },
+        {
+            "source": "uk",
+            "target": "economy",
+            "value": 3
+        },
+        {
+            "source": "uk",
+            "target": "publichealth",
+            "value": 3
+        },
+        {
+            "source": "uk",
+            "target": "us",
+            "value": 24
+        },
+        {
+            "source": "uk",
+            "target": "stocks",
+            "value": 9
+        },
+        {
+            "source": "uk",
+            "target": "covid19uk",
+            "value": 6
+        },
+        {
+            "source": "uk",
+            "target": "stockmarket",
+            "value": 3
+        },
+        {
+            "source": "uk",
+            "target": "uk",
+            "value": 6
+        },
+        {
+            "source": "uk",
+            "target": "wuflu",
+            "value": 3
+        },
+        {
+            "source": "uk",
+            "target": "australia",
+            "value": 6
+        },
+        {
+            "source": "uk",
+            "target": "japan",
+            "value": 9
+        },
+        {
+            "source": "uk",
+            "target": "india",
+            "value": 4
+        },
+        {
+            "source": "uk",
+            "target": "healthcare",
+            "value": 3
+        },
+        {
+            "source": "uk",
+            "target": "nyc",
+            "value": 3
+        },
+        {
+            "source": "uk",
+            "target": "wuhan",
+            "value": 4
+        },
+        {
+            "source": "uk",
+            "target": "canada",
+            "value": 6
+        },
+        {
+            "source": "uk",
+            "target": "politics",
+            "value": 11
+        },
+        {
+            "source": "uk",
+            "target": "who",
+            "value": 7
+        },
+        {
+            "source": "uk",
+            "target": "potus",
+            "value": 4
+        },
+        {
+            "source": "uk",
+            "target": "fashion",
+            "value": 3
+        },
+        {
+            "source": "flattenthecurve",
+            "target": "publichealth",
+            "value": 5
+        },
+        {
+            "source": "flattenthecurve",
+            "target": "staysafe",
+            "value": 14
+        },
+        {
+            "source": "flattenthecurve",
+            "target": "canada",
+            "value": 4
+        },
+        {
+            "source": "flattenthecurve",
+            "target": "washyourhands",
+            "value": 35
+        },
+        {
+            "source": "flattenthecurve",
+            "target": "covid19usa",
+            "value": 5
+        },
+        {
+            "source": "flattenthecurve",
+            "target": "healthcare",
+            "value": 8
+        },
+        {
+            "source": "flattenthecurve",
+            "target": "trumpvirus",
+            "value": 7
+        },
+        {
+            "source": "flattenthecurve",
+            "target": "quarantine",
+            "value": 12
+        },
+        {
+            "source": "flattenthecurve",
+            "target": "kungflu",
+            "value": 4
+        },
+        {
+            "source": "flattenthecurve",
+            "target": "coronapocalypse",
+            "value": 4
+        },
+        {
+            "source": "flattenthecurve",
+            "target": "covid19us",
+            "value": 10
+        },
+        {
+            "source": "flattenthecurve",
+            "target": "nyc",
+            "value": 4
+        },
+        {
+            "source": "wuhan",
+            "target": "ccp",
+            "value": 14
+        },
+        {
+            "source": "wuhan",
+            "target": "wuhanvirus",
+            "value": 31
+        },
+        {
+            "source": "wuhan",
+            "target": "quarantine",
+            "value": 25
+        },
+        {
+            "source": "wuhan",
+            "target": "cornoravirus",
+            "value": 3
+        },
+        {
+            "source": "wuhan",
+            "target": "covid19us",
+            "value": 4
+        },
+        {
+            "source": "wuhan",
+            "target": "who",
+            "value": 26
+        },
+        {
+            "source": "wuhan",
+            "target": "chinavirus",
+            "value": 27
+        },
+        {
+            "source": "wuhan",
+            "target": "covid19uk",
+            "value": 7
+        },
+        {
+            "source": "wuhan",
+            "target": "2019ncov",
+            "value": 16
+        },
+        {
+            "source": "wuhan",
+            "target": "wuhan",
+            "value": 11
+        },
+        {
+            "source": "wuhan",
+            "target": "bitcoin",
+            "value": 6
+        },
+        {
+            "source": "wuhan",
+            "target": "covid19usa",
+            "value": 4
+        },
+        {
+            "source": "wuhan",
+            "target": "economy",
+            "value": 3
+        },
+        {
+            "source": "wuhan",
+            "target": "india",
+            "value": 5
+        },
+        {
+            "source": "wuhan",
+            "target": "wuflu",
+            "value": 7
+        },
+        {
+            "source": "wuhan",
+            "target": "japan",
+            "value": 4
+        },
+        {
+            "source": "wuhan",
+            "target": "coronapocalypse",
+            "value": 3
+        },
+        {
+            "source": "wuhan",
+            "target": "ncov2019",
+            "value": 3
+        },
+        {
+            "source": "wuhan",
+            "target": "trump2020",
+            "value": 3
+        },
+        {
+            "source": "wuhan",
+            "target": "nyc",
+            "value": 3
+        },
+        {
+            "source": "wuhan",
+            "target": "chinacoronavirus",
+            "value": 5
+        },
+        {
+            "source": "boston",
+            "target": "nyc",
+            "value": 8
+        },
+        {
+            "source": "donaldtrump",
+            "target": "trumpvirus",
+            "value": 10
+        },
+        {
+            "source": "donaldtrump",
+            "target": "donaldtrump",
+            "value": 4
+        },
+        {
+            "source": "donaldtrump",
+            "target": "gop",
+            "value": 5
+        },
+        {
+            "source": "donaldtrump",
+            "target": "trumpslump",
+            "value": 3
+        },
+        {
+            "source": "donaldtrump",
+            "target": "cnn",
+            "value": 7
+        },
+        {
+            "source": "donaldtrump",
+            "target": "us",
+            "value": 5
+        },
+        {
+            "source": "donaldtrump",
+            "target": "publichealth",
+            "value": 15
+        },
+        {
+            "source": "donaldtrump",
+            "target": "who",
+            "value": 3
+        },
+        {
+            "source": "donaldtrump",
+            "target": "healthcare",
+            "value": 8
+        },
+        {
+            "source": "donaldtrump",
+            "target": "politics",
+            "value": 7
+        },
+        {
+            "source": "donaldtrump",
+            "target": "stockmarket",
+            "value": 3
+        },
+        {
+            "source": "donaldtrump",
+            "target": "trumpviruscoverup",
+            "value": 8
+        },
+        {
+            "source": "donaldtrump",
+            "target": "potus",
+            "value": 8
+        },
+        {
+            "source": "donaldtrump",
+            "target": "trump2020",
+            "value": 9
+        },
+        {
+            "source": "donaldtrump",
+            "target": "fed",
+            "value": 4
+        },
+        {
+            "source": "donaldtrump",
+            "target": "kag",
+            "value": 3
+        },
+        {
+            "source": "healthcare",
+            "target": "economy",
+            "value": 11
+        },
+        {
+            "source": "healthcare",
+            "target": "publichealth",
+            "value": 54
+        },
+        {
+            "source": "healthcare",
+            "target": "stocks",
+            "value": 7
+        },
+        {
+            "source": "healthcare",
+            "target": "nyc",
+            "value": 5
+        },
+        {
+            "source": "healthcare",
+            "target": "us",
+            "value": 9
+        },
+        {
+            "source": "healthcare",
+            "target": "who",
+            "value": 22
+        },
+        {
+            "source": "healthcare",
+            "target": "healthcare",
+            "value": 17
+        },
+        {
+            "source": "healthcare",
+            "target": "chinacoronavirus",
+            "value": 3
+        },
+        {
+            "source": "healthcare",
+            "target": "politics",
+            "value": 11
+        },
+        {
+            "source": "healthcare",
+            "target": "covid19us",
+            "value": 5
+        },
+        {
+            "source": "healthcare",
+            "target": "gop",
+            "value": 5
+        },
+        {
+            "source": "healthcare",
+            "target": "staysafe",
+            "value": 6
+        },
+        {
+            "source": "healthcare",
+            "target": "potus",
+            "value": 3
+        },
+        {
+            "source": "healthcare",
+            "target": "washyourhands",
+            "value": 4
+        },
+        {
+            "source": "healthcare",
+            "target": "stockmarket",
+            "value": 4
+        },
+        {
+            "source": "healthcare",
+            "target": "canada",
+            "value": 4
+        },
+        {
+            "source": "australia",
+            "target": "panicbuying",
+            "value": 7
+        },
+        {
+            "source": "australia",
+            "target": "toiletpapergate",
+            "value": 7
+        },
+        {
+            "source": "australia",
+            "target": "toiletpapercrisis",
+            "value": 8
+        },
+        {
+            "source": "australia",
+            "target": "stocks",
+            "value": 5
+        },
+        {
+            "source": "australia",
+            "target": "toiletpaperapocalypse",
+            "value": 5
+        },
+        {
+            "source": "australia",
+            "target": "toiletpaper",
+            "value": 20
+        },
+        {
+            "source": "australia",
+            "target": "us",
+            "value": 5
+        },
+        {
+            "source": "australia",
+            "target": "japan",
+            "value": 14
+        },
+        {
+            "source": "australia",
+            "target": "india",
+            "value": 6
+        },
+        {
+            "source": "australia",
+            "target": "canada",
+            "value": 6
+        },
+        {
+            "source": "stocks",
+            "target": "stockmarket",
+            "value": 105
+        },
+        {
+            "source": "stocks",
+            "target": "covid19uk",
+            "value": 6
+        },
+        {
+            "source": "stocks",
+            "target": "us",
+            "value": 3
+        },
+        {
+            "source": "stocks",
+            "target": "india",
+            "value": 3
+        },
+        {
+            "source": "stocks",
+            "target": "stocks",
+            "value": 5
+        },
+        {
+            "source": "stocks",
+            "target": "bitcoin",
+            "value": 16
+        },
+        {
+            "source": "stocks",
+            "target": "economy",
+            "value": 40
+        },
+        {
+            "source": "stocks",
+            "target": "fed",
+            "value": 34
+        },
+        {
+            "source": "stocks",
+            "target": "ny",
+            "value": 6
+        },
+        {
+            "source": "stocks",
+            "target": "cnn",
+            "value": 3
+        },
+        {
+            "source": "hope",
+            "target": "nyc",
+            "value": 3
+        },
+        {
+            "source": "hope",
+            "target": "quarantine",
+            "value": 4
+        },
+        {
+            "source": "hope",
+            "target": "ny",
+            "value": 3
+        },
+        {
+            "source": "hope",
+            "target": "staysafe",
+            "value": 4
+        },
+        {
+            "source": "bitcoin",
+            "target": "stockmarket",
+            "value": 10
+        },
+        {
+            "source": "bitcoin",
+            "target": "economy",
+            "value": 3
+        },
+        {
+            "source": "bitcoin",
+            "target": "ny",
+            "value": 5
+        },
+        {
+            "source": "bitcoin",
+            "target": "bitcoin",
+            "value": 14
+        },
+        {
+            "source": "bitcoin",
+            "target": "us",
+            "value": 4
+        },
+        {
+            "source": "toiletpaperapocalypse",
+            "target": "toiletpapergate",
+            "value": 12
+        },
+        {
+            "source": "toiletpaperapocalypse",
+            "target": "toiletpapercrisis",
+            "value": 26
+        },
+        {
+            "source": "toiletpaperapocalypse",
+            "target": "toiletpaper",
+            "value": 43
+        },
+        {
+            "source": "toiletpaperapocalypse",
+            "target": "coronapocalypse",
+            "value": 12
+        },
+        {
+            "source": "toiletpaperapocalypse",
+            "target": "panicbuying",
+            "value": 8
+        },
+        {
+            "source": "toiletpaperapocalypse",
+            "target": "coronvirusuk",
+            "value": 3
+        },
+        {
+            "source": "covid19us",
+            "target": "covid19usa",
+            "value": 36
+        },
+        {
+            "source": "covid19us",
+            "target": "2019ncov",
+            "value": 4
+        },
+        {
+            "source": "covid19us",
+            "target": "japan",
+            "value": 3
+        },
+        {
+            "source": "covid19us",
+            "target": "us",
+            "value": 6
+        },
+        {
+            "source": "covid19us",
+            "target": "covid19uk",
+            "value": 7
+        },
+        {
+            "source": "covid19us",
+            "target": "nyc",
+            "value": 3
+        },
+        {
+            "source": "covid19us",
+            "target": "panicbuying",
+            "value": 4
+        },
+        {
+            "source": "covid19us",
+            "target": "who",
+            "value": 4
+        },
+        {
+            "source": "covid19us",
+            "target": "publichealth",
+            "value": 3
+        },
+        {
+            "source": "covid19us",
+            "target": "india",
+            "value": 5
+        },
+        {
+            "source": "covid19us",
+            "target": "trumpvirus",
+            "value": 16
+        },
+        {
+            "source": "covid19us",
+            "target": "trumpviruscoverup",
+            "value": 5
+        },
+        {
+            "source": "covid19us",
+            "target": "stockmarket",
+            "value": 5
+        },
+        {
+            "source": "covid19us",
+            "target": "potus",
+            "value": 5
+        },
+        {
+            "source": "covid19us",
+            "target": "ny",
+            "value": 3
+        },
+        {
+            "source": "covid19us",
+            "target": "chinavirus",
+            "value": 4
+        },
+        {
+            "source": "covid19us",
+            "target": "pencedemic",
+            "value": 4
+        },
+        {
+            "source": "covid19us",
+            "target": "coronapocalypse",
+            "value": 3
+        },
+        {
+            "source": "covid19us",
+            "target": "washyourhands",
+            "value": 8
+        },
+        {
+            "source": "covid19us",
+            "target": "wuhanvirus",
+            "value": 3
+        },
+        {
+            "source": "covid19us",
+            "target": "staysafe",
+            "value": 3
+        },
+        {
+            "source": "covid19us",
+            "target": "politics",
+            "value": 3
+        },
+        {
+            "source": "covid19us",
+            "target": "quarantine",
+            "value": 5
+        },
+        {
+            "source": "covid19us",
+            "target": "trumpslump",
+            "value": 3
+        },
+        {
+            "source": "pencedemic",
+            "target": "trumpslump",
+            "value": 12
+        },
+        {
+            "source": "pencedemic",
+            "target": "trumpvirus",
+            "value": 71
+        },
+        {
+            "source": "pencedemic",
+            "target": "trumpviruscoverup",
+            "value": 30
+        },
+        {
+            "source": "pencedemic",
+            "target": "pencedemic",
+            "value": 5
+        },
+        {
+            "source": "pencedemic",
+            "target": "cnn",
+            "value": 11
+        },
+        {
+            "source": "pencedemic",
+            "target": "gop",
+            "value": 13
+        },
+        {
+            "source": "pencedemic",
+            "target": "who",
+            "value": 5
+        },
+        {
+            "source": "pencedemic",
+            "target": "votebluenomatterwho",
+            "value": 4
+        },
+        {
+            "source": "cornoravirus",
+            "target": "toiletpaper",
+            "value": 6
+        },
+        {
+            "source": "cornoravirus",
+            "target": "trumpvirus",
+            "value": 3
+        },
+        {
+            "source": "cornoravirus",
+            "target": "coronvirusuk",
+            "value": 4
+        },
+        {
+            "source": "panicbuying",
+            "target": "toiletpapergate",
+            "value": 7
+        },
+        {
+            "source": "panicbuying",
+            "target": "toiletpapercrisis",
+            "value": 16
+        },
+        {
+            "source": "panicbuying",
+            "target": "coronapocalypse",
+            "value": 18
+        },
+        {
+            "source": "panicbuying",
+            "target": "quarantine",
+            "value": 5
+        },
+        {
+            "source": "panicbuying",
+            "target": "coronvirusuk",
+            "value": 12
+        },
+        {
+            "source": "panicbuying",
+            "target": "toiletpaper",
+            "value": 29
+        },
+        {
+            "source": "panicbuying",
+            "target": "covid19uk",
+            "value": 11
+        },
+        {
+            "source": "panicbuying",
+            "target": "kag",
+            "value": 3
+        },
+        {
+            "source": "panicbuying",
+            "target": "economy",
+            "value": 11
+        },
+        {
+            "source": "chinaliedpeopledied",
+            "target": "ccp",
+            "value": 3
+        },
+        {
+            "source": "chinaliedpeopledied",
+            "target": "chinavirus",
+            "value": 28
+        },
+        {
+            "source": "chinaliedpeopledied",
+            "target": "wuhanvirus",
+            "value": 16
+        },
+        {
+            "source": "chinaliedpeopledied",
+            "target": "trumpvirus",
+            "value": 3
+        },
+        {
+            "source": "chinaliedpeopledied",
+            "target": "kungflu",
+            "value": 5
+        },
+        {
+            "source": "chinaliedpeopledied",
+            "target": "chinacoronavirus",
+            "value": 6
+        },
+        {
+            "source": "economy",
+            "target": "publichealth",
+            "value": 17
+        },
+        {
+            "source": "economy",
+            "target": "canada",
+            "value": 8
+        },
+        {
+            "source": "economy",
+            "target": "politics",
+            "value": 6
+        },
+        {
+            "source": "economy",
+            "target": "us",
+            "value": 12
+        },
+        {
+            "source": "economy",
+            "target": "india",
+            "value": 3
+        },
+        {
+            "source": "economy",
+            "target": "stockmarket",
+            "value": 33
+        },
+        {
+            "source": "economy",
+            "target": "fed",
+            "value": 46
+        },
+        {
+            "source": "economy",
+            "target": "japan",
+            "value": 4
+        },
+        {
+            "source": "economy",
+            "target": "quarantine",
+            "value": 3
+        },
+        {
+            "source": "economy",
+            "target": "chinavirus",
+            "value": 3
+        },
+        {
+            "source": "economy",
+            "target": "gop",
+            "value": 3
+        },
+        {
+            "source": "economy",
+            "target": "trumpviruscoverup",
+            "value": 4
+        },
+        {
+            "source": "economy",
+            "target": "economy",
+            "value": 4
+        },
+        {
+            "source": "economy",
+            "target": "chinacoronavirus",
+            "value": 6
+        },
+        {
+            "source": "trumpslump",
+            "target": "trumpviruscoverup",
+            "value": 44
+        },
+        {
+            "source": "trumpslump",
+            "target": "trumpslump",
+            "value": 26
+        },
+        {
+            "source": "trumpslump",
+            "target": "trumpvirus",
+            "value": 37
+        },
+        {
+            "source": "trumpslump",
+            "target": "gop",
+            "value": 3
+        },
+        {
+            "source": "trumpslump",
+            "target": "votebluenomatterwho",
+            "value": 8
+        },
+        {
+            "source": "trumpslump",
+            "target": "stockmarket",
+            "value": 7
+        },
+        {
+            "source": "washyourhands",
+            "target": "staysafe",
+            "value": 36
+        },
+        {
+            "source": "washyourhands",
+            "target": "publichealth",
+            "value": 18
+        },
+        {
+            "source": "washyourhands",
+            "target": "quarantine",
+            "value": 18
+        },
+        {
+            "source": "washyourhands",
+            "target": "nyc",
+            "value": 12
+        },
+        {
+            "source": "washyourhands",
+            "target": "cnn",
+            "value": 3
+        },
+        {
+            "source": "washyourhands",
+            "target": "covid19usa",
+            "value": 8
+        },
+        {
+            "source": "washyourhands",
+            "target": "who",
+            "value": 7
+        },
+        {
+            "source": "washyourhands",
+            "target": "trumpviruscoverup",
+            "value": 6
+        },
+        {
+            "source": "washyourhands",
+            "target": "trumpvirus",
+            "value": 3
+        },
+        {
+            "source": "washyourhands",
+            "target": "washyourhands",
+            "value": 4
+        },
+        {
+            "source": "washyourhands",
+            "target": "coronapocalypse",
+            "value": 9
+        },
+        {
+            "source": "kungflu",
+            "target": "wuflu",
+            "value": 9
+        },
+        {
+            "source": "kungflu",
+            "target": "wuhanvirus",
+            "value": 18
+        },
+        {
+            "source": "kungflu",
+            "target": "chinavirus",
+            "value": 11
+        },
+        {
+            "source": "trumpvirus",
+            "target": "wuhanvirus",
+            "value": 7
+        },
+        {
+            "source": "trumpvirus",
+            "target": "coronapocalypse",
+            "value": 21
+        },
+        {
+            "source": "trumpvirus",
+            "target": "trumpviruscoverup",
+            "value": 93
+        },
+        {
+            "source": "trumpvirus",
+            "target": "trumpvirus",
+            "value": 88
+        },
+        {
+            "source": "trumpvirus",
+            "target": "gop",
+            "value": 8
+        },
+        {
+            "source": "trumpvirus",
+            "target": "votebluenomatterwho",
+            "value": 9
+        },
+        {
+            "source": "trumpvirus",
+            "target": "cnn",
+            "value": 8
+        },
+        {
+            "source": "trumpvirus",
+            "target": "covid19usa",
+            "value": 7
+        },
+        {
+            "source": "trumpvirus",
+            "target": "kag",
+            "value": 3
+        },
+        {
+            "source": "trumpvirus",
+            "target": "trump2020",
+            "value": 7
+        },
+        {
+            "source": "trumpvirus",
+            "target": "chinavirus",
+            "value": 5
+        },
+        {
+            "source": "trumpvirus",
+            "target": "stockmarket",
+            "value": 6
+        },
+        {
+            "source": "covid19uk",
+            "target": "covid19usa",
+            "value": 8
+        },
+        {
+            "source": "covid19uk",
+            "target": "quarantine",
+            "value": 3
+        },
+        {
+            "source": "gop",
+            "target": "gop",
+            "value": 5
+        },
+        {
+            "source": "gop",
+            "target": "potus",
+            "value": 12
+        },
+        {
+            "source": "gop",
+            "target": "who",
+            "value": 6
+        },
+        {
+            "source": "gop",
+            "target": "votebluenomatterwho",
+            "value": 14
+        },
+        {
+            "source": "gop",
+            "target": "us",
+            "value": 4
+        },
+        {
+            "source": "gop",
+            "target": "trump2020",
+            "value": 16
+        },
+        {
+            "source": "gop",
+            "target": "politics",
+            "value": 14
+        },
+        {
+            "source": "gop",
+            "target": "stockmarket",
+            "value": 6
+        },
+        {
+            "source": "gop",
+            "target": "kag",
+            "value": 16
+        },
+        {
+            "source": "gop",
+            "target": "cnn",
+            "value": 28
+        },
+        {
+            "source": "gop",
+            "target": "trumpviruscoverup",
+            "value": 3
+        },
+        {
+            "source": "votebluenomatterwho",
+            "target": "trumpviruscoverup",
+            "value": 5
+        },
+        {
+            "source": "votebluenomatterwho",
+            "target": "cnn",
+            "value": 7
+        },
+        {
+            "source": "votebluenomatterwho",
+            "target": "coronapocalypse",
+            "value": 3
+        },
+        {
+            "source": "westchester",
+            "target": "nyc",
+            "value": 7
+        },
+        {
+            "source": "westchester",
+            "target": "ny",
+            "value": 3
+        },
+        {
+            "source": "westchester",
+            "target": "dailyvoice",
+            "value": 11
+        },
+        {
+            "source": "coronapocalypse",
+            "target": "toiletpaper",
+            "value": 15
+        },
+        {
+            "source": "coronapocalypse",
+            "target": "trump2020",
+            "value": 4
+        },
+        {
+            "source": "coronapocalypse",
+            "target": "kag",
+            "value": 3
+        },
+        {
+            "source": "coronapocalypse",
+            "target": "who",
+            "value": 7
+        },
+        {
+            "source": "coronapocalypse",
+            "target": "quarantine",
+            "value": 7
+        },
+        {
+            "source": "coronapocalypse",
+            "target": "toiletpapercrisis",
+            "value": 9
+        },
+        {
+            "source": "coronapocalypse",
+            "target": "cnn",
+            "value": 3
+        },
+        {
+            "source": "coronapocalypse",
+            "target": "nyc",
+            "value": 4
+        },
+        {
+            "source": "coronapocalypse",
+            "target": "nowplaying",
+            "value": 3
+        },
+        {
+            "source": "coronapocalypse",
+            "target": "staysafe",
+            "value": 3
+        },
+        {
+            "source": "coronapocalypse",
+            "target": "youtube",
+            "value": 3
+        },
+        {
+            "source": "toiletpapergate",
+            "target": "toiletpapercrisis",
+            "value": 43
+        },
+        {
+            "source": "toiletpapergate",
+            "target": "toiletpaper",
+            "value": 26
+        },
+        {
+            "source": "chinacoronavirus",
+            "target": "kag",
+            "value": 3
+        },
+        {
+            "source": "chinacoronavirus",
+            "target": "wuhanvirus",
+            "value": 18
+        },
+        {
+            "source": "chinacoronavirus",
+            "target": "chinavirus",
+            "value": 31
+        },
+        {
+            "source": "chinacoronavirus",
+            "target": "2019ncov",
+            "value": 5
+        },
+        {
+            "source": "chinacoronavirus",
+            "target": "who",
+            "value": 4
+        },
+        {
+            "source": "quarantine",
+            "target": "nyc",
+            "value": 16
+        },
+        {
+            "source": "quarantine",
+            "target": "ny",
+            "value": 4
+        },
+        {
+            "source": "quarantine",
+            "target": "staysafe",
+            "value": 13
+        },
+        {
+            "source": "quarantine",
+            "target": "publichealth",
+            "value": 10
+        },
+        {
+            "source": "quarantine",
+            "target": "fashion",
+            "value": 3
+        },
+        {
+            "source": "quarantine",
+            "target": "covid19usa",
+            "value": 4
+        },
+        {
+            "source": "quarantine",
+            "target": "chinavirus",
+            "value": 9
+        },
+        {
+            "source": "quarantine",
+            "target": "wuhanvirus",
+            "value": 8
+        },
+        {
+            "source": "quarantine",
+            "target": "toiletpaper",
+            "value": 8
+        },
+        {
+            "source": "quarantine",
+            "target": "who",
+            "value": 10
+        },
+        {
+            "source": "quarantine",
+            "target": "newjersey",
+            "value": 3
+        },
+        {
+            "source": "quarantine",
+            "target": "youtube",
+            "value": 7
+        },
+        {
+            "source": "quarantine",
+            "target": "trending",
+            "value": 3
+        },
+        {
+            "source": "cnn",
+            "target": "who",
+            "value": 7
+        },
+        {
+            "source": "cnn",
+            "target": "stockmarket",
+            "value": 3
+        },
+        {
+            "source": "cnn",
+            "target": "politics",
+            "value": 4
+        },
+        {
+            "source": "cnn",
+            "target": "us",
+            "value": 5
+        },
+        {
+            "source": "cnn",
+            "target": "trumpviruscoverup",
+            "value": 3
+        },
+        {
+            "source": "cnn",
+            "target": "wuhanvirus",
+            "value": 3
+        },
+        {
+            "source": "cnn",
+            "target": "potus",
+            "value": 3
+        },
+        {
+            "source": "india",
+            "target": "new",
+            "value": 5
+        },
+        {
+            "source": "india",
+            "target": "japan",
+            "value": 11
+        },
+        {
+            "source": "india",
+            "target": "canada",
+            "value": 6
+        },
+        {
+            "source": "india",
+            "target": "us",
+            "value": 5
+        },
+        {
+            "source": "india",
+            "target": "who",
+            "value": 4
+        },
+        {
+            "source": "newjersey",
+            "target": "nj",
+            "value": 8
+        },
+        {
+            "source": "newjersey",
+            "target": "nyc",
+            "value": 4
+        },
+        {
+            "source": "fed",
+            "target": "stockmarket",
+            "value": 25
+        },
+        {
+            "source": "fed",
+            "target": "fed",
+            "value": 9
+        },
+        {
+            "source": "fed",
+            "target": "us",
+            "value": 6
+        },
+        {
+            "source": "us",
+            "target": "new",
+            "value": 4
+        },
+        {
+            "source": "us",
+            "target": "potus",
+            "value": 7
+        },
+        {
+            "source": "us",
+            "target": "nyc",
+            "value": 3
+        },
+        {
+            "source": "us",
+            "target": "japan",
+            "value": 8
+        },
+        {
+            "source": "us",
+            "target": "wuflu",
+            "value": 4
+        },
+        {
+            "source": "us",
+            "target": "publichealth",
+            "value": 7
+        },
+        {
+            "source": "us",
+            "target": "stockmarket",
+            "value": 4
+        },
+        {
+            "source": "us",
+            "target": "us",
+            "value": 8
+        },
+        {
+            "source": "us",
+            "target": "politics",
+            "value": 21
+        },
+        {
+            "source": "us",
+            "target": "who",
+            "value": 11
+        },
+        {
+            "source": "us",
+            "target": "trump2020",
+            "value": 3
+        },
+        {
+            "source": "us",
+            "target": "wuhanvirus",
+            "value": 3
+        },
+        {
+            "source": "who",
+            "target": "2019ncov",
+            "value": 3
+        },
+        {
+            "source": "who",
+            "target": "publichealth",
+            "value": 21
+        },
+        {
+            "source": "who",
+            "target": "who",
+            "value": 7
+        },
+        {
+            "source": "who",
+            "target": "canada",
+            "value": 3
+        },
+        {
+            "source": "who",
+            "target": "ncov2019",
+            "value": 3
+        },
+        {
+            "source": "who",
+            "target": "covid19usa",
+            "value": 3
+        },
+        {
+            "source": "who",
+            "target": "ccp",
+            "value": 8
+        },
+        {
+            "source": "who",
+            "target": "chinavirus",
+            "value": 6
+        },
+        {
+            "source": "who",
+            "target": "japan",
+            "value": 4
+        },
+        {
+            "source": "who",
+            "target": "potus",
+            "value": 4
+        },
+        {
+            "source": "who",
+            "target": "trending",
+            "value": 3
+        },
+        {
+            "source": "who",
+            "target": "wuhanvirus",
+            "value": 5
+        },
+        {
+            "source": "who",
+            "target": "stockmarket",
+            "value": 3
+        },
+        {
+            "source": "trump2020",
+            "target": "trumpviruscoverup",
+            "value": 4
+        },
+        {
+            "source": "trump2020",
+            "target": "wuhanvirus",
+            "value": 11
+        },
+        {
+            "source": "trump2020",
+            "target": "kag",
+            "value": 99
+        },
+        {
+            "source": "trump2020",
+            "target": "politics",
+            "value": 6
+        },
+        {
+            "source": "trump2020",
+            "target": "potus",
+            "value": 7
+        },
+        {
+            "source": "trump2020",
+            "target": "chinavirus",
+            "value": 7
+        },
+        {
+            "source": "trump2020",
+            "target": "nyc",
+            "value": 3
+        },
+        {
+            "source": "ccp",
+            "target": "wuflu",
+            "value": 5
+        },
+        {
+            "source": "ccp",
+            "target": "wuhanvirus",
+            "value": 10
+        },
+        {
+            "source": "trumpviruscoverup",
+            "target": "covid19usa",
+            "value": 7
+        },
+        {
+            "source": "trumpviruscoverup",
+            "target": "kag",
+            "value": 5
+        },
+        {
+            "source": "trumpviruscoverup",
+            "target": "trumpviruscoverup",
+            "value": 4
+        },
+        {
+            "source": "trumpviruscoverup",
+            "target": "stockmarket",
+            "value": 3
+        },
+        {
+            "source": "stockmarket",
+            "target": "japan",
+            "value": 3
+        },
+        {
+            "source": "stockmarket",
+            "target": "wuhanvirus",
+            "value": 3
+        },
+        {
+            "source": "stockmarket",
+            "target": "nyc",
+            "value": 3
+        },
+        {
+            "source": "stockmarket",
+            "target": "kag",
+            "value": 3
+        },
+        {
+            "source": "potus",
+            "target": "potus",
+            "value": 3
+        },
+        {
+            "source": "potus",
+            "target": "politics",
+            "value": 9
+        },
+        {
+            "source": "potus",
+            "target": "kag",
+            "value": 7
+        },
+        {
+            "source": "potus",
+            "target": "publichealth",
+            "value": 5
+        },
+        {
+            "source": "potus",
+            "target": "covid19usa",
+            "value": 4
+        },
+        {
+            "source": "potus",
+            "target": "canada",
+            "value": 3
+        },
+        {
+            "source": "canada",
+            "target": "new",
+            "value": 3
+        },
+        {
+            "source": "canada",
+            "target": "japan",
+            "value": 8
+        },
+        {
+            "source": "canada",
+            "target": "canada",
+            "value": 3
+        },
+        {
+            "source": "canada",
+            "target": "toiletpaper",
+            "value": 3
+        },
+        {
+            "source": "nyc",
+            "target": "ny",
+            "value": 23
+        },
+        {
+            "source": "nyc",
+            "target": "covid19usa",
+            "value": 3
+        },
+        {
+            "source": "nyc",
+            "target": "kag",
+            "value": 7
+        },
+        {
+            "source": "nyc",
+            "target": "japan",
+            "value": 5
+        },
+        {
+            "source": "nyc",
+            "target": "toiletpaper",
+            "value": 3
+        },
+        {
+            "source": "nyc",
+            "target": "nj",
+            "value": 5
+        },
+        {
+            "source": "nyc",
+            "target": "publichealth",
+            "value": 5
+        },
+        {
+            "source": "nyc",
+            "target": "mta",
+            "value": 16
+        },
+        {
+            "source": "nyc",
+            "target": "politics",
+            "value": 3
+        },
+        {
+            "source": "nyc",
+            "target": "fashion",
+            "value": 5
+        },
+        {
+            "source": "ny",
+            "target": "nj",
+            "value": 7
+        },
+        {
+            "source": "new",
+            "target": "trending",
+            "value": 16
+        },
+        {
+            "source": "new",
+            "target": "youtube",
+            "value": 3
+        },
+        {
+            "source": "ncov2019",
+            "target": "wuflu",
+            "value": 20
+        },
+        {
+            "source": "ncov2019",
+            "target": "publichealth",
+            "value": 7
+        },
+        {
+            "source": "ncov2019",
+            "target": "2019ncov",
+            "value": 7
+        },
+        {
+            "source": "wuhanvirus",
+            "target": "kag",
+            "value": 5
+        },
+        {
+            "source": "wuhanvirus",
+            "target": "wuflu",
+            "value": 7
+        },
+        {
+            "source": "wuhanvirus",
+            "target": "chinavirus",
+            "value": 72
+        },
+        {
+            "source": "wuhanvirus",
+            "target": "wuhanvirus",
+            "value": 31
+        },
+        {
+            "source": "wuhanvirus",
+            "target": "publichealth",
+            "value": 3
+        },
+        {
+            "source": "wuhanvirus",
+            "target": "covid19usa",
+            "value": 4
+        },
+        {
+            "source": "wuhanvirus",
+            "target": "2019ncov",
+            "value": 4
+        },
+        {
+            "source": "wuhanvirus",
+            "target": "politics",
+            "value": 4
+        },
+        {
+            "source": "wuflu",
+            "target": "covid19usa",
+            "value": 3
+        },
+        {
+            "source": "wuflu",
+            "target": "chinavirus",
+            "value": 3
+        },
+        {
+            "source": "covid19usa",
+            "target": "kag",
+            "value": 4
+        },
+        {
+            "source": "covid19usa",
+            "target": "publichealth",
+            "value": 3
+        },
+        {
+            "source": "covid19usa",
+            "target": "chinavirus",
+            "value": 5
+        },
+        {
+            "source": "staysafe",
+            "target": "publichealth",
+            "value": 3
+        },
+        {
+            "source": "staysafe",
+            "target": "youtube",
+            "value": 4
+        },
+        {
+            "source": "nowplaying",
+            "target": "youtube",
+            "value": 4
+        },
+        {
+            "source": "publichealth",
+            "target": "politics",
+            "value": 8
+        },
+        {
+            "source": "publichealth",
+            "target": "publichealth",
+            "value": 10
+        },
+        {
+            "source": "publichealth",
+            "target": "2019ncov",
+            "value": 11
+        },
+        {
+            "source": "toiletpaper",
+            "target": "toiletpapercrisis",
+            "value": 37
+        },
+        {
+            "source": "toiletpaper",
+            "target": "coronvirusuk",
+            "value": 7
+        },
+        {
+            "source": "2019ncov",
+            "target": "chinavirus",
+            "value": 3
+        },
+        {
+            "source": "chinavirus",
+            "target": "kag",
+            "value": 11
+        },
+        {
+            "source": "chinavirus",
+            "target": "chinavirus",
+            "value": 84
+        },
+        {
+            "source": "trending",
+            "target": "politics",
+            "value": 3
+        },
+        {
+            "source": "trending",
+            "target": "youtube",
+            "value": 4
+        },
+        {
+            "source": "trending",
+            "target": "trending",
+            "value": 3
+        },
+        {
+            "source": "politics",
+            "target": "kag",
+            "value": 4
+        },
+        {
+            "source": "youtube",
+            "target": "youtube",
+            "value": 4
+        }
+    ]
+}

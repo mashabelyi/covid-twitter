@@ -234,7 +234,7 @@ function drawTimeline(topicHashtags, data){
                   .attr("name", d => d.key)
                   .attr("x", width-labelWidth)
                   .attr("rank", d => d)
-                  .attr("fill", function(d){ return color(d.key) })
+                  .attr("fill", function(d){ return d.color })
     
     // Topic Label Text
     let labelsText = labelGroup.selectAll("text")
@@ -258,7 +258,7 @@ function drawTimeline(topicHashtags, data){
       .data(curr_data)
       .join("path")
         .attr("fill", "none")
-        .attr("stroke", function(d){ return color(d.key) })
+        .attr("stroke", function(d){ return d.color })
         .attr("stroke-width", 2)
         .attr("class", "line")
         .attr("topic", d => d.selector)
@@ -288,12 +288,12 @@ function drawTimeline(topicHashtags, data){
       var tags = topicHashtags.find(function(d) {return d.topicName == topic}).hashtags.split(' ').slice(0,50)
       // console.log()
       hashtags.html("Top hashtags in <b>"+topic+"</b> cluster:<br/>#" + tags.join(" #"))
-              .style("color", color(d.key))
-              .style("border-left", "2px solid " + color(d.key))
+              .style("color", d.color)
+              .style("border-left", "2px solid " + d.color)
     }).on("mouseout", function(d){
       labelGroup.selectAll("rect").attr("class", "labelContainer")
       pathGroup.selectAll("path.line").attr("class", "line")
-      hashtags.html("").style("border-left", "0px solid " + color(d.key))
+      hashtags.html("").style("border-left", "0px solid " + d.color)
     });
     
     
@@ -336,7 +336,9 @@ function drawTimeline(topicHashtags, data){
 
     var selectedValue = this.getAttribute("value");
     var query = selectedValue == "human" ? "bot" : "human";
-    var url = "https://raw.githubusercontent.com/mashabelyi/Twitter-Covid-Response/master/data/topics_timeline_v2_"+query+".csv";
+    // var url = "https://raw.githubusercontent.com/mashabelyi/Twitter-Covid-Response/master/data/topics_timeline_v2_"+query+".csv";
+
+    var url = "data/topics_timeline_v4_"+query+".csv"
 
     if (this.getAttribute('value')=='human'){
       this.setAttribute('value', 'bot')
@@ -426,9 +428,9 @@ function prepare_data(n, d) {
   var tmp = d.slice(0,n);
   var out = []
   for (var t=0; t<n; t++) {
-    out.push({"key": tmp[t].name, "values":[], "selector": tmp[t].name.replace(/[^A-Za-z0-9]/g,'').replace(/ /g,'')})
+    out.push({"key": tmp[t].name, "color": tmp[t].color, "values":[], "selector": tmp[t].name.replace(/[^A-Za-z0-9]/g,'').replace(/ /g,'')})
   }
-
+ 
   // calculate ranks for each day
   for (var date=1; date<32; date++) {
     var ranks = tmp.map(x => +x[date]); // list of all ranks
@@ -446,8 +448,8 @@ function prepare_data(n, d) {
 }
 
 Promise.all([
-    d3.csv("https://raw.githubusercontent.com/mashabelyi/Twitter-Covid-Response/master/data/hashtag_clusters_unique.csv"),
-    d3.csv("https://raw.githubusercontent.com/mashabelyi/Twitter-Covid-Response/master/data/topics_timeline_v2_all.csv")
+    d3.csv("data/hashtag_clusters.csv"),
+    d3.csv("data/topics_timeline_v4_all.csv")
 ]).then(function(files) {
     // files[0] will contain file1.csv
     // files[1] will contain file2.csv

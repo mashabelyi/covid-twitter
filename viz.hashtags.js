@@ -14,14 +14,6 @@ function drawHirearchical(data, elId) {
     const font_size_mouseover = 19
 
     const outerDiv = d3.select(elId);
-    // width = outerDiv.node().getBoundingClientRect().width
-    // height = nTopics*(20+5)
-
-
-    // const container = d3.select(DOM.svg(width, height))
-    //   .attr("viewBox", `${-width / 2-80} ${-height / 2-80} 
-    //                     ${width*1.2} ${height*1.2}`)
-
 
     const container = outerDiv.append("svg")
         .attr("width",width).attr("height",width)
@@ -40,67 +32,13 @@ function drawHirearchical(data, elId) {
 
     const link = container.append("g").attr('class','cluster-links').style('transform','translate(50%,50%)')
                         .attr("fill", "none")
-                        .attr("stroke", "black")
+                        .attr("stroke", "#f7f7f7")
                         .attr("stroke-opacity", 0.8)
                         .selectAll("path")
                         .data(d3.merge(root.leaves().map(d => d.data.targetIds.map(i => d.path(map.get(i))))))
                         .join("path")
                             .style("mix-blend-mode", "multiply")
                             .attr("d", line)
-
-    //   const topic = container.append("g")
-    //         .selectAll("text")
-    //         .data(root.leaves())
-    //         .join("text") 
-    //         .text(d => d.data.topic)
-    //         .attr("fill",d => d.data.color)
-    //         .attr("font-size", 24)
-    //         .attr("x", function(d) {
-    //                             if (d.data.topic === 'Republican') {
-    //                               return 150;}
-    //                             if (d.data.topic === 'Economy') {
-    //                               return 340;}
-    //                             if (d.data.topic === 'Health Official') {
-    //                               return 330;}
-    //                             if (d.data.topic === 'Quarantine') {
-    //                               return 50;}
-    //                             if (d.data.topic === 'Health') {
-    //                               return -390;}
-    //                             if (d.data.topic === 'International') {
-    //                               return -480;}
-    //                             if (d.data.topic === 'Democrat') {
-    //                               return -481;}
-    //                             if (d.data.topic === 'China') {
-    //                               return -350;}
-    //                             if (d.data.topic === 'Other') {
-    //                               return -190;}
-    //                             if (d.data.topic === 'Toilet Paper') {
-    //                               return -40;}
-          
-    //         } )
-    //         .attr("y", function(d) {
-    //                             if (d.data.topic === 'Republican') {
-    //                               return -350;}
-    //                             if (d.data.topic === 'Economy') {
-    //                               return 170;}
-    //                             if (d.data.topic === 'Health Official') {
-    //                               return -90;}
-    //                             if (d.data.topic === 'Quarantine') {
-    //                               return 450;}
-    //                             if (d.data.topic === 'Health') {
-    //                               return 290;}
-    //                             if (d.data.topic === 'International') {
-    //                               return 90;}
-    //                             if (d.data.topic === 'Democrat') {
-    //                               return -210;}
-    //                             if (d.data.topic === 'China') {
-    //                               return -350;}
-    //                             if (d.data.topic === 'Other') {
-    //                               return -370;}
-    //                             if (d.data.topic === 'Toilet Paper') {
-    //                               return -410;}
-          
-    //         } )
 
     const node = container.append("g").attr('class','cluster-text').style('transform','translate(50%,50%)')
     .selectAll("text")
@@ -116,22 +54,26 @@ function drawHirearchical(data, elId) {
       .attr("dy", "0.31em")
       .attr("x", d => d.x < Math.PI ? 3 : -3)
       .attr("text-anchor", d => d.x < Math.PI ? "start" : "end")
-      .text(d => d.data.id)
+      .text(d => '#' + d.data.id)
       .attr("fill",d => d.data.color)
 
     node.on('mouseover', function(d) {
      d3.select(this).style("font-weight",'bold');
 
      link
-      .style('stroke-width',function(arcd) {
+        .style('stroke-width',function(arcd) {
            const sourceId = arcd[0].data.id;
            const targetId = arcd[arcd.length - 1].data.id;
            return d.data.id === sourceId || d.data.id == targetId ? 4: 1;})
+        .style('stroke',function(arcd) {
+           const sourceId = arcd[0].data.id;
+           const targetId = arcd[arcd.length - 1].data.id;
+           return d.data.id === sourceId || d.data.id == targetId ? '#000000': '#f7f7f7';})
     });
 
     node.on('mouseout', function (d) {   
      node.style("font-weight","normal");
-     link.style('stroke', 'black');
+     link.style('stroke', '#f7f7f7');
      link.style('stroke-width', 1);
     });
 
@@ -323,7 +265,8 @@ function drawBars(data, elId, dir, legend){
     //  .call(yAxis);
 }
 
-function drawLegend(elId){
+function drawLegend(elId, data){
+    console.log(data)
 
     const outerDiv = d3.select(elId)
     var width = outerDiv.node().getBoundingClientRect().width
@@ -333,31 +276,31 @@ function drawLegend(elId){
     // const width = 500;
     const margin = { top: 0, right: 20, bottom: 0, left:20 };
 
-    const series = [
-        { key: "StayHome" },
-        { key: "Health" },
-        { key: "Economy" },
-        { key: "AntiTrump" },
-        { key: "ProTrump" },
-        { key: "International" },
-        { key: "China" },
-        { key: "Music" },
-        { key: "Election" },
-        { key: "New York" },
-        { key: "Toilet Paper" },
-        { key: "Vote Blue" },
-        { key: "Cybersecurity" },
-        { key: "Travel" },
-        { key: "Canada" },
-        { key: "SXSW" },
-        { key: "Seattle" }
-        ];
+    // const series = [
+    //     { key: "StayHome" },
+    //     { key: "Health" },
+    //     { key: "Economy" },
+    //     { key: "AntiTrump" },
+    //     { key: "ProTrump" },
+    //     { key: "International" },
+    //     { key: "China" },
+    //     { key: "Music" },
+    //     { key: "Election" },
+    //     { key: "New York" },
+    //     { key: "Toilet Paper" },
+    //     { key: "Vote Blue" },
+    //     { key: "Cybersecurity" },
+    //     { key: "Travel" },
+    //     { key: "Canada" },
+    //     { key: "SXSW" },
+    //     { key: "Seattle" }
+    //     ];
 
-    const color = d3
-        .scaleOrdinal()
-        .domain(series.map(d => d.key))  
-        .range( ['#35AAF2','#33CC89','#CC9829','#4777CC','#CC6352','#3DBBCC','#5652CC','#CC476A','#1171CC','#99957A','#CC7839','#173C80','#3DCCB3','#628000','#850F00','#CC831C','#7C8500']
-              );
+    // const color = d3
+    //     .scaleOrdinal()
+    //     .domain(series.map(d => d.key))  
+    //     .range( ['#35AAF2','#33CC89','#CC9829','#4777CC','#CC6352','#3DBBCC','#5652CC','#CC476A','#1171CC','#99957A','#CC7839','#173C80','#3DCCB3','#628000','#850F00','#CC831C','#7C8500']
+    //           );
 
     const svg = outerDiv
         .append("svg")
@@ -384,7 +327,7 @@ function drawLegend(elId){
     const g = svg
         .append("g").attr("transform", "translate("+margin.left+","+margin.top+")")
         .selectAll("g")
-        .data(series)
+        .data(data)
         .join("g")
         .attr("transform", function(d, i){
             var row = Math.floor(i/5);
@@ -398,7 +341,8 @@ function drawLegend(elId){
     g.append("rect")
         .attr("width", swatchSize)
         .attr("height", swatchSize)
-        .attr("fill", d => color(d.key))
+        // .attr("fill", d => color(d.key))
+        .attr("fill", d => d.topicColor)
         .attr("x", x(0)/2 + swatchSize/2);
 
     g.append("text")
@@ -407,32 +351,29 @@ function drawLegend(elId){
         .attr("text-anchor", "center")
         .attr("dy", "0.8em")
         .style("font-size", "14px")
-        .text(d => d.key);
+        // .text(d => d.key);
+        .text(d => d.topicName);
 
 
 }
 
 Promise.all([
-    d3.json("data/final_covid_hashtags_by_tweet-copy.json"),
-    d3.json("data/final_covid_hashtags_by_users-copy1.json"),
     d3.csv("data/20_hashtag_pairs_formatted.csv"),
     d3.csv("data/20_hashtag_pairs_unique_formatted.csv"),
+    d3.json("data/hirearchical_hashtags.json"),
+    d3.csv("data/hashtag_clusters.csv")
 ]).then(function(files) {
-    // var {nodes,links} = files[0];
 
-    data31 = formatData(files[0].nodes,files[0].links);
-    
-    // {n2,l2} = files[1];
-    data32 = formatData(files[1].nodes,files[1].links);
-
-    drawHirearchical(data32, "#HashtagsGraph");
+    data = formatData(files[2].nodes,files[2].links);
+    drawHirearchical(data, "#HashtagsGraph");
 
     // console.log(files[2])
-    drawBars(files[2], "#HashtagsBarsLeft", "left", false)
-    drawBars(files[3], "#HashtagsBarsRight", "right", true)
-    drawLegend("#HashtagsLegend")
+    drawBars(files[0], "#HashtagsBarsLeft", "left", false)
+    drawBars(files[1], "#HashtagsBarsRight", "right", true)
+    
 
-    // data = files[1];
+    drawLegend("#HashtagsLegend", files[3].slice(0,10))
+
 }).catch(function(err) {
     // handle error here
     console.log(err)
