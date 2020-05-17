@@ -99,7 +99,7 @@ function drawTweetsByDay(pop_data, tweet_data, state_converter, us) {
 
   const outerBars = d3.select("#TweetsByDay-bars");
   barsW = outerBars.node().getBoundingClientRect().width;
-  console.log(barsW)
+  
   barsH = 150
 
   margin = ({top: 30, right: 30, bottom: 30, left: 40})

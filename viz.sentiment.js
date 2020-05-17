@@ -159,7 +159,6 @@ function drawSentiment(tw, re, states){
           .attr('height', h)
           .attr("class","state")
           .attr("transform", function(d) {
-            console.log(d.values[0].row,d.values[0].col)
             return "translate(" + xGrid(d.values[0].col-1) + "," + yGrid(d.values[0].row) + ")"
           })
           // .attr("transform", function(d) {return "translate(110,100)"})
@@ -323,7 +322,6 @@ function drawTerms(mydata){
   width = outerDiv.node().getBoundingClientRect().width
 
   height = d3.select("#sentiment-context").node().getBoundingClientRect().height-100
-  console.log(height)
   let margin = ({top: 10, bottom: 40, left: 10, right: 10});
 
   const posfill = "#f2bc27" // "#45804e"
@@ -411,7 +409,7 @@ Promise.all([
     re = files[1];
     states = files[2];
     terms = files[3];
-    console.log(tw);
+
     drawSentiment(tw, re, states);
     drawTerms(terms)
 

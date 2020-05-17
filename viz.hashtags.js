@@ -277,7 +277,6 @@ function drawBars(data, elId, dir, legend){
 }
 
 function drawLegend(elId, data){
-    console.log(data)
 
     const outerDiv = d3.select(elId)
     var width = outerDiv.node().getBoundingClientRect().width

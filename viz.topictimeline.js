@@ -10,15 +10,15 @@ function drawTimeline(topicHashtags, data){
 
   labelWidth = 100
 
-
-  counts = topicHashtags.map(d => +d.num)
-  console.log(counts)
+  // starting to add % values for each topic
+  // counts = topicHashtags.map(d => +d.num)
+  // console.log(counts)
   // total = Math.sum(counts)
-  const arrSum = counts => counts.reduce((a,b) => a + b, 0) // from https://codeburst.io/javascript-arrays-finding-the-minimum-maximum-sum-average-values-f02f1b0ce332
-  var total = arrSum(counts)
-  console.log(total)
-  var normalized = counts.map(d => Math.floor(100*d/total))
-  console.log(normalized)
+  // const arrSum = counts => counts.reduce((a,b) => a + b, 0) // from https://codeburst.io/javascript-arrays-finding-the-minimum-maximum-sum-average-values-f02f1b0ce332
+  // var total = arrSum(counts)
+  // console.log(total)
+  // var normalized = counts.map(d => Math.floor(100*d/total))
+  // console.log(normalized)
 
   // buttons
   // const controls = outerDiv.append("div").attr("class","controls")
@@ -466,7 +466,7 @@ Promise.all([
     // files[1] will contain file2.csv
     hashtags = files[0];
     data = files[1];
-    console.log(hashtags)
+    
     drawTimeline(hashtags, data);
 
 }).catch(function(err) {
