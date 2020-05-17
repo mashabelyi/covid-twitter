@@ -81,7 +81,9 @@ function drawSentiment(tw, re, states){
   const detail = outerDiv.append("svg").attr("class","sentiment-detail")
                             .attr("width",detailW+"px")
                             .attr("height", detailH+"px")
-                            .attr("transform", "translate(" + (20+xGrid(2)*9) + "," + (yGrid(2)*-3) + ")")
+                            // .attr("transform", "translate(" + (20+xGrid(2)*9) + "," + (yGrid(2)*-3) + ")")
+                            .style("left", (20+xGrid(2)*9)+"px")
+                            .style("top", (yGrid(2)*5) + "px")
  
   
   
@@ -400,7 +402,6 @@ function drawTerms(mydata){
 Promise.all([
     d3.csv("data/tweets-smoothed.0301-0331.usa.sentiment.d3.csv"),
     d3.csv("data/retweets-smoothed.0301-0331.usa.sentiment.d3.csv"),
-    // d3.csv("https://raw.githubusercontent.com/mashabelyi/Twitter-Covid-Response/master/data/retweets-smoothed.0301-0331.usa.sentiment.d3.csv"),
     d3.json("https://raw.githubusercontent.com/mashabelyi/Twitter-Covid-Response/master/scripts/us_states.json"),
     d3.csv("data/distinctive_sentiment_terms.csv")
 ]).then(function(files) {
