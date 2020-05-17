@@ -156,7 +156,11 @@ function drawSentiment(tw, re, states){
           .attr('width', w)
           .attr('height', h)
           .attr("class","state")
-          .attr("transform", function(d) {return "translate(" + xGrid(d.values[0].col-1) + "," + yGrid(d.values[0].row) + ")"})
+          .attr("transform", function(d) {
+            console.log(d.values[0].row,d.values[0].col)
+            return "translate(" + xGrid(d.values[0].col-1) + "," + yGrid(d.values[0].row) + ")"
+          })
+          // .attr("transform", function(d) {return "translate(110,100)"})
           .attr("state", d => d.key)
           .each(function(d,i) {
             // draw state data
@@ -394,8 +398,9 @@ function drawTerms(mydata){
 }
 
 Promise.all([
-    d3.csv("https://raw.githubusercontent.com/mashabelyi/Twitter-Covid-Response/master/data/tweets-smoothed.0301-0331.usa.sentiment.d3.csv"),
-    d3.csv("https://raw.githubusercontent.com/mashabelyi/Twitter-Covid-Response/master/data/retweets-smoothed.0301-0331.usa.sentiment.d3.csv"),
+    d3.csv("data/tweets-smoothed.0301-0331.usa.sentiment.d3.csv"),
+    d3.csv("data/retweets-smoothed.0301-0331.usa.sentiment.d3.csv"),
+    // d3.csv("https://raw.githubusercontent.com/mashabelyi/Twitter-Covid-Response/master/data/retweets-smoothed.0301-0331.usa.sentiment.d3.csv"),
     d3.json("https://raw.githubusercontent.com/mashabelyi/Twitter-Covid-Response/master/scripts/us_states.json"),
     d3.csv("data/distinctive_sentiment_terms.csv")
 ]).then(function(files) {
@@ -405,7 +410,7 @@ Promise.all([
     re = files[1];
     states = files[2];
     terms = files[3];
-
+    console.log(tw);
     drawSentiment(tw, re, states);
     drawTerms(terms)
 
