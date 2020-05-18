@@ -148,7 +148,7 @@ function drawBars(data, elId, dir, legend){
                     // .attr("x", d => +d.Count) 
                     .attr("x", function(d){
                         if (dir=="left"){
-                            return (width - (+d.Count));
+                            return (width - x(+d.Count));
                         }
                         else {return  x(0)}
                     })
@@ -178,7 +178,7 @@ function drawBars(data, elId, dir, legend){
             // .attr("x", d => x(+d.Count) - 10 )
             .attr("x", function(d){
                         if (dir=="left"){
-                            return (width - (+d.Count) + 10);
+                            return (width - x(+d.Count) + 10);
                         }
                         else {return  x(+d.Count) - 10;}
                     })
@@ -195,7 +195,7 @@ function drawBars(data, elId, dir, legend){
             // .attr("x", d => x(+d.Count) + 10 ) // - x(0) ) //Math.min?
             .attr("x", function(d){
                         if (dir=="left"){
-                            return (width - (+d.Count) - 10);
+                            return (width - x(+d.Count) - 10);
                         }
                         else {return  x(+d.Count) + 10;}
                     })
@@ -212,7 +212,7 @@ function drawBars(data, elId, dir, legend){
             // .attr("x", d => x(+d.Count) + 10 ) // - x(0) ) //Math.min?
             .attr("x", function(d){
                         if (dir=="left"){
-                            return (width - (+d.Count) - 40);
+                            return (width - x(+d.Count) - 40);
                         }
                         else {return  x(+d.Count) + 40;}
                     })
