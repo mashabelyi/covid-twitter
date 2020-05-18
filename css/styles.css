@@ -14,7 +14,7 @@ body {
 a {cursor:pointer;}
 #top-header a:visited {color:white;}
 #top-header a:link {color:white;}
-#intro{
+#intro, #top-header p{
   position:relative;
   width:80%;
   max-width:700px;
